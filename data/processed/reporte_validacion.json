@@ -1,0 +1,225 @@
+{
+  "estado_global": "PASS",
+  "filas_crudas_mensuales_2021_2025": 60,
+  "filas_limpias_mensuales": 53,
+  "filas_excluidas_por_ventana_completa": 7,
+  "detalle_exclusiones": [
+    {
+      "periodo": "2021-01",
+      "columnas_faltantes": [
+        "tasa_consumo_pct",
+        "monto_consumo_musd"
+      ],
+      "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+    },
+    {
+      "periodo": "2021-02",
+      "columnas_faltantes": [
+        "tasa_consumo_pct",
+        "monto_consumo_musd"
+      ],
+      "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+    },
+    {
+      "periodo": "2021-03",
+      "columnas_faltantes": [
+        "tasa_consumo_pct",
+        "monto_consumo_musd"
+      ],
+      "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+    },
+    {
+      "periodo": "2021-04",
+      "columnas_faltantes": [
+        "tasa_consumo_pct",
+        "monto_consumo_musd"
+      ],
+      "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+    },
+    {
+      "periodo": "2021-05",
+      "columnas_faltantes": [
+        "tasa_consumo_pct"
+      ],
+      "motivo": "Mes de transición normativa sin tasa activa efectiva referencial publicada"
+    },
+    {
+      "periodo": "2025-11",
+      "columnas_faltantes": [
+        "desempleo_pct",
+        "empleo_adecuado_pct",
+        "subempleo_pct"
+      ],
+      "motivo": "Cierre aún no publicado en boletín ENEMDU / IEM m2085"
+    },
+    {
+      "periodo": "2025-12",
+      "columnas_faltantes": [
+        "desempleo_pct",
+        "empleo_adecuado_pct",
+        "subempleo_pct",
+        "inflacion_anual_pct",
+        "monto_consumo_musd"
+      ],
+      "motivo": "Cierre aún no publicado en boletín ENEMDU / IEM m2085"
+    }
+  ],
+  "validaciones": [
+    {
+      "dataset": "ecuador_sb_serie_historica_mensual",
+      "filas": 276,
+      "columnas": 11,
+      "rango_clave": [
+        "2003-01",
+        "2025-12"
+      ],
+      "estado_global": "PASS",
+      "pruebas": [
+        {
+          "prueba": "sin_valores_faltantes",
+          "estado": "PASS",
+          "detalle": "Total nulos en columnas analíticas: 0",
+          "por_columna": {
+            "periodo": 0,
+            "morosidad_consumo_pct": 0,
+            "morosidad_total_pct": 0,
+            "participacion_consumo_pct": 0,
+            "cobertura_consumo_pct": 0
+          }
+        },
+        {
+          "prueba": "sin_claves_duplicadas",
+          "estado": "PASS",
+          "detalle": "Registros duplicados en 'periodo': 0"
+        },
+        {
+          "prueba": "tipos_numericos_y_finitud",
+          "estado": "PASS",
+          "detalle": "Todas las columnas requeridas son numéricas finitas"
+        },
+        {
+          "prueba": "formato_fecha_iso",
+          "estado": "PASS",
+          "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha': 0"
+        },
+        {
+          "prueba": "orden_cronologico_estricto",
+          "estado": "PASS",
+          "detalle": "Columna 'periodo' ordenada ascendentemente: True"
+        },
+        {
+          "prueba": "rangos_economicos_validos",
+          "estado": "PASS",
+          "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+        }
+      ]
+    },
+    {
+      "dataset": "ecuador_morosidad_mensual_limpio",
+      "filas": 53,
+      "columnas": 26,
+      "rango_clave": [
+        "2021-06",
+        "2025-10"
+      ],
+      "estado_global": "PASS",
+      "pruebas": [
+        {
+          "prueba": "sin_valores_faltantes",
+          "estado": "PASS",
+          "detalle": "Total nulos en columnas analíticas: 0",
+          "por_columna": {
+            "periodo": 0,
+            "morosidad_consumo_pct": 0,
+            "morosidad_total_pct": 0,
+            "desempleo_pct": 0,
+            "empleo_adecuado_pct": 0,
+            "subempleo_pct": 0,
+            "inflacion_anual_pct": 0,
+            "tasa_consumo_pct": 0,
+            "monto_consumo_musd": 0,
+            "log_monto_consumo": 0
+          }
+        },
+        {
+          "prueba": "sin_claves_duplicadas",
+          "estado": "PASS",
+          "detalle": "Registros duplicados en 'periodo': 0"
+        },
+        {
+          "prueba": "tipos_numericos_y_finitud",
+          "estado": "PASS",
+          "detalle": "Todas las columnas requeridas son numéricas finitas"
+        },
+        {
+          "prueba": "formato_fecha_iso",
+          "estado": "PASS",
+          "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha': 0"
+        },
+        {
+          "prueba": "orden_cronologico_estricto",
+          "estado": "PASS",
+          "detalle": "Columna 'periodo' ordenada ascendentemente: True"
+        },
+        {
+          "prueba": "rangos_economicos_validos",
+          "estado": "PASS",
+          "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+        }
+      ]
+    },
+    {
+      "dataset": "ecuador_morosidad_anual_limpio",
+      "filas": 23,
+      "columnas": 20,
+      "rango_clave": [
+        "2003",
+        "2025"
+      ],
+      "estado_global": "PASS",
+      "pruebas": [
+        {
+          "prueba": "sin_valores_faltantes",
+          "estado": "PASS",
+          "detalle": "Total nulos en columnas analíticas: 0",
+          "por_columna": {
+            "anio": 0,
+            "morosidad_consumo_pct": 0,
+            "morosidad_total_pct": 0,
+            "pib_crecimiento_pct": 0,
+            "desempleo_pct": 0,
+            "inflacion_anual_pct": 0,
+            "remesas_pib_pct": 0,
+            "credito_privado_pib_pct": 0,
+            "morosidad_fmi_bm_pct": 0
+          }
+        },
+        {
+          "prueba": "sin_claves_duplicadas",
+          "estado": "PASS",
+          "detalle": "Registros duplicados en 'anio': 0"
+        },
+        {
+          "prueba": "tipos_numericos_y_finitud",
+          "estado": "PASS",
+          "detalle": "Todas las columnas requeridas son numéricas finitas"
+        },
+        {
+          "prueba": "formato_fecha_iso",
+          "estado": "PASS",
+          "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha_cierre': 0"
+        },
+        {
+          "prueba": "orden_cronologico_estricto",
+          "estado": "PASS",
+          "detalle": "Columna 'anio' ordenada ascendentemente: True"
+        },
+        {
+          "prueba": "rangos_economicos_validos",
+          "estado": "PASS",
+          "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+        }
+      ]
+    }
+  ]
+}

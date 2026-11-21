@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto de econometría aplicada con datos oficiales de la Superintendencia de Bancos, Banco Central del Ecuador y Banco Mundial: variables macroeconómicas asociadas a la morosidad del crédito de consumo en Ecuador.">
+  <title>Econometría de la Morosidad del Crédito de Consumo en Ecuador (2003–2025)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <div class="aviso-bar" role="note" aria-label="Aviso importante">
+    <div class="container aviso-inner">
+      <span class="aviso-badge">Aviso</span>
+      <p><strong>Herramienta educativa. No es asesoría financiera.</strong> Análisis empírico reproducible con datos públicos oficiales de Ecuador.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-tag">Portafolio de Econometría Aplicada · Ecuador</span>
+        <h1 class="site-title">¿Qué variables macroeconómicas se asocian a la morosidad del crédito de consumo en Ecuador?</h1>
+        <p class="site-subtitle">
+          Evidencia empírica con series oficiales de la <strong>Superintendencia de Bancos</strong> (2003–2025),
+          el <strong>Banco Central del Ecuador</strong> (IEM m2085) y la <strong>API del Banco Mundial</strong>.
+          Limpieza reproducible en Python y OpenRefine, regresión MCO con <code>statsmodels</code>, diagnóstico de supuestos e interpretación honesta.
+        </p>
+      </div>
+      <div class="header-controls">
+        <button id="theme-toggle" class="btn-theme" type="button" aria-pressed="false" aria-label="Cambiar entre modo claro y oscuro">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span id="theme-label">Modo oscuro</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Secciones del estudio">
+      <div class="container nav-inner">
+        <a href="#resumen">Resumen</a>
+        <a href="#serie-historica">Serie 2003–2025</a>
+        <a href="#relaciones-macro">Dispersión Macro</a>
+        <a href="#modelo-econometrico">Modelos y Supuestos</a>
+        <a href="#interpretacion">Interpretación Honesta</a>
+        <a href="#limpieza-tableau">Limpieza y Tableau</a>
+        <a href="#fuentes">Fuentes Oficiales</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal" class="container main-content">
+    <div id="live-status" class="sr-only" aria-live="polite"></div>
+
+    <!-- SECCIÓN 0: PREGUNTA DE NEGOCIO Y KPIs -->
+    <section id="resumen" class="section" aria-labelledby="h-resumen">
+      <div class="section-head">
+        <h2 id="h-resumen">Pregunta de negocio y hallazgos clave</h2>
+        <p class="section-lead">
+          El crédito de consumo representa el <strong>40.55%</strong> de la cartera bruta de la banca privada ecuatoriana al cierre de diciembre de 2025 (Superintendencia de Bancos).
+          Cuantificar qué indicadores macroeconómicos se mueven junto con su morosidad —y distinguir asociaciones espurias en niveles de co-movimientos reales en diferencias— es esencial para el monitoreo prudencial y la gestión de riesgo de cartera.
+        </p>
+      </div>
+
+      <div id="kpi-grid" class="kpi-grid" aria-label="Indicadores principales del estudio"></div>
+
+      <div class="callout callout-info">
+        <h3>Hallazgo central del estudio (sin exagerar causalidad)</h3>
+        <p>
+          En la ventana mensual homogénea <strong>junio 2021 – octubre 2025 (n = 53)</strong>, el modelo MCO en niveles alcanza <strong>R² = 0.7049</strong> (R² ajustado = 0.6803), pero presenta <strong>autocorrelación positiva moderada (Durbin-Watson = 1.2751)</strong> y un coeficiente <em>negativo</em> en desempleo (<code>−0.8026</code>) inducido por la tendencia post-pandemia (diferimientos en 2021–2022 frente a la normalización y crisis energética 2024).
+          Al estimar en <strong>primeras diferencias mensuales (n = 52)</strong>, la autocorrelación desaparece (<strong>DW = 1.8337</strong>) y el signo del desempleo se invierte al esperado económicamente: <strong>+0.1789 pp</strong> por cada +1 pp de aumento mensual en desempleo (<em>p</em> HAC = 0.0402), hallazgo coherente con las <strong>primeras diferencias anuales 2004–2025 (n = 22)</strong> con datos del Banco Mundial (<strong>ΔDesempleo = +0.6008</strong>, <em>p</em> HAC = 0.0313).
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: SERIE HISTÓRICA SB 2003-2025 -->
+    <section id="serie-historica" class="section" aria-labelledby="h-serie">
+      <div class="section-head section-head-flex">
+        <div>
+          <h2 id="h-serie">1. Evolución histórica de la morosidad bancaria (2003–2025)</h2>
+          <p class="section-lead">
+            276 observaciones mensuales oficiales del <em>Boletín de Series de Banca Privada</em> (Superintendencia de Bancos).
+            La morosidad de consumo se ha mantenido sistemáticamente por encima de la morosidad total del sistema privado en los últimos 15 años.
+          </p>
+        </div>
+        <div class="segmented" role="tablist" aria-label="Ventana temporal del gráfico histórico">
+          <button type="button" class="seg-btn active" role="tab" aria-selected="true" data-window="full">2003–2025 (276 meses)</button>
+          <button type="button" class="seg-btn" role="tab" aria-selected="false" data-window="model">2021–2025 + Ajuste MCO</button>
+        </div>
+      </div>
+
+      <article class="card chart-card">
+        <div class="chart-toolbar">
+          <div class="legend" id="legend-ts" aria-label="Leyenda de la serie temporal"></div>
+          <div class="hover-readout" id="readout-ts">Pasa el cursor o enfoca un punto para ver el detalle mensual.</div>
+        </div>
+        <div class="svg-wrap" id="chart-timeseries"></div>
+        <p class="chart-footnote">
+          Fuente: Superintendencia de Bancos del Ecuador, <em>SERIES SUBSISTEMA BANCA PRIVADA 2025_12.xlsx</em> (hoja <code>GRAF CARTERA</code>). Morosidad = Cartera improductiva / Cartera bruta (%).
+        </p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN 2: DISPERSIÓN MACRO -->
+    <section id="relaciones-macro" class="section" aria-labelledby="h-dispersion">
+      <div class="section-head section-head-flex">
+        <div>
+          <h2 id="h-dispersion">2. Explorador de relaciones macroeconómicas</h2>
+          <p class="section-lead">
+            Compara la asociación bivariada entre cada indicador macroeconómico y la morosidad del crédito de consumo. Observa cómo la relación con el desempleo cambia radicalmente al pasar de niveles a primeras diferencias.
+          </p>
+        </div>
+        <div class="control-group">
+          <label for="scatter-select" class="control-label">Variable explicativa (eje X):</label>
+          <select id="scatter-select" class="select-input">
+            <option value="tasa_consumo_pct">Tasa activa referencial consumo (%) — Mensual niveles</option>
+            <option value="desempleo_pct">Desempleo nacional (%) — Mensual niveles (trampa de tendencia)</option>
+            <option value="d_desempleo_pct">Δ Desempleo mensual (pp) — Primeras diferencias</option>
+            <option value="inflacion_anual_pct">Inflación anual IPC (%) — Mensual niveles</option>
+            <option value="log_monto_consumo">Log monto crédito consumo (ln MUSD) — Mensual niveles</option>
+            <option value="pib_crecimiento_pct">Crecimiento PIB real (%) — Anual 2003–2025 (Banco Mundial)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="two-col-asymmetric">
+        <article class="card chart-card">
+          <div class="chart-toolbar">
+            <div class="legend" id="legend-scatter"></div>
+            <div class="hover-readout" id="readout-scatter">Selecciona o enfoca un punto para inspeccionar el mes.</div>
+          </div>
+          <div class="svg-wrap" id="chart-scatter"></div>
+        </article>
+
+        <aside class="card side-stats" aria-label="Estadísticas de la relación seleccionada">
+          <h3 id="scatter-stat-title">Estadísticas bivariadas</h3>
+          <dl class="metric-list" id="scatter-stat-list"></dl>
+          <div class="callout callout-subtle" id="scatter-stat-note"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: MODELOS ECONOMÉTRICOS Y SUPUESTOS -->
+    <section id="modelo-econometrico" class="section" aria-labelledby="h-modelo">
+      <div class="section-head">
+        <h2 id="h-modelo">3. Regresión lineal múltiple (<code>statsmodels</code>) y diagnóstico de supuestos</h2>
+        <p class="section-lead">
+          Se estiman cuatro especificaciones complementarias por Mínimos Cuadrados Ordinarios (MCO) junto con errores estándar robustos a heterocedasticidad y autocorrelación <strong>Newey-West (HAC)</strong>. Alterna entre especificaciones para auditar coeficientes, intervalos de confianza y pruebas formales de supuestos.
+        </p>
+      </div>
+
+      <div class="model-tabs" role="tablist" aria-label="Selección de especificación econométrica">
+        <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-model="mensual_niveles">M1: Mensual Niveles (n=53)</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-model="mensual_diferencias">M2: Mensual 1ras Dif. (n=52)</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-model="anual_niveles">M3: Anual Niveles (n=23)</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-model="anual_diferencias">M4: Anual 1ras Dif. (n=22)</button>
+      </div>
+
+      <div class="card equation-card">
+        <div class="eq-header">
+          <h3 id="model-title">Modelo</h3>
+          <span id="model-window" class="pill"></span>
+        </div>
+        <p class="equation-box" id="model-equation"></p>
+        <div class="fit-strip" id="model-fit-strip"></div>
+      </div>
+
+      <div class="two-col-equal">
+        <article class="card">
+          <h3>Tabla de coeficientes (MCO y errores robustos Newey-West HAC)</h3>
+          <div class="table-wrap">
+            <table class="data-table" id="coef-table">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col" class="num">Coef. (β̂)</th>
+                  <th scope="col" class="num">EE MCO</th>
+                  <th scope="col" class="num">EE HAC</th>
+                  <th scope="col" class="num">t (HAC)</th>
+                  <th scope="col" class="num">p (HAC)</th>
+                  <th scope="col" class="num">VIF</th>
+                </tr>
+              </thead>
+              <tbody id="coef-tbody"></tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            Significancia estadística (errores HAC): <code>***</code> p &lt; 0.01, <code>**</code> p &lt; 0.05, <code>*</code> p &lt; 0.10. El intercepto no tiene VIF.
+          </p>
+        </article>
+
+        <article class="card chart-card">
+          <h3>Intervalos de confianza al 95% (MCO vs. Newey-West HAC)</h3>
+          <p class="mini-desc">Pendientes estandarizadas en escala natural del regresor (excluye el intercepto). La línea vertical punteada marca cero.</p>
+          <div class="svg-wrap" id="chart-forest"></div>
+        </article>
+      </div>
+
+      <h3 class="subhead">Pruebas formales de supuestos clásicos</h3>
+      <div class="assumptions-grid" id="assumptions-grid"></div>
+
+      <div class="two-col-equal">
+        <article class="card chart-card">
+          <h3>Diagnóstico visual A: Residuos vs. Valores Ajustados</h3>
+          <p class="mini-desc">Permite inspeccionar patrones de heterocedasticidad (Breusch-Pagan) o no linealidades alrededor de cero.</p>
+          <div class="svg-wrap" id="chart-resid-fitted"></div>
+        </article>
+        <article class="card chart-card">
+          <h3>Diagnóstico visual B: Residuos en el tiempo</h3>
+          <p class="mini-desc">Permite observar rachas persistentes (autocorrelación positiva, DW &lt; 1.5) frente a ruido oscilatorio (DW ≈ 1.83 en M2).</p>
+          <div class="svg-wrap" id="chart-resid-time"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: INTERPRETACIÓN HONESTA Y LIMITACIONES -->
+    <section id="interpretacion" class="section" aria-labelledby="h-interpretacion">
+      <div class="section-head">
+        <h2 id="h-interpretacion">4. Interpretación honesta y limitaciones metodológicas</h2>
+        <p class="section-lead">
+          <strong>Correlación no es causalidad.</strong> Los resultados describen asociaciones estadísticas condicionales observadas en series macrofinancieras agregadas de Ecuador; no prueban mecanismos causales aislados ni sirven como modelo de predicción comercial individual.
+        </p>
+      </div>
+
+      <div class="cards-grid-3">
+        <article class="card">
+          <h3>1. ¿Por qué el desempleo cambia de signo?</h3>
+          <p>
+            En <strong>M1 (niveles 2021–2025)</strong> el coeficiente de desempleo es <code>−0.8026</code> porque durante 2021–2022 el desempleo cayó desde 5.39% hacia ~3.5% mientras los alivios y diferimientos regulatorios COVID-19 mantenían la morosidad contable en mínimos (2.90% en jun 2022). Posteriormente, en 2023–2025, la mora subió hacia 4.9%–5.4% con desempleo abierto en torno a 3.2%–3.8%.
+            Al eliminar tendencias comunes mediante <strong>primeras diferencias (M2 y M4)</strong>, el aumento del desempleo se asocia de forma <strong>positiva y significativa</strong> con aumentos de la morosidad (<code>+0.1789</code> mensual; <code>+0.6008</code> anual).
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2. Tasa de interés, crédito y regulación</h3>
+          <p>
+            La tasa activa referencial de consumo fluctúa dentro de una banda estrecha (<code>15.89%</code> a <code>16.56%</code>) acotada por techos máximos de la Junta de Política y Regulación Financiera (<code>16.77%–17.30%</code>). Su asociación positiva en M1 (<code>+2.6577</code>) puede reflejar tanto mayor carga financiera como <em>causalidad inversa</em> (los bancos ajustan tasas hacia el techo cuando perciben mayor riesgo de crédito).
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3. Limitaciones que impone la evidencia</h3>
+          <ul class="clean-list">
+            <li><strong>Tamaño muestral acotado:</strong> n = 53 meses homogéneos tras el cambio de segmentación de mayo 2021 y el inicio de la ENEMDU mensual en 2021; n = 23 años en la serie del Banco Mundial.</li>
+            <li><strong>Choques regulatorios no observados:</strong> diferimientos extraordinarios (2020–2021) y alivios financieros (Res. JPRFM 2024–2025) alteran el registro contable de cartera vencida.</li>
+            <li><strong>Agregación nacional:</strong> la serie agrega todos los bancos privados y oculta heterogeneidad por entidad, provincia, plazo y tipo de deudor.</li>
+            <li><strong>Inflación y dolarización:</strong> en Ecuador la inflación fue baja y poco volátil (media 1.87% en 2021–2025), por lo que su asociación negativa en niveles no debe extrapolarse a escenarios de alta inflación.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: LIMPIEZA, VALIDACIÓN Y TABLEAU -->
+    <section id="limpieza-tableau" class="section" aria-labelledby="h-limpieza">
+      <div class="section-head">
+        <h2 id="h-limpieza">5. Limpieza documentada, validación y salida para Tableau Public</h2>
+        <p class="section-lead">
+          El flujo de preparación en Python (<code>scripts/limpiar_datos.py</code>) cuenta con un historial equivalente en formato JSON de <strong>OpenRefine</strong> (<code>openrefine/historial_operaciones_openrefine.json</code>) y una batería automática de pruebas de calidad de datos.
+        </p>
+      </div>
+
+      <div class="two-col-equal">
+        <article class="card">
+          <h3>Auditoría de pruebas de validación de datos</h3>
+          <div id="validation-summary"></div>
+          <h4 class="mini-title">Meses excluidos (sin imputación artificial)</h4>
+          <p class="mini-desc">
+            De los 60 meses calendario 2021–2025, se excluyeron explícitamente <strong>7 meses</strong> incompletos para garantizar 0% de datos inventados o interpolados: <code>2021-01</code> a <code>2021-04</code> (antes de la segmentación unificada «Consumo»), <code>2021-05</code> (mes de transición sin tasa efectiva referencial publicada en IEM 1.10.2a) y <code>2025-11</code> a <code>2025-12</code> (aún sin cierre ENEMDU en el corte IEM m2085).
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Archivos reproducibles y tablero Tableau Public</h3>
+          <ul class="artifact-list">
+            <li>
+              <strong>Limpieza Python (pandas):</strong> <code>scripts/limpiar_datos.py</code>
+              <span>Parseo directo de Excel/ZIP oficiales, estandarización y pruebas automáticas.</span>
+            </li>
+            <li>
+              <strong>Historial OpenRefine (JSON):</strong> <code>openrefine/historial_operaciones_openrefine.json</code>
+              <span>19 operaciones GREL equivalentes aplicables a <code>raw_integrado_mensual_pre_limpieza.csv</code>.</span>
+            </li>
+            <li>
+              <strong>Regresión y supuestos (statsmodels):</strong> <code>scripts/modelo_econometrico.py</code>
+              <span>MCO, Newey-West HAC, Shapiro-Wilk, Jarque-Bera, Breusch-Pagan, VIF, Durbin-Watson y Breusch-Godfrey.</span>
+            </li>
+            <li>
+              <strong>CSV Tableau Public (Mensual y Anual):</strong>
+              <code>tableau/ecuador_morosidad_consumo_mensual_tableau.csv</code> y <code>tableau/ecuador_morosidad_consumo_anual_tableau.csv</code>
+              <span>Incluyen predicciones MCO, residuos, primeras diferencias y régimen coyuntural.</span>
+            </li>
+            <li>
+              <strong>Guía paso a paso Tableau Public:</strong> <code>tableau/INSTRUCCIONES_TABLEAU_PUBLIC.md</code>
+              <span>Campos calculados, 4 hojas sugeridas, parámetros interactivos y diseño de dashboard.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: FUENTES OFICIALES -->
+    <section id="fuentes" class="section" aria-labelledby="h-fuentes">
+      <div class="section-head">
+        <h2 id="h-fuentes">6. Fuentes públicas oficiales y trazabilidad de descarga</h2>
+        <p class="section-lead">
+          Cada archivo crudo fue descargado mediante <code>scripts/descargar_datos.py</code> y auditado con fecha exacta, tamaño en bytes y huella SHA-256 en <code>data/raw/fuentes_descarga.json</code>.
+        </p>
+      </div>
+
+      <article class="card">
+        <div class="table-wrap">
+          <table class="data-table" id="sources-table">
+            <thead>
+              <tr>
+                <th scope="col">Institución</th>
+                <th scope="col">Serie / Archivo</th>
+                <th scope="col">Frecuencia</th>
+                <th scope="col">Fecha de descarga (EC)</th>
+                <th scope="col">Enlace oficial</th>
+              </tr>
+            </thead>
+            <tbody id="sources-tbody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-disclaimer"><strong>Herramienta educativa. No es asesoría financiera.</strong></p>
+      <p class="footer-author">
+        Hecho por Bryan Román ·
+        <a href="https://www.linkedin.com/in/bryan-roman-ai" target="_blank" rel="noopener noreferrer">linkedin.com/in/bryan-roman-ai</a>
+      </p>
+      <p class="footer-meta">Licencia MIT · Datos públicos de Superintendencia de Bancos, Banco Central del Ecuador y Banco Mundial.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

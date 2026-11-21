@@ -1,0 +1,6082 @@
+{
+  "meta": {
+    "proyecto": "econometria-morosidad-ecuador",
+    "autor": "Bryan Román",
+    "fecha_descarga_datos": "2026-11-21T09:15:06-05:00",
+    "aviso": "Herramienta educativa. No es asesoría financiera."
+  },
+  "fuentes": [
+    {
+      "id": "sb_series_banca_privada_2025",
+      "institucion": "Superintendencia de Bancos del Ecuador (SB)",
+      "titulo": "Boletín de Series Mensuales - Total Subsistema Banca Privada (Corte Diciembre 2025)",
+      "url": "https://www.superbancos.gob.ec/estadisticas/portalestudios/wp-admin/admin-ajax.php?action=shareonedrive-download&dl=1&id=01ONK3WL67DUF43B6SYBBJEJJ2KZ7WR2S4&account_id=341c37a6-daa9-4b83-adad-506b00ccb984&drive_id=b!Iz-mji9B1EqK1eiAuGWU7x82x3m7uftFja_xK_rSLWY6gLR41EOqTYg222Ho8lwD&listtoken=cb2dcac486c20e9c7a63b3bc95e58f46",
+      "pagina_origen": "https://www.superbancos.gob.ec/estadisticas/portalestudios/bancos-2/",
+      "archivo": "sb_series_banca_privada_dic2025.zip",
+      "frecuencia": "Mensual (2003-2025)",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:00-05:00",
+      "bytes": 6835334,
+      "sha256_corto": "86dd7acfb0502355"
+    },
+    {
+      "id": "bce_iem_1102_tasas_2015_2021",
+      "institucion": "Banco Central del Ecuador (BCE)",
+      "titulo": "IEM 1.10.2 Tasas de Interés Activas Efectivas Referenciales por Segmento (Ago 2015 - Abr 2021)",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-1102-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-1102-e.xlsx",
+      "frecuencia": "Mensual (2015-08 a 2021-04)",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:01-05:00",
+      "bytes": 132037,
+      "sha256_corto": "88745577829a93fb"
+    },
+    {
+      "id": "bce_iem_1102a_tasas_2021_2025",
+      "institucion": "Banco Central del Ecuador (BCE)",
+      "titulo": "IEM 1.10.2a Tasas de Interés Activas Efectivas Referenciales por Segmento (Desde May 2021)",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-1102a-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-1102a-e.xlsx",
+      "frecuencia": "Mensual (2021-05 a 2025-11)",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:01-05:00",
+      "bytes": 121783,
+      "sha256_corto": "8cd8b27789b332dd"
+    },
+    {
+      "id": "bce_iem_1103_monto_2015_2021",
+      "institucion": "Banco Central del Ecuador (BCE)",
+      "titulo": "IEM 1.10.3 Monto de Operaciones Activas por Segmento (Sep 2015 - Abr 2021)",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-1103-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-1103-e.xlsx",
+      "frecuencia": "Mensual (2015-09 a 2021-04)",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:02-05:00",
+      "bytes": 138724,
+      "sha256_corto": "ae18a140fa4fc4a4"
+    },
+    {
+      "id": "bce_iem_1103a_monto_2021_2025",
+      "institucion": "Banco Central del Ecuador (BCE)",
+      "titulo": "IEM 1.10.3a Monto de Operaciones Activas por Segmento (Desde May 2021)",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-1103a-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-1103a-e.xlsx",
+      "frecuencia": "Mensual (2021-05 a 2025-11)",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:02-05:00",
+      "bytes": 126326,
+      "sha256_corto": "000abf99a3bc7a95"
+    },
+    {
+      "id": "bce_iem_421_ipc",
+      "institucion": "Banco Central del Ecuador (BCE) / INEC",
+      "titulo": "IEM 4.2.1 Índice de Precios al Consumidor (IPC) e Inflación Anual/Mensual",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-421-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-421-e.xlsx",
+      "frecuencia": "Mensual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:03-05:00",
+      "bytes": 149410,
+      "sha256_corto": "d58650d486d06937"
+    },
+    {
+      "id": "bce_iem_425_laboral",
+      "institucion": "Banco Central del Ecuador (BCE) / INEC",
+      "titulo": "IEM 4.2.5 Indicadores del Mercado Laboral Nacional, Urbano y Rural",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-425-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-425-e.xlsx",
+      "frecuencia": "Mensual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:03-05:00",
+      "bytes": 137483,
+      "sha256_corto": "605e8e869e3ca7ac"
+    },
+    {
+      "id": "bce_iem_451_confianza",
+      "institucion": "Banco Central del Ecuador (BCE)",
+      "titulo": "IEM 4.5.1 Índice de Confianza del Consumidor Nacional",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/m2085/IEM-451-e.xlsx",
+      "pagina_origen": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/IEMensual/Indices/m2085112025.html",
+      "archivo": "bce_IEM-451-e.xlsx",
+      "frecuencia": "Mensual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:04-05:00",
+      "bytes": 125322,
+      "sha256_corto": "bded3d95d395d1c3"
+    },
+    {
+      "id": "wb_pib_crecimiento",
+      "institucion": "Banco Mundial (World Bank Open Data API v2)",
+      "titulo": "Crecimiento del PIB real anual (%) - NY.GDP.MKTP.KD.ZG",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=EC",
+      "archivo": "wb_ECU_NY.GDP.MKTP.KD.ZG.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:04-05:00",
+      "bytes": 14209,
+      "sha256_corto": "cc9e131ecec50d3a"
+    },
+    {
+      "id": "wb_desempleo_ilo",
+      "institucion": "Banco Mundial / OIT (World Bank Open Data API v2)",
+      "titulo": "Desempleo total (% población activa, estimación modelada OIT) - SL.UEM.TOTL.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=EC",
+      "archivo": "wb_ECU_SL.UEM.TOTL.ZS.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:04-05:00",
+      "bytes": 16291,
+      "sha256_corto": "3ecbaf47dd984ee9"
+    },
+    {
+      "id": "wb_inflacion_ipc",
+      "institucion": "Banco Mundial / FMI (World Bank Open Data API v2)",
+      "titulo": "Inflación, precios al consumidor (% anual) - FP.CPI.TOTL.ZG",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=EC",
+      "archivo": "wb_ECU_FP.CPI.TOTL.ZG.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:05-05:00",
+      "bytes": 15077,
+      "sha256_corto": "70a474fba9b547f1"
+    },
+    {
+      "id": "wb_remesas_pib",
+      "institucion": "Banco Mundial (World Bank Open Data API v2)",
+      "titulo": "Remesas personales recibidas (% del PIB) - BX.TRF.PWKR.DT.GD.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/BX.TRF.PWKR.DT.GD.ZS?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS?locations=EC",
+      "archivo": "wb_ECU_BX.TRF.PWKR.DT.GD.ZS.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:05-05:00",
+      "bytes": 15445,
+      "sha256_corto": "71c3af39ae006911"
+    },
+    {
+      "id": "wb_credito_privado_pib",
+      "institucion": "Banco Mundial / FMI (World Bank Open Data API v2)",
+      "titulo": "Crédito interno al sector privado (% del PIB) - FS.AST.PRVT.GD.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=EC",
+      "archivo": "wb_ECU_FS.AST.PRVT.GD.ZS.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:05-05:00",
+      "bytes": 15226,
+      "sha256_corto": "6e805393fdc4e543"
+    },
+    {
+      "id": "wb_consumo_hogares",
+      "institucion": "Banco Mundial (World Bank Open Data API v2)",
+      "titulo": "Crecimiento del gasto de consumo final de los hogares (% anual) - NE.CON.PRVT.KD.ZG",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/NE.CON.PRVT.KD.ZG?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/NE.CON.PRVT.KD.ZG?locations=EC",
+      "archivo": "wb_ECU_NE.CON.PRVT.KD.ZG.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:05-05:00",
+      "bytes": 17381,
+      "sha256_corto": "e4ed7600bd60ba1c"
+    },
+    {
+      "id": "wb_morosidad_bancaria_total_fmi",
+      "institucion": "Banco Mundial / FMI FSI (World Bank Open Data API v2)",
+      "titulo": "Préstamos bancarios en mora respecto al total de préstamos brutos (%) - FB.AST.NPER.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU/indicator/FB.AST.NPER.ZS?format=json&per_page=100",
+      "pagina_origen": "https://data.worldbank.org/indicator/FB.AST.NPER.ZS?locations=EC",
+      "archivo": "wb_ECU_FB.AST.NPER.ZS.json",
+      "frecuencia": "Anual",
+      "fecha_descarga_ecuador": "2026-11-21T09:15:06-05:00",
+      "bytes": 15350,
+      "sha256_corto": "9f68c0d9987f5b7d"
+    }
+  ],
+  "validacion_limpieza": {
+    "estado_global": "PASS",
+    "filas_crudas_mensuales_2021_2025": 60,
+    "filas_limpias_mensuales": 53,
+    "filas_excluidas_por_ventana_completa": 7,
+    "detalle_exclusiones": [
+      {
+        "periodo": "2021-01",
+        "columnas_faltantes": [
+          "tasa_consumo_pct",
+          "monto_consumo_musd"
+        ],
+        "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+      },
+      {
+        "periodo": "2021-02",
+        "columnas_faltantes": [
+          "tasa_consumo_pct",
+          "monto_consumo_musd"
+        ],
+        "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+      },
+      {
+        "periodo": "2021-03",
+        "columnas_faltantes": [
+          "tasa_consumo_pct",
+          "monto_consumo_musd"
+        ],
+        "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+      },
+      {
+        "periodo": "2021-04",
+        "columnas_faltantes": [
+          "tasa_consumo_pct",
+          "monto_consumo_musd"
+        ],
+        "motivo": "Anterior a vigencia de segmentación unificada 'Consumo' (May 2021)"
+      },
+      {
+        "periodo": "2021-05",
+        "columnas_faltantes": [
+          "tasa_consumo_pct"
+        ],
+        "motivo": "Mes de transición normativa sin tasa activa efectiva referencial publicada"
+      },
+      {
+        "periodo": "2025-11",
+        "columnas_faltantes": [
+          "desempleo_pct",
+          "empleo_adecuado_pct",
+          "subempleo_pct"
+        ],
+        "motivo": "Cierre aún no publicado en boletín ENEMDU / IEM m2085"
+      },
+      {
+        "periodo": "2025-12",
+        "columnas_faltantes": [
+          "desempleo_pct",
+          "empleo_adecuado_pct",
+          "subempleo_pct",
+          "inflacion_anual_pct",
+          "monto_consumo_musd"
+        ],
+        "motivo": "Cierre aún no publicado en boletín ENEMDU / IEM m2085"
+      }
+    ],
+    "validaciones": [
+      {
+        "dataset": "ecuador_sb_serie_historica_mensual",
+        "filas": 276,
+        "columnas": 11,
+        "rango_clave": [
+          "2003-01",
+          "2025-12"
+        ],
+        "estado_global": "PASS",
+        "pruebas": [
+          {
+            "prueba": "sin_valores_faltantes",
+            "estado": "PASS",
+            "detalle": "Total nulos en columnas analíticas: 0",
+            "por_columna": {
+              "periodo": 0,
+              "morosidad_consumo_pct": 0,
+              "morosidad_total_pct": 0,
+              "participacion_consumo_pct": 0,
+              "cobertura_consumo_pct": 0
+            }
+          },
+          {
+            "prueba": "sin_claves_duplicadas",
+            "estado": "PASS",
+            "detalle": "Registros duplicados en 'periodo': 0"
+          },
+          {
+            "prueba": "tipos_numericos_y_finitud",
+            "estado": "PASS",
+            "detalle": "Todas las columnas requeridas son numéricas finitas"
+          },
+          {
+            "prueba": "formato_fecha_iso",
+            "estado": "PASS",
+            "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha': 0"
+          },
+          {
+            "prueba": "orden_cronologico_estricto",
+            "estado": "PASS",
+            "detalle": "Columna 'periodo' ordenada ascendentemente: True"
+          },
+          {
+            "prueba": "rangos_economicos_validos",
+            "estado": "PASS",
+            "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+          }
+        ]
+      },
+      {
+        "dataset": "ecuador_morosidad_mensual_limpio",
+        "filas": 53,
+        "columnas": 26,
+        "rango_clave": [
+          "2021-06",
+          "2025-10"
+        ],
+        "estado_global": "PASS",
+        "pruebas": [
+          {
+            "prueba": "sin_valores_faltantes",
+            "estado": "PASS",
+            "detalle": "Total nulos en columnas analíticas: 0",
+            "por_columna": {
+              "periodo": 0,
+              "morosidad_consumo_pct": 0,
+              "morosidad_total_pct": 0,
+              "desempleo_pct": 0,
+              "empleo_adecuado_pct": 0,
+              "subempleo_pct": 0,
+              "inflacion_anual_pct": 0,
+              "tasa_consumo_pct": 0,
+              "monto_consumo_musd": 0,
+              "log_monto_consumo": 0
+            }
+          },
+          {
+            "prueba": "sin_claves_duplicadas",
+            "estado": "PASS",
+            "detalle": "Registros duplicados en 'periodo': 0"
+          },
+          {
+            "prueba": "tipos_numericos_y_finitud",
+            "estado": "PASS",
+            "detalle": "Todas las columnas requeridas son numéricas finitas"
+          },
+          {
+            "prueba": "formato_fecha_iso",
+            "estado": "PASS",
+            "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha': 0"
+          },
+          {
+            "prueba": "orden_cronologico_estricto",
+            "estado": "PASS",
+            "detalle": "Columna 'periodo' ordenada ascendentemente: True"
+          },
+          {
+            "prueba": "rangos_economicos_validos",
+            "estado": "PASS",
+            "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+          }
+        ]
+      },
+      {
+        "dataset": "ecuador_morosidad_anual_limpio",
+        "filas": 23,
+        "columnas": 20,
+        "rango_clave": [
+          "2003",
+          "2025"
+        ],
+        "estado_global": "PASS",
+        "pruebas": [
+          {
+            "prueba": "sin_valores_faltantes",
+            "estado": "PASS",
+            "detalle": "Total nulos en columnas analíticas: 0",
+            "por_columna": {
+              "anio": 0,
+              "morosidad_consumo_pct": 0,
+              "morosidad_total_pct": 0,
+              "pib_crecimiento_pct": 0,
+              "desempleo_pct": 0,
+              "inflacion_anual_pct": 0,
+              "remesas_pib_pct": 0,
+              "credito_privado_pib_pct": 0,
+              "morosidad_fmi_bm_pct": 0
+            }
+          },
+          {
+            "prueba": "sin_claves_duplicadas",
+            "estado": "PASS",
+            "detalle": "Registros duplicados en 'anio': 0"
+          },
+          {
+            "prueba": "tipos_numericos_y_finitud",
+            "estado": "PASS",
+            "detalle": "Todas las columnas requeridas son numéricas finitas"
+          },
+          {
+            "prueba": "formato_fecha_iso",
+            "estado": "PASS",
+            "detalle": "Fechas fuera de formato YYYY-MM-DD en 'fecha_cierre': 0"
+          },
+          {
+            "prueba": "orden_cronologico_estricto",
+            "estado": "PASS",
+            "detalle": "Columna 'anio' ordenada ascendentemente: True"
+          },
+          {
+            "prueba": "rangos_economicos_validos",
+            "estado": "PASS",
+            "detalle": "Todos los indicadores dentro de rangos económicos plausibles"
+          }
+        ]
+      }
+    ]
+  },
+  "descriptivas_mensuales": {
+    "morosidad_consumo_pct": {
+      "media": 4.404,
+      "desv_est": 0.9032,
+      "min": 2.8967,
+      "mediana": 4.8613,
+      "max": 5.4322
+    },
+    "morosidad_total_pct": {
+      "media": 2.9919,
+      "desv_est": 0.5433,
+      "min": 2.1354,
+      "mediana": 3.2078,
+      "max": 3.7164
+    },
+    "desempleo_pct": {
+      "media": 3.8705,
+      "desv_est": 0.5662,
+      "min": 2.6882,
+      "mediana": 3.7531,
+      "max": 5.3918
+    },
+    "inflacion_anual_pct": {
+      "media": 1.8742,
+      "desv_est": 1.2041,
+      "min": -0.6883,
+      "mediana": 1.6562,
+      "max": 4.2348
+    },
+    "tasa_consumo_pct": {
+      "media": 16.1664,
+      "desv_est": 0.1505,
+      "min": 15.89,
+      "mediana": 16.21,
+      "max": 16.56
+    },
+    "monto_consumo_musd": {
+      "media": 1171.8518,
+      "desv_est": 106.5995,
+      "min": 947.7463,
+      "mediana": 1162.1474,
+      "max": 1424.5463
+    }
+  },
+  "correlaciones_mensuales": {
+    "desempleo_pct": {
+      "etiqueta": "Desempleo nacional (%)",
+      "r_pearson": -0.5052,
+      "p_valor": 0.000114
+    },
+    "empleo_adecuado_pct": {
+      "etiqueta": "empleo_adecuado_pct",
+      "r_pearson": 0.4574,
+      "p_valor": 0.000574
+    },
+    "subempleo_pct": {
+      "etiqueta": "subempleo_pct",
+      "r_pearson": -0.5019,
+      "p_valor": 0.000129
+    },
+    "inflacion_anual_pct": {
+      "etiqueta": "Inflación anual IPC (%)",
+      "r_pearson": -0.5396,
+      "p_valor": 3.1e-05
+    },
+    "tasa_consumo_pct": {
+      "etiqueta": "Tasa activa referencial consumo (%)",
+      "r_pearson": 0.3661,
+      "p_valor": 0.007013
+    },
+    "log_monto_consumo": {
+      "etiqueta": "Log monto crédito consumo (ln MUSD)",
+      "r_pearson": 0.3062,
+      "p_valor": 0.02578
+    }
+  },
+  "modelos": {
+    "mensual_niveles": {
+      "id": "mensual_niveles",
+      "titulo": "Modelo 1: MCO Mensual en Niveles (Jun 2021 – Oct 2025)",
+      "ecuacion": "MorosidadConsumo_t = β₀ + β₁·Desempleo_t + β₂·InflaciónIPC_t + β₃·TasaConsumo_t + β₄·ln(MontoConsumo_t) + ε_t",
+      "rango_muestral": [
+        "2021-06",
+        "2025-10"
+      ],
+      "n": 53,
+      "k_regresores": 4,
+      "hac_lags": 3,
+      "bondad_ajuste": {
+        "r2": 0.704884,
+        "r2_ajustado": 0.680291,
+        "f_estadistico": 28.6619,
+        "f_pvalor": 3.412776e-12,
+        "rmse": 0.486017,
+        "aic": 83.9273,
+        "bic": 93.7788
+      },
+      "coeficientes": [
+        {
+          "variable": "const",
+          "etiqueta": "Intercepto (β₀)",
+          "coef": -58.210483,
+          "se_ols": 12.370697,
+          "t_ols": -4.7055,
+          "p_ols": 2.2e-05,
+          "ic95_ols": [
+            -83.083436,
+            -33.337531
+          ],
+          "se_hac": 11.382981,
+          "t_hac": -5.1138,
+          "p_hac": 5e-06,
+          "ic95_hac": [
+            -81.0975,
+            -35.323467
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "desempleo_pct",
+          "etiqueta": "Desempleo nacional (%)",
+          "coef": -0.802639,
+          "se_ols": 0.13437,
+          "t_ols": -5.9734,
+          "p_ols": 0.0,
+          "ic95_ols": [
+            -1.072807,
+            -0.532471
+          ],
+          "se_hac": 0.182177,
+          "t_hac": -4.4058,
+          "p_hac": 5.9e-05,
+          "ic95_hac": [
+            -1.16893,
+            -0.436348
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "inflacion_anual_pct",
+          "etiqueta": "Inflación anual IPC (%)",
+          "coef": -0.259679,
+          "se_ols": 0.067144,
+          "t_ols": -3.8675,
+          "p_ols": 0.000331,
+          "ic95_ols": [
+            -0.394682,
+            -0.124676
+          ],
+          "se_hac": 0.074169,
+          "t_hac": -3.5012,
+          "p_hac": 0.001012,
+          "ic95_hac": [
+            -0.408805,
+            -0.110552
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "tasa_consumo_pct",
+          "etiqueta": "Tasa activa referencial consumo (%)",
+          "coef": 2.657739,
+          "se_ols": 0.574665,
+          "t_ols": 4.6248,
+          "p_ols": 2.9e-05,
+          "ic95_ols": [
+            1.502297,
+            3.813182
+          ],
+          "se_hac": 0.545485,
+          "t_hac": 4.8723,
+          "p_hac": 1.2e-05,
+          "ic95_hac": [
+            1.560968,
+            3.754511
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "log_monto_consumo",
+          "etiqueta": "Log monto crédito consumo (ln MUSD)",
+          "coef": 3.290964,
+          "se_ols": 0.847763,
+          "t_ols": 3.8819,
+          "p_ols": 0.000316,
+          "ic95_ols": [
+            1.586423,
+            4.995505
+          ],
+          "se_hac": 0.768709,
+          "t_hac": 4.2812,
+          "p_hac": 8.8e-05,
+          "ic95_hac": [
+            1.745371,
+            4.836558
+          ],
+          "significativo_5pct_hac": true
+        }
+      ],
+      "supuestos": {
+        "normalidad": {
+          "shapiro_w": 0.9677,
+          "shapiro_p": 0.159558,
+          "jarque_bera": 1.9089,
+          "jarque_bera_p": 0.385018,
+          "asimetria": -0.053,
+          "curtosis": 2.0763,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza normalidad de residuos al 5%."
+        },
+        "heterocedasticidad_breusch_pagan": {
+          "lm_estadistico": 8.6667,
+          "lm_pvalor": 0.069992,
+          "f_estadistico": 2.3459,
+          "f_pvalor": 0.067805,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza homocedasticidad al 5% (errores HAC reportados como resguardo)."
+        },
+        "multicolinealidad_vif": {
+          "max_vif": 1.4911,
+          "cumple_umbral_5": true,
+          "por_variable": [
+            {
+              "variable": "desempleo_pct",
+              "etiqueta": "Desempleo nacional (%)",
+              "vif": 1.1539,
+              "alerta": false
+            },
+            {
+              "variable": "inflacion_anual_pct",
+              "etiqueta": "Inflación anual IPC (%)",
+              "vif": 1.3032,
+              "alerta": false
+            },
+            {
+              "variable": "tasa_consumo_pct",
+              "etiqueta": "Tasa activa referencial consumo (%)",
+              "vif": 1.4911,
+              "alerta": false
+            },
+            {
+              "variable": "log_monto_consumo",
+              "etiqueta": "Log monto crédito consumo (ln MUSD)",
+              "vif": 1.1933,
+              "alerta": false
+            }
+          ],
+          "conclusion": "Sin multicolinealidad severa (VIF máximo = 1.49 < 5)."
+        },
+        "autocorrelacion": {
+          "durbin_watson": 1.2751,
+          "breusch_godfrey_lm1": 7.9613,
+          "breusch_godfrey_p1": 0.004779,
+          "cumple_rango_dw": false,
+          "conclusion": "Autocorrelación positiva detectada (se aplican errores HAC y primeras diferencias)"
+        }
+      },
+      "observaciones": [
+        {
+          "periodo": "2021-06",
+          "y_observado": 4.535112,
+          "y_ajustado": 5.034289,
+          "residuo": -0.499177
+        },
+        {
+          "periodo": "2021-07",
+          "y_observado": 4.046437,
+          "y_ajustado": 4.476738,
+          "residuo": -0.430301
+        },
+        {
+          "periodo": "2021-08",
+          "y_observado": 3.814551,
+          "y_ajustado": 4.172605,
+          "residuo": -0.358054
+        },
+        {
+          "periodo": "2021-09",
+          "y_observado": 3.484617,
+          "y_ajustado": 4.18131,
+          "residuo": -0.696693
+        },
+        {
+          "periodo": "2021-10",
+          "y_observado": 3.273197,
+          "y_ajustado": 4.120317,
+          "residuo": -0.84712
+        },
+        {
+          "periodo": "2021-11",
+          "y_observado": 3.312452,
+          "y_ajustado": 3.921987,
+          "residuo": -0.609535
+        },
+        {
+          "periodo": "2021-12",
+          "y_observado": 3.060415,
+          "y_ajustado": 3.771249,
+          "residuo": -0.710834
+        },
+        {
+          "periodo": "2022-01",
+          "y_observado": 3.255874,
+          "y_ajustado": 2.363543,
+          "residuo": 0.892331
+        },
+        {
+          "periodo": "2022-02",
+          "y_observado": 3.221339,
+          "y_ajustado": 2.993722,
+          "residuo": 0.227617
+        },
+        {
+          "periodo": "2022-03",
+          "y_observado": 3.143109,
+          "y_ajustado": 3.035974,
+          "residuo": 0.107135
+        },
+        {
+          "periodo": "2022-04",
+          "y_observado": 2.937048,
+          "y_ajustado": 2.703468,
+          "residuo": 0.23358
+        },
+        {
+          "periodo": "2022-05",
+          "y_observado": 2.962908,
+          "y_ajustado": 3.566733,
+          "residuo": -0.603825
+        },
+        {
+          "periodo": "2022-06",
+          "y_observado": 2.896687,
+          "y_ajustado": 2.805188,
+          "residuo": 0.091499
+        },
+        {
+          "periodo": "2022-07",
+          "y_observado": 3.011128,
+          "y_ajustado": 3.190785,
+          "residuo": -0.179657
+        },
+        {
+          "periodo": "2022-08",
+          "y_observado": 3.111137,
+          "y_ajustado": 3.82007,
+          "residuo": -0.708933
+        },
+        {
+          "periodo": "2022-09",
+          "y_observado": 2.969741,
+          "y_ajustado": 3.618443,
+          "residuo": -0.648702
+        },
+        {
+          "periodo": "2022-10",
+          "y_observado": 3.122312,
+          "y_ajustado": 3.506474,
+          "residuo": -0.384162
+        },
+        {
+          "periodo": "2022-11",
+          "y_observado": 3.237752,
+          "y_ajustado": 3.637244,
+          "residuo": -0.399492
+        },
+        {
+          "periodo": "2022-12",
+          "y_observado": 3.005576,
+          "y_ajustado": 3.962394,
+          "residuo": -0.956818
+        },
+        {
+          "periodo": "2023-01",
+          "y_observado": 4.545788,
+          "y_ajustado": 4.082322,
+          "residuo": 0.463466
+        },
+        {
+          "periodo": "2023-02",
+          "y_observado": 4.86125,
+          "y_ajustado": 3.974883,
+          "residuo": 0.886367
+        },
+        {
+          "periodo": "2023-03",
+          "y_observado": 4.90254,
+          "y_ajustado": 4.894395,
+          "residuo": 0.008145
+        },
+        {
+          "periodo": "2023-04",
+          "y_observado": 4.816938,
+          "y_ajustado": 4.031438,
+          "residuo": 0.7855
+        },
+        {
+          "periodo": "2023-05",
+          "y_observado": 4.916488,
+          "y_ajustado": 5.171937,
+          "residuo": -0.255449
+        },
+        {
+          "periodo": "2023-06",
+          "y_observado": 4.896023,
+          "y_ajustado": 4.914585,
+          "residuo": -0.018562
+        },
+        {
+          "periodo": "2023-07",
+          "y_observado": 5.111756,
+          "y_ajustado": 4.903604,
+          "residuo": 0.208152
+        },
+        {
+          "periodo": "2023-08",
+          "y_observado": 5.104471,
+          "y_ajustado": 4.859891,
+          "residuo": 0.24458
+        },
+        {
+          "periodo": "2023-09",
+          "y_observado": 5.086824,
+          "y_ajustado": 4.734087,
+          "residuo": 0.352737
+        },
+        {
+          "periodo": "2023-10",
+          "y_observado": 5.282651,
+          "y_ajustado": 5.21338,
+          "residuo": 0.069271
+        },
+        {
+          "periodo": "2023-11",
+          "y_observado": 5.368519,
+          "y_ajustado": 4.906301,
+          "residuo": 0.462218
+        },
+        {
+          "periodo": "2023-12",
+          "y_observado": 4.809403,
+          "y_ajustado": 4.818974,
+          "residuo": -0.009571
+        },
+        {
+          "periodo": "2024-01",
+          "y_observado": 5.056904,
+          "y_ajustado": 4.650906,
+          "residuo": 0.405998
+        },
+        {
+          "periodo": "2024-02",
+          "y_observado": 5.224575,
+          "y_ajustado": 4.570215,
+          "residuo": 0.65436
+        },
+        {
+          "periodo": "2024-03",
+          "y_observado": 5.25439,
+          "y_ajustado": 4.992043,
+          "residuo": 0.262347
+        },
+        {
+          "periodo": "2024-04",
+          "y_observado": 5.234814,
+          "y_ajustado": 4.892536,
+          "residuo": 0.342278
+        },
+        {
+          "periodo": "2024-05",
+          "y_observado": 5.201435,
+          "y_ajustado": 4.902686,
+          "residuo": 0.298749
+        },
+        {
+          "periodo": "2024-06",
+          "y_observado": 5.232213,
+          "y_ajustado": 5.411849,
+          "residuo": -0.179636
+        },
+        {
+          "periodo": "2024-07",
+          "y_observado": 5.346036,
+          "y_ajustado": 5.062132,
+          "residuo": 0.283904
+        },
+        {
+          "periodo": "2024-08",
+          "y_observado": 5.405295,
+          "y_ajustado": 4.751793,
+          "residuo": 0.653502
+        },
+        {
+          "periodo": "2024-09",
+          "y_observado": 5.432154,
+          "y_ajustado": 4.976889,
+          "residuo": 0.455265
+        },
+        {
+          "periodo": "2024-10",
+          "y_observado": 5.333238,
+          "y_ajustado": 4.954131,
+          "residuo": 0.379107
+        },
+        {
+          "periodo": "2024-11",
+          "y_observado": 5.371762,
+          "y_ajustado": 4.608646,
+          "residuo": 0.763116
+        },
+        {
+          "periodo": "2024-12",
+          "y_observado": 4.779435,
+          "y_ajustado": 5.292386,
+          "residuo": -0.512951
+        },
+        {
+          "periodo": "2025-01",
+          "y_observado": 4.65126,
+          "y_ajustado": 4.660405,
+          "residuo": -0.009145
+        },
+        {
+          "periodo": "2025-02",
+          "y_observado": 4.565041,
+          "y_ajustado": 5.226346,
+          "residuo": -0.661305
+        },
+        {
+          "periodo": "2025-03",
+          "y_observado": 4.653007,
+          "y_ajustado": 5.280677,
+          "residuo": -0.62767
+        },
+        {
+          "periodo": "2025-04",
+          "y_observado": 4.861769,
+          "y_ajustado": 4.898211,
+          "residuo": -0.036442
+        },
+        {
+          "periodo": "2025-05",
+          "y_observado": 5.028708,
+          "y_ajustado": 4.22564,
+          "residuo": 0.803068
+        },
+        {
+          "periodo": "2025-06",
+          "y_observado": 4.937557,
+          "y_ajustado": 4.862376,
+          "residuo": 0.075181
+        },
+        {
+          "periodo": "2025-07",
+          "y_observado": 4.943862,
+          "y_ajustado": 5.289271,
+          "residuo": -0.345409
+        },
+        {
+          "periodo": "2025-08",
+          "y_observado": 4.867282,
+          "y_ajustado": 4.776047,
+          "residuo": 0.091235
+        },
+        {
+          "periodo": "2025-09",
+          "y_observado": 4.912488,
+          "y_ajustado": 4.974506,
+          "residuo": -0.062018
+        },
+        {
+          "periodo": "2025-10",
+          "y_observado": 5.016456,
+          "y_ajustado": 4.765701,
+          "residuo": 0.250755
+        }
+      ]
+    },
+    "mensual_diferencias": {
+      "id": "mensual_diferencias",
+      "titulo": "Modelo 2: MCO Mensual en Primeras Diferencias (Jul 2021 – Oct 2025)",
+      "ecuacion": "ΔMorosidadConsumo_t = α₀ + α₁·ΔDesempleo_t + α₂·ΔInflaciónIPC_t + α₃·ΔTasaConsumo_t + α₄·Δln(MontoConsumo_t) + u_t",
+      "rango_muestral": [
+        "2021-07",
+        "2025-10"
+      ],
+      "n": 52,
+      "k_regresores": 4,
+      "hac_lags": 2,
+      "bondad_ajuste": {
+        "r2": 0.245112,
+        "r2_ajustado": 0.180866,
+        "f_estadistico": 3.8152,
+        "f_pvalor": 0.009124296,
+        "rmse": 0.24786,
+        "aic": 12.5008,
+        "bic": 22.257
+      },
+      "coeficientes": [
+        {
+          "variable": "const",
+          "etiqueta": "Intercepto (β₀)",
+          "coef": 0.028853,
+          "se_ols": 0.037139,
+          "t_ols": 0.7769,
+          "p_ols": 0.441123,
+          "ic95_ols": [
+            -0.045862,
+            0.103567
+          ],
+          "se_hac": 0.040445,
+          "t_hac": 0.7134,
+          "p_hac": 0.479133,
+          "ic95_hac": [
+            -0.052511,
+            0.110217
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_desempleo_pct",
+          "etiqueta": "Δ Desempleo nacional (pp)",
+          "coef": 0.178891,
+          "se_ols": 0.077157,
+          "t_ols": 2.3185,
+          "p_ols": 0.02482,
+          "ic95_ols": [
+            0.023671,
+            0.334112
+          ],
+          "se_hac": 0.084758,
+          "t_hac": 2.1106,
+          "p_hac": 0.040155,
+          "ic95_hac": [
+            0.00838,
+            0.349403
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "d_inflacion_anual_pct",
+          "etiqueta": "Δ Inflación anual IPC (pp)",
+          "coef": -0.107551,
+          "se_ols": 0.069902,
+          "t_ols": -1.5386,
+          "p_ols": 0.130607,
+          "ic95_ols": [
+            -0.248175,
+            0.033073
+          ],
+          "se_hac": 0.084212,
+          "t_hac": -1.2771,
+          "p_hac": 0.207825,
+          "ic95_hac": [
+            -0.276965,
+            0.061862
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_tasa_consumo_pct",
+          "etiqueta": "Δ Tasa activa consumo (pp)",
+          "coef": 0.94432,
+          "se_ols": 0.647757,
+          "t_ols": 1.4578,
+          "p_ols": 0.151537,
+          "ic95_ols": [
+            -0.358799,
+            2.247438
+          ],
+          "se_hac": 0.513011,
+          "t_hac": 1.8407,
+          "p_hac": 0.071977,
+          "ic95_hac": [
+            -0.087725,
+            1.976364
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_log_monto_consumo",
+          "etiqueta": "Δ Log monto consumo (≈ tasa crec.)",
+          "coef": 1.111741,
+          "se_ols": 0.433159,
+          "t_ols": 2.5666,
+          "p_ols": 0.013516,
+          "ic95_ols": [
+            0.240338,
+            1.983143
+          ],
+          "se_hac": 0.425093,
+          "t_hac": 2.6153,
+          "p_hac": 0.011946,
+          "ic95_hac": [
+            0.256565,
+            1.966917
+          ],
+          "significativo_5pct_hac": true
+        }
+      ],
+      "supuestos": {
+        "normalidad": {
+          "shapiro_w": 0.8307,
+          "shapiro_p": 3e-06,
+          "jarque_bera": 197.9267,
+          "jarque_bera_p": 0.0,
+          "asimetria": 1.7504,
+          "curtosis": 11.8935,
+          "cumple_5pct": false,
+          "conclusion": "Se rechaza normalidad estricta al 5% (colas pesadas por episodios coyunturales)."
+        },
+        "heterocedasticidad_breusch_pagan": {
+          "lm_estadistico": 6.4908,
+          "lm_pvalor": 0.16537,
+          "f_estadistico": 1.6759,
+          "f_pvalor": 0.1714,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza homocedasticidad al 5% (errores HAC reportados como resguardo)."
+        },
+        "multicolinealidad_vif": {
+          "max_vif": 1.1209,
+          "cumple_umbral_5": true,
+          "por_variable": [
+            {
+              "variable": "d_desempleo_pct",
+              "etiqueta": "Δ Desempleo nacional (pp)",
+              "vif": 1.0072,
+              "alerta": false
+            },
+            {
+              "variable": "d_inflacion_anual_pct",
+              "etiqueta": "Δ Inflación anual IPC (pp)",
+              "vif": 1.0054,
+              "alerta": false
+            },
+            {
+              "variable": "d_tasa_consumo_pct",
+              "etiqueta": "Δ Tasa activa consumo (pp)",
+              "vif": 1.1209,
+              "alerta": false
+            },
+            {
+              "variable": "d_log_monto_consumo",
+              "etiqueta": "Δ Log monto consumo (≈ tasa crec.)",
+              "vif": 1.1197,
+              "alerta": false
+            }
+          ],
+          "conclusion": "Sin multicolinealidad severa (VIF máximo = 1.12 < 5)."
+        },
+        "autocorrelacion": {
+          "durbin_watson": 1.8337,
+          "breusch_godfrey_lm1": 0.2218,
+          "breusch_godfrey_p1": 0.637702,
+          "cumple_rango_dw": true,
+          "conclusion": "Aceptable (sin autocorrelación severa)"
+        }
+      },
+      "observaciones": [
+        {
+          "periodo": "2021-07",
+          "y_observado": -0.488675,
+          "y_ajustado": -0.170061,
+          "residuo": -0.318614
+        },
+        {
+          "periodo": "2021-08",
+          "y_observado": -0.231886,
+          "y_ajustado": -0.220536,
+          "residuo": -0.01135
+        },
+        {
+          "periodo": "2021-09",
+          "y_observado": -0.329934,
+          "y_ajustado": 0.025222,
+          "residuo": -0.355156
+        },
+        {
+          "periodo": "2021-10",
+          "y_observado": -0.21142,
+          "y_ajustado": -0.129057,
+          "residuo": -0.082363
+        },
+        {
+          "periodo": "2021-11",
+          "y_observado": 0.039255,
+          "y_ajustado": -0.12063,
+          "residuo": 0.159885
+        },
+        {
+          "periodo": "2021-12",
+          "y_observado": -0.252037,
+          "y_ajustado": -0.145828,
+          "residuo": -0.106209
+        },
+        {
+          "periodo": "2022-01",
+          "y_observado": 0.195459,
+          "y_ajustado": 0.098685,
+          "residuo": 0.096774
+        },
+        {
+          "periodo": "2022-02",
+          "y_observado": -0.034535,
+          "y_ajustado": -0.243132,
+          "residuo": 0.208597
+        },
+        {
+          "periodo": "2022-03",
+          "y_observado": -0.07823,
+          "y_ajustado": 0.24372,
+          "residuo": -0.32195
+        },
+        {
+          "periodo": "2022-04",
+          "y_observado": -0.206061,
+          "y_ajustado": -0.133754,
+          "residuo": -0.072307
+        },
+        {
+          "periodo": "2022-05",
+          "y_observado": 0.02586,
+          "y_ajustado": -0.141119,
+          "residuo": 0.166979
+        },
+        {
+          "periodo": "2022-06",
+          "y_observado": -0.066221,
+          "y_ajustado": -0.079252,
+          "residuo": 0.013031
+        },
+        {
+          "periodo": "2022-07",
+          "y_observado": 0.114441,
+          "y_ajustado": 0.083967,
+          "residuo": 0.030474
+        },
+        {
+          "periodo": "2022-08",
+          "y_observado": 0.100009,
+          "y_ajustado": 0.311924,
+          "residuo": -0.211915
+        },
+        {
+          "periodo": "2022-09",
+          "y_observado": -0.141396,
+          "y_ajustado": -0.016814,
+          "residuo": -0.124582
+        },
+        {
+          "periodo": "2022-10",
+          "y_observado": 0.152571,
+          "y_ajustado": -0.001018,
+          "residuo": 0.153589
+        },
+        {
+          "periodo": "2022-11",
+          "y_observado": 0.11544,
+          "y_ajustado": -0.047352,
+          "residuo": 0.162792
+        },
+        {
+          "periodo": "2022-12",
+          "y_observado": -0.232176,
+          "y_ajustado": -0.135908,
+          "residuo": -0.096268
+        },
+        {
+          "periodo": "2023-01",
+          "y_observado": 1.540212,
+          "y_ajustado": 0.333287,
+          "residuo": 1.206925
+        },
+        {
+          "periodo": "2023-02",
+          "y_observado": 0.315462,
+          "y_ajustado": 0.051068,
+          "residuo": 0.264394
+        },
+        {
+          "periodo": "2023-03",
+          "y_observado": 0.04129,
+          "y_ajustado": 0.23943,
+          "residuo": -0.19814
+        },
+        {
+          "periodo": "2023-04",
+          "y_observado": -0.085602,
+          "y_ajustado": -0.08103,
+          "residuo": -0.004572
+        },
+        {
+          "periodo": "2023-05",
+          "y_observado": 0.09955,
+          "y_ajustado": 0.052287,
+          "residuo": 0.047263
+        },
+        {
+          "periodo": "2023-06",
+          "y_observado": -0.020465,
+          "y_ajustado": 0.232918,
+          "residuo": -0.253383
+        },
+        {
+          "periodo": "2023-07",
+          "y_observado": 0.215733,
+          "y_ajustado": -0.036478,
+          "residuo": 0.252211
+        },
+        {
+          "periodo": "2023-08",
+          "y_observado": -0.007285,
+          "y_ajustado": -0.102783,
+          "residuo": 0.095498
+        },
+        {
+          "periodo": "2023-09",
+          "y_observado": -0.017647,
+          "y_ajustado": 0.085099,
+          "residuo": -0.102746
+        },
+        {
+          "periodo": "2023-10",
+          "y_observado": 0.195827,
+          "y_ajustado": 0.145788,
+          "residuo": 0.050039
+        },
+        {
+          "periodo": "2023-11",
+          "y_observado": 0.085868,
+          "y_ajustado": -0.11378,
+          "residuo": 0.199648
+        },
+        {
+          "periodo": "2023-12",
+          "y_observado": -0.559116,
+          "y_ajustado": -0.028778,
+          "residuo": -0.530338
+        },
+        {
+          "periodo": "2024-01",
+          "y_observado": 0.247501,
+          "y_ajustado": 0.213507,
+          "residuo": 0.033994
+        },
+        {
+          "periodo": "2024-02",
+          "y_observado": 0.167671,
+          "y_ajustado": 0.145655,
+          "residuo": 0.022016
+        },
+        {
+          "periodo": "2024-03",
+          "y_observado": 0.029815,
+          "y_ajustado": -0.050282,
+          "residuo": 0.080097
+        },
+        {
+          "periodo": "2024-04",
+          "y_observado": -0.019576,
+          "y_ajustado": -0.194562,
+          "residuo": 0.174986
+        },
+        {
+          "periodo": "2024-05",
+          "y_observado": -0.033379,
+          "y_ajustado": 0.106324,
+          "residuo": -0.139703
+        },
+        {
+          "periodo": "2024-06",
+          "y_observado": 0.030778,
+          "y_ajustado": 0.045141,
+          "residuo": -0.014363
+        },
+        {
+          "periodo": "2024-07",
+          "y_observado": 0.113823,
+          "y_ajustado": 0.16784,
+          "residuo": -0.054017
+        },
+        {
+          "periodo": "2024-08",
+          "y_observado": 0.059259,
+          "y_ajustado": 0.051725,
+          "residuo": 0.007534
+        },
+        {
+          "periodo": "2024-09",
+          "y_observado": 0.026859,
+          "y_ajustado": -0.034512,
+          "residuo": 0.061371
+        },
+        {
+          "periodo": "2024-10",
+          "y_observado": -0.098916,
+          "y_ajustado": -0.049292,
+          "residuo": -0.049624
+        },
+        {
+          "periodo": "2024-11",
+          "y_observado": 0.038524,
+          "y_ajustado": 0.00037,
+          "residuo": 0.038154
+        },
+        {
+          "periodo": "2024-12",
+          "y_observado": -0.592327,
+          "y_ajustado": -0.192303,
+          "residuo": -0.400024
+        },
+        {
+          "periodo": "2025-01",
+          "y_observado": -0.128175,
+          "y_ajustado": 0.326468,
+          "residuo": -0.454643
+        },
+        {
+          "periodo": "2025-02",
+          "y_observado": -0.086219,
+          "y_ajustado": 0.05854,
+          "residuo": -0.144759
+        },
+        {
+          "periodo": "2025-03",
+          "y_observado": 0.087966,
+          "y_ajustado": -0.023059,
+          "residuo": 0.111025
+        },
+        {
+          "periodo": "2025-04",
+          "y_observado": 0.208762,
+          "y_ajustado": 0.063038,
+          "residuo": 0.145724
+        },
+        {
+          "periodo": "2025-05",
+          "y_observado": 0.166939,
+          "y_ajustado": -0.014553,
+          "residuo": 0.181492
+        },
+        {
+          "periodo": "2025-06",
+          "y_observado": -0.091151,
+          "y_ajustado": -0.047003,
+          "residuo": -0.044148
+        },
+        {
+          "periodo": "2025-07",
+          "y_observado": 0.006305,
+          "y_ajustado": 0.085984,
+          "residuo": -0.079679
+        },
+        {
+          "periodo": "2025-08",
+          "y_observado": -0.07658,
+          "y_ajustado": -0.010097,
+          "residuo": -0.066483
+        },
+        {
+          "periodo": "2025-09",
+          "y_observado": 0.045206,
+          "y_ajustado": -0.079268,
+          "residuo": 0.124474
+        },
+        {
+          "periodo": "2025-10",
+          "y_observado": 0.103968,
+          "y_ajustado": -0.044398,
+          "residuo": 0.148366
+        }
+      ]
+    },
+    "anual_niveles": {
+      "id": "anual_niveles",
+      "titulo": "Modelo 3: MCO Anual de Largo Plazo en Niveles (2003 – 2025)",
+      "ecuacion": "MorosidadConsumo_t = γ₀ + γ₁·PIB_t + γ₂·Desempleo_t + γ₃·InflaciónIPC_t + γ₄·CréditoPrivadoPIB_t + ν_t",
+      "rango_muestral": [
+        "2003",
+        "2025"
+      ],
+      "n": 23,
+      "k_regresores": 4,
+      "hac_lags": 2,
+      "bondad_ajuste": {
+        "r2": 0.347479,
+        "r2_ajustado": 0.202475,
+        "f_estadistico": 2.3963,
+        "f_pvalor": 0.08851501,
+        "rmse": 1.163816,
+        "aic": 82.2496,
+        "bic": 87.927
+      },
+      "coeficientes": [
+        {
+          "variable": "const",
+          "etiqueta": "Intercepto (β₀)",
+          "coef": 5.933613,
+          "se_ols": 2.234436,
+          "t_ols": 2.6555,
+          "p_ols": 0.0161,
+          "ic95_ols": [
+            1.239238,
+            10.627988
+          ],
+          "se_hac": 2.394235,
+          "t_hac": 2.4783,
+          "p_hac": 0.023336,
+          "ic95_hac": [
+            0.903512,
+            10.963714
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "pib_crecimiento_pct",
+          "etiqueta": "Crecimiento PIB real (%)",
+          "coef": -0.046694,
+          "se_ols": 0.082618,
+          "t_ols": -0.5652,
+          "p_ols": 0.578931,
+          "ic95_ols": [
+            -0.220268,
+            0.12688
+          ],
+          "se_hac": 0.069092,
+          "t_hac": -0.6758,
+          "p_hac": 0.507748,
+          "ic95_hac": [
+            -0.191851,
+            0.098464
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "desempleo_pct",
+          "etiqueta": "Desempleo nacional (%)",
+          "coef": 0.531343,
+          "se_ols": 0.401417,
+          "t_ols": 1.3237,
+          "p_ols": 0.20218,
+          "ic95_ols": [
+            -0.312003,
+            1.37469
+          ],
+          "se_hac": 0.531961,
+          "t_hac": 0.9988,
+          "p_hac": 0.331112,
+          "ic95_hac": [
+            -0.586265,
+            1.648952
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "inflacion_anual_pct",
+          "etiqueta": "Inflación anual IPC (%)",
+          "coef": -0.087675,
+          "se_ols": 0.150977,
+          "t_ols": -0.5807,
+          "p_ols": 0.568631,
+          "ic95_ols": [
+            -0.404867,
+            0.229517
+          ],
+          "se_hac": 0.123669,
+          "t_hac": -0.709,
+          "p_hac": 0.487436,
+          "ic95_hac": [
+            -0.347494,
+            0.172143
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "credito_privado_pib_pct",
+          "etiqueta": "Crédito interno privado (% PIB)",
+          "coef": -0.062181,
+          "se_ols": 0.027544,
+          "t_ols": -2.2575,
+          "p_ols": 0.036637,
+          "ic95_ols": [
+            -0.120048,
+            -0.004313
+          ],
+          "se_hac": 0.022966,
+          "t_hac": -2.7075,
+          "p_hac": 0.014421,
+          "ic95_hac": [
+            -0.110431,
+            -0.01393
+          ],
+          "significativo_5pct_hac": true
+        }
+      ],
+      "supuestos": {
+        "normalidad": {
+          "shapiro_w": 0.9656,
+          "shapiro_p": 0.586092,
+          "jarque_bera": 0.9813,
+          "jarque_bera_p": 0.612218,
+          "asimetria": 0.1842,
+          "curtosis": 2.0575,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza normalidad de residuos al 5%."
+        },
+        "heterocedasticidad_breusch_pagan": {
+          "lm_estadistico": 16.4359,
+          "lm_pvalor": 0.002487,
+          "f_estadistico": 11.2677,
+          "f_pvalor": 9.3e-05,
+          "cumple_5pct": false,
+          "conclusion": "Se detecta heterocedasticidad al 5%; inferencia respaldada con errores Newey-West HAC."
+        },
+        "multicolinealidad_vif": {
+          "max_vif": 1.6058,
+          "cumple_umbral_5": true,
+          "por_variable": [
+            {
+              "variable": "pib_crecimiento_pct",
+              "etiqueta": "Crecimiento PIB real (%)",
+              "vif": 1.4381,
+              "alerta": false
+            },
+            {
+              "variable": "desempleo_pct",
+              "etiqueta": "Desempleo nacional (%)",
+              "vif": 1.2759,
+              "alerta": false
+            },
+            {
+              "variable": "inflacion_anual_pct",
+              "etiqueta": "Inflación anual IPC (%)",
+              "vif": 1.5919,
+              "alerta": false
+            },
+            {
+              "variable": "credito_privado_pib_pct",
+              "etiqueta": "Crédito interno privado (% PIB)",
+              "vif": 1.6058,
+              "alerta": false
+            }
+          ],
+          "conclusion": "Sin multicolinealidad severa (VIF máximo = 1.61 < 5)."
+        },
+        "autocorrelacion": {
+          "durbin_watson": 0.571,
+          "breusch_godfrey_lm1": 12.1057,
+          "breusch_godfrey_p1": 0.000503,
+          "cumple_rango_dw": false,
+          "conclusion": "Autocorrelación positiva detectada (se aplican errores HAC y primeras diferencias)"
+        }
+      },
+      "observaciones": [
+        {
+          "periodo": "2003",
+          "y_observado": 9.148536,
+          "y_ajustado": 6.989505,
+          "residuo": 2.159031
+        },
+        {
+          "periodo": "2004",
+          "y_observado": 8.013466,
+          "y_ajustado": 6.754573,
+          "residuo": 1.258893
+        },
+        {
+          "periodo": "2005",
+          "y_observado": 6.120531,
+          "y_ajustado": 6.132377,
+          "residuo": -0.011846
+        },
+        {
+          "periodo": "2006",
+          "y_observado": 5.37622,
+          "y_ajustado": 5.939392,
+          "residuo": -0.563172
+        },
+        {
+          "periodo": "2007",
+          "y_observado": 4.773651,
+          "y_ajustado": 5.860887,
+          "residuo": -1.087236
+        },
+        {
+          "periodo": "2008",
+          "y_observado": 4.261483,
+          "y_ajustado": 5.481715,
+          "residuo": -1.220232
+        },
+        {
+          "periodo": "2009",
+          "y_observado": 4.954006,
+          "y_ajustado": 6.331047,
+          "residuo": -1.377041
+        },
+        {
+          "periodo": "2010",
+          "y_observado": 4.49268,
+          "y_ajustado": 5.921859,
+          "residuo": -1.429179
+        },
+        {
+          "periodo": "2011",
+          "y_observado": 3.998962,
+          "y_ajustado": 5.267003,
+          "residuo": -1.268041
+        },
+        {
+          "periodo": "2012",
+          "y_observado": 4.983712,
+          "y_ajustado": 5.166487,
+          "residuo": -0.182775
+        },
+        {
+          "periodo": "2013",
+          "y_observado": 5.564137,
+          "y_ajustado": 5.220998,
+          "residuo": 0.343139
+        },
+        {
+          "periodo": "2014",
+          "y_observado": 5.671739,
+          "y_ajustado": 5.454475,
+          "residuo": 0.217264
+        },
+        {
+          "periodo": "2015",
+          "y_observado": 7.095595,
+          "y_ajustado": 5.640131,
+          "residuo": 1.455464
+        },
+        {
+          "periodo": "2016",
+          "y_observado": 8.415958,
+          "y_ajustado": 6.297818,
+          "residuo": 2.11814
+        },
+        {
+          "periodo": "2017",
+          "y_observado": 6.333707,
+          "y_ajustado": 5.528604,
+          "residuo": 0.805103
+        },
+        {
+          "periodo": "2018",
+          "y_observado": 5.32225,
+          "y_ajustado": 5.396294,
+          "residuo": -0.074044
+        },
+        {
+          "periodo": "2019",
+          "y_observado": 5.014791,
+          "y_ajustado": 5.273461,
+          "residuo": -0.25867
+        },
+        {
+          "periodo": "2020",
+          "y_observado": 4.500395,
+          "y_ajustado": 6.594396,
+          "residuo": -2.094001
+        },
+        {
+          "periodo": "2021",
+          "y_observado": 4.042467,
+          "y_ajustado": 4.781462,
+          "residuo": -0.738995
+        },
+        {
+          "periodo": "2022",
+          "y_observado": 3.072884,
+          "y_ajustado": 4.07156,
+          "residuo": -0.998676
+        },
+        {
+          "periodo": "2023",
+          "y_observado": 4.975221,
+          "y_ajustado": 4.120334,
+          "residuo": 0.854887
+        },
+        {
+          "periodo": "2024",
+          "y_observado": 5.239354,
+          "y_ajustado": 4.205466,
+          "residuo": 1.033888
+        },
+        {
+          "periodo": "2025",
+          "y_observado": 4.85229,
+          "y_ajustado": 3.794192,
+          "residuo": 1.058098
+        }
+      ]
+    },
+    "anual_diferencias": {
+      "id": "anual_diferencias",
+      "titulo": "Modelo 4: MCO Anual en Primeras Diferencias (2004 – 2025)",
+      "ecuacion": "ΔMorosidadConsumo_t = δ₀ + δ₁·ΔPIB_t + δ₂·ΔDesempleo_t + δ₃·ΔInflaciónIPC_t + δ₄·ΔCréditoPrivadoPIB_t + ω_t",
+      "rango_muestral": [
+        "2004",
+        "2025"
+      ],
+      "n": 22,
+      "k_regresores": 4,
+      "hac_lags": 1,
+      "bondad_ajuste": {
+        "r2": 0.402374,
+        "r2_ajustado": 0.261757,
+        "f_estadistico": 2.8615,
+        "f_pvalor": 0.05560171,
+        "rmse": 0.772066,
+        "aic": 61.0511,
+        "bic": 66.5063
+      },
+      "coeficientes": [
+        {
+          "variable": "const",
+          "etiqueta": "Intercepto (β₀)",
+          "coef": 0.512882,
+          "se_ols": 0.324047,
+          "t_ols": 1.5827,
+          "p_ols": 0.131906,
+          "ic95_ols": [
+            -0.170797,
+            1.196562
+          ],
+          "se_hac": 0.26501,
+          "t_hac": 1.9353,
+          "p_hac": 0.069763,
+          "ic95_hac": [
+            -0.046239,
+            1.072004
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_pib_crecimiento_pct",
+          "etiqueta": "Δ Crecimiento PIB real (pp)",
+          "coef": -0.033476,
+          "se_ols": 0.040776,
+          "t_ols": -0.821,
+          "p_ols": 0.42302,
+          "ic95_ols": [
+            -0.119506,
+            0.052553
+          ],
+          "se_hac": 0.037972,
+          "t_hac": -0.8816,
+          "p_hac": 0.390288,
+          "ic95_hac": [
+            -0.113591,
+            0.046638
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_desempleo_pct",
+          "etiqueta": "Δ Desempleo nacional (pp)",
+          "coef": 0.60079,
+          "se_ols": 0.298054,
+          "t_ols": 2.0157,
+          "p_ols": 0.059919,
+          "ic95_ols": [
+            -0.028049,
+            1.229628
+          ],
+          "se_hac": 0.255907,
+          "t_hac": 2.3477,
+          "p_hac": 0.031255,
+          "ic95_hac": [
+            0.060873,
+            1.140706
+          ],
+          "significativo_5pct_hac": true
+        },
+        {
+          "variable": "d_inflacion_anual_pct",
+          "etiqueta": "Δ Inflación anual IPC (pp)",
+          "coef": -0.085753,
+          "se_ols": 0.086586,
+          "t_ols": -0.9904,
+          "p_ols": 0.335877,
+          "ic95_ols": [
+            -0.268434,
+            0.096928
+          ],
+          "se_hac": 0.043482,
+          "t_hac": -1.9721,
+          "p_hac": 0.065088,
+          "ic95_hac": [
+            -0.177493,
+            0.005987
+          ],
+          "significativo_5pct_hac": false
+        },
+        {
+          "variable": "d_credito_privado_pib_pct",
+          "etiqueta": "Δ Crédito privado / PIB (pp)",
+          "coef": -0.361504,
+          "se_ols": 0.138839,
+          "t_ols": -2.6038,
+          "p_ols": 0.018535,
+          "ic95_ols": [
+            -0.654428,
+            -0.068579
+          ],
+          "se_hac": 0.087171,
+          "t_hac": -4.1471,
+          "p_hac": 0.000674,
+          "ic95_hac": [
+            -0.545419,
+            -0.177589
+          ],
+          "significativo_5pct_hac": true
+        }
+      ],
+      "supuestos": {
+        "normalidad": {
+          "shapiro_w": 0.9598,
+          "shapiro_p": 0.485018,
+          "jarque_bera": 1.922,
+          "jarque_bera_p": 0.38252,
+          "asimetria": 0.6954,
+          "curtosis": 3.403,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza normalidad de residuos al 5%."
+        },
+        "heterocedasticidad_breusch_pagan": {
+          "lm_estadistico": 1.5607,
+          "lm_pvalor": 0.815844,
+          "f_estadistico": 0.3245,
+          "f_pvalor": 0.857638,
+          "cumple_5pct": true,
+          "conclusion": "No se rechaza homocedasticidad al 5% (errores HAC reportados como resguardo)."
+        },
+        "multicolinealidad_vif": {
+          "max_vif": 1.6359,
+          "cumple_umbral_5": true,
+          "por_variable": [
+            {
+              "variable": "d_pib_crecimiento_pct",
+              "etiqueta": "Δ Crecimiento PIB real (pp)",
+              "vif": 1.5568,
+              "alerta": false
+            },
+            {
+              "variable": "d_desempleo_pct",
+              "etiqueta": "Δ Desempleo nacional (pp)",
+              "vif": 1.6359,
+              "alerta": false
+            },
+            {
+              "variable": "d_inflacion_anual_pct",
+              "etiqueta": "Δ Inflación anual IPC (pp)",
+              "vif": 1.0433,
+              "alerta": false
+            },
+            {
+              "variable": "d_credito_privado_pib_pct",
+              "etiqueta": "Δ Crédito privado / PIB (pp)",
+              "vif": 1.2368,
+              "alerta": false
+            }
+          ],
+          "conclusion": "Sin multicolinealidad severa (VIF máximo = 1.64 < 5)."
+        },
+        "autocorrelacion": {
+          "durbin_watson": 1.5327,
+          "breusch_godfrey_lm1": 1.115,
+          "breusch_godfrey_p1": 0.290995,
+          "cumple_rango_dw": true,
+          "conclusion": "Aceptable (sin autocorrelación severa)"
+        }
+      },
+      "observaciones": [
+        {
+          "periodo": "2004",
+          "y_observado": -1.13507,
+          "y_ajustado": -0.469871,
+          "residuo": -0.665199
+        },
+        {
+          "periodo": "2005",
+          "y_observado": -1.892935,
+          "y_ajustado": -0.646197,
+          "residuo": -1.246738
+        },
+        {
+          "periodo": "2006",
+          "y_observado": -0.744311,
+          "y_ajustado": 0.18835,
+          "residuo": -0.932661
+        },
+        {
+          "periodo": "2007",
+          "y_observado": -0.602569,
+          "y_ajustado": 0.057782,
+          "residuo": -0.660351
+        },
+        {
+          "periodo": "2008",
+          "y_observado": -0.512168,
+          "y_ajustado": 0.085998,
+          "residuo": -0.598166
+        },
+        {
+          "periodo": "2009",
+          "y_observado": 0.692523,
+          "y_ajustado": 1.054822,
+          "residuo": -0.362299
+        },
+        {
+          "periodo": "2010",
+          "y_observado": -0.461326,
+          "y_ajustado": -0.553594,
+          "residuo": 0.092268
+        },
+        {
+          "periodo": "2011",
+          "y_observado": -0.493718,
+          "y_ajustado": -0.276929,
+          "residuo": -0.216789
+        },
+        {
+          "periodo": "2012",
+          "y_observado": 0.98475,
+          "y_ajustado": 0.107152,
+          "residuo": 0.877598
+        },
+        {
+          "periodo": "2013",
+          "y_observado": 0.580425,
+          "y_ajustado": 0.538854,
+          "residuo": 0.041571
+        },
+        {
+          "periodo": "2014",
+          "y_observado": 0.107602,
+          "y_ajustado": 0.539724,
+          "residuo": -0.432122
+        },
+        {
+          "periodo": "2015",
+          "y_observado": 1.423856,
+          "y_ajustado": 0.436577,
+          "residuo": 0.987279
+        },
+        {
+          "periodo": "2016",
+          "y_observado": 1.320363,
+          "y_ajustado": 0.754262,
+          "residuo": 0.566101
+        },
+        {
+          "periodo": "2017",
+          "y_observado": -2.082251,
+          "y_ajustado": -1.036712,
+          "residuo": -1.045539
+        },
+        {
+          "periodo": "2018",
+          "y_observado": -1.011457,
+          "y_ajustado": -0.939231,
+          "residuo": -0.072226
+        },
+        {
+          "periodo": "2019",
+          "y_observado": -0.307459,
+          "y_ajustado": -0.904321,
+          "residuo": 0.596862
+        },
+        {
+          "periodo": "2020",
+          "y_observado": -0.514396,
+          "y_ajustado": -0.036654,
+          "residuo": -0.477742
+        },
+        {
+          "periodo": "2021",
+          "y_observado": -0.457928,
+          "y_ajustado": -1.373196,
+          "residuo": 0.915268
+        },
+        {
+          "periodo": "2022",
+          "y_observado": -0.969583,
+          "y_ajustado": -1.078702,
+          "residuo": 0.109119
+        },
+        {
+          "periodo": "2023",
+          "y_observado": 1.902337,
+          "y_ajustado": -0.189024,
+          "residuo": 2.091361
+        },
+        {
+          "periodo": "2024",
+          "y_observado": 0.264133,
+          "y_ajustado": -0.032583,
+          "residuo": 0.296716
+        },
+        {
+          "periodo": "2025",
+          "y_observado": -0.387064,
+          "y_ajustado": -0.522752,
+          "residuo": 0.135688
+        }
+      ]
+    }
+  },
+  "series": {
+    "sb_historica_mensual": [
+      {
+        "periodo": "2003-01",
+        "anio": 2003,
+        "mes": 1,
+        "morosidad_consumo_pct": 7.2288,
+        "morosidad_total_pct": 9.1835,
+        "participacion_consumo_pct": 28.0826,
+        "cobertura_consumo_pct": 61.1834
+      },
+      {
+        "periodo": "2003-02",
+        "anio": 2003,
+        "mes": 2,
+        "morosidad_consumo_pct": 7.8334,
+        "morosidad_total_pct": 9.5985,
+        "participacion_consumo_pct": 28.1895,
+        "cobertura_consumo_pct": 57.1887
+      },
+      {
+        "periodo": "2003-03",
+        "anio": 2003,
+        "mes": 3,
+        "morosidad_consumo_pct": 9.0193,
+        "morosidad_total_pct": 9.9535,
+        "participacion_consumo_pct": 24.6378,
+        "cobertura_consumo_pct": 53.6944
+      },
+      {
+        "periodo": "2003-04",
+        "anio": 2003,
+        "mes": 4,
+        "morosidad_consumo_pct": 8.5931,
+        "morosidad_total_pct": 9.6089,
+        "participacion_consumo_pct": 24.2477,
+        "cobertura_consumo_pct": 55.5678
+      },
+      {
+        "periodo": "2003-05",
+        "anio": 2003,
+        "mes": 5,
+        "morosidad_consumo_pct": 8.8079,
+        "morosidad_total_pct": 10.0942,
+        "participacion_consumo_pct": 24.6117,
+        "cobertura_consumo_pct": 54.1793
+      },
+      {
+        "periodo": "2003-06",
+        "anio": 2003,
+        "mes": 6,
+        "morosidad_consumo_pct": 9.5735,
+        "morosidad_total_pct": 9.4707,
+        "participacion_consumo_pct": 24.4116,
+        "cobertura_consumo_pct": 46.4726
+      },
+      {
+        "periodo": "2003-07",
+        "anio": 2003,
+        "mes": 7,
+        "morosidad_consumo_pct": 9.9581,
+        "morosidad_total_pct": 9.7142,
+        "participacion_consumo_pct": 24.406,
+        "cobertura_consumo_pct": 48.7875
+      },
+      {
+        "periodo": "2003-08",
+        "anio": 2003,
+        "mes": 8,
+        "morosidad_consumo_pct": 10.1467,
+        "morosidad_total_pct": 10.2191,
+        "participacion_consumo_pct": 24.5876,
+        "cobertura_consumo_pct": 46.123
+      },
+      {
+        "periodo": "2003-09",
+        "anio": 2003,
+        "mes": 9,
+        "morosidad_consumo_pct": 9.7106,
+        "morosidad_total_pct": 9.5911,
+        "participacion_consumo_pct": 24.3972,
+        "cobertura_consumo_pct": 50.277
+      },
+      {
+        "periodo": "2003-10",
+        "anio": 2003,
+        "mes": 10,
+        "morosidad_consumo_pct": 10.1311,
+        "morosidad_total_pct": 9.4491,
+        "participacion_consumo_pct": 24.4654,
+        "cobertura_consumo_pct": 46.4706
+      },
+      {
+        "periodo": "2003-11",
+        "anio": 2003,
+        "mes": 11,
+        "morosidad_consumo_pct": 10.3054,
+        "morosidad_total_pct": 9.3553,
+        "participacion_consumo_pct": 24.7383,
+        "cobertura_consumo_pct": 45.3825
+      },
+      {
+        "periodo": "2003-12",
+        "anio": 2003,
+        "mes": 12,
+        "morosidad_consumo_pct": 8.4747,
+        "morosidad_total_pct": 7.8819,
+        "participacion_consumo_pct": 24.87,
+        "cobertura_consumo_pct": 53.6051
+      },
+      {
+        "periodo": "2004-01",
+        "anio": 2004,
+        "mes": 1,
+        "morosidad_consumo_pct": 9.5736,
+        "morosidad_total_pct": 8.6118,
+        "participacion_consumo_pct": 25.4418,
+        "cobertura_consumo_pct": 47.3432
+      },
+      {
+        "periodo": "2004-02",
+        "anio": 2004,
+        "mes": 2,
+        "morosidad_consumo_pct": 11.6192,
+        "morosidad_total_pct": 9.538,
+        "participacion_consumo_pct": 25.4692,
+        "cobertura_consumo_pct": 39.983
+      },
+      {
+        "periodo": "2004-03",
+        "anio": 2004,
+        "mes": 3,
+        "morosidad_consumo_pct": 8.5735,
+        "morosidad_total_pct": 8.4413,
+        "participacion_consumo_pct": 25.3489,
+        "cobertura_consumo_pct": 51.95
+      },
+      {
+        "periodo": "2004-04",
+        "anio": 2004,
+        "mes": 4,
+        "morosidad_consumo_pct": 7.6489,
+        "morosidad_total_pct": 8.1255,
+        "participacion_consumo_pct": 25.2372,
+        "cobertura_consumo_pct": 56.8634
+      },
+      {
+        "periodo": "2004-05",
+        "anio": 2004,
+        "mes": 5,
+        "morosidad_consumo_pct": 8.117,
+        "morosidad_total_pct": 8.3913,
+        "participacion_consumo_pct": 25.2656,
+        "cobertura_consumo_pct": 51.0073
+      },
+      {
+        "periodo": "2004-06",
+        "anio": 2004,
+        "mes": 6,
+        "morosidad_consumo_pct": 7.419,
+        "morosidad_total_pct": 7.2316,
+        "participacion_consumo_pct": 25.1366,
+        "cobertura_consumo_pct": 56.3881
+      },
+      {
+        "periodo": "2004-07",
+        "anio": 2004,
+        "mes": 7,
+        "morosidad_consumo_pct": 7.2827,
+        "morosidad_total_pct": 7.7266,
+        "participacion_consumo_pct": 25.5121,
+        "cobertura_consumo_pct": 55.6751
+      },
+      {
+        "periodo": "2004-08",
+        "anio": 2004,
+        "mes": 8,
+        "morosidad_consumo_pct": 7.5376,
+        "morosidad_total_pct": 8.468,
+        "participacion_consumo_pct": 25.5628,
+        "cobertura_consumo_pct": 53.5728
+      },
+      {
+        "periodo": "2004-09",
+        "anio": 2004,
+        "mes": 9,
+        "morosidad_consumo_pct": 7.292,
+        "morosidad_total_pct": 8.2848,
+        "participacion_consumo_pct": 25.7393,
+        "cobertura_consumo_pct": 55.6633
+      },
+      {
+        "periodo": "2004-10",
+        "anio": 2004,
+        "mes": 10,
+        "morosidad_consumo_pct": 7.5298,
+        "morosidad_total_pct": 8.2066,
+        "participacion_consumo_pct": 25.4373,
+        "cobertura_consumo_pct": 53.9129
+      },
+      {
+        "periodo": "2004-11",
+        "anio": 2004,
+        "mes": 11,
+        "morosidad_consumo_pct": 7.5703,
+        "morosidad_total_pct": 8.4833,
+        "participacion_consumo_pct": 25.8419,
+        "cobertura_consumo_pct": 53.5263
+      },
+      {
+        "periodo": "2004-12",
+        "anio": 2004,
+        "mes": 12,
+        "morosidad_consumo_pct": 5.998,
+        "morosidad_total_pct": 6.4414,
+        "participacion_consumo_pct": 26.5552,
+        "cobertura_consumo_pct": 57.5397
+      },
+      {
+        "periodo": "2005-01",
+        "anio": 2005,
+        "mes": 1,
+        "morosidad_consumo_pct": 6.7638,
+        "morosidad_total_pct": 7.096,
+        "participacion_consumo_pct": 26.4737,
+        "cobertura_consumo_pct": 53.5506
+      },
+      {
+        "periodo": "2005-02",
+        "anio": 2005,
+        "mes": 2,
+        "morosidad_consumo_pct": 7.1802,
+        "morosidad_total_pct": 7.2465,
+        "participacion_consumo_pct": 26.612,
+        "cobertura_consumo_pct": 49.3021
+      },
+      {
+        "periodo": "2005-03",
+        "anio": 2005,
+        "mes": 3,
+        "morosidad_consumo_pct": 7.2647,
+        "morosidad_total_pct": 7.2746,
+        "participacion_consumo_pct": 26.8027,
+        "cobertura_consumo_pct": 50.5019
+      },
+      {
+        "periodo": "2005-04",
+        "anio": 2005,
+        "mes": 4,
+        "morosidad_consumo_pct": 6.6979,
+        "morosidad_total_pct": 6.9525,
+        "participacion_consumo_pct": 27.0115,
+        "cobertura_consumo_pct": 51.8102
+      },
+      {
+        "periodo": "2005-05",
+        "anio": 2005,
+        "mes": 5,
+        "morosidad_consumo_pct": 6.622,
+        "morosidad_total_pct": 6.7211,
+        "participacion_consumo_pct": 27.3739,
+        "cobertura_consumo_pct": 52.5074
+      },
+      {
+        "periodo": "2005-06",
+        "anio": 2005,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.7306,
+        "morosidad_total_pct": 6.0244,
+        "participacion_consumo_pct": 27.0813,
+        "cobertura_consumo_pct": 53.2094
+      },
+      {
+        "periodo": "2005-07",
+        "anio": 2005,
+        "mes": 7,
+        "morosidad_consumo_pct": 6.1836,
+        "morosidad_total_pct": 6.1642,
+        "participacion_consumo_pct": 27.4688,
+        "cobertura_consumo_pct": 50.2142
+      },
+      {
+        "periodo": "2005-08",
+        "anio": 2005,
+        "mes": 8,
+        "morosidad_consumo_pct": 6.3525,
+        "morosidad_total_pct": 6.4048,
+        "participacion_consumo_pct": 27.2884,
+        "cobertura_consumo_pct": 130.3344
+      },
+      {
+        "periodo": "2005-09",
+        "anio": 2005,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.6554,
+        "morosidad_total_pct": 5.9818,
+        "participacion_consumo_pct": 27.318,
+        "cobertura_consumo_pct": 154.3308
+      },
+      {
+        "periodo": "2005-10",
+        "anio": 2005,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.6621,
+        "morosidad_total_pct": 6.1521,
+        "participacion_consumo_pct": 26.5017,
+        "cobertura_consumo_pct": 160.3845
+      },
+      {
+        "periodo": "2005-11",
+        "anio": 2005,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.361,
+        "morosidad_total_pct": 5.7495,
+        "participacion_consumo_pct": 27.1371,
+        "cobertura_consumo_pct": 166.2781
+      },
+      {
+        "periodo": "2005-12",
+        "anio": 2005,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.9725,
+        "morosidad_total_pct": 4.7451,
+        "participacion_consumo_pct": 26.91,
+        "cobertura_consumo_pct": 224.047
+      },
+      {
+        "periodo": "2006-01",
+        "anio": 2006,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.1309,
+        "morosidad_total_pct": 5.3538,
+        "participacion_consumo_pct": 28.5132,
+        "cobertura_consumo_pct": 175.0185
+      },
+      {
+        "periodo": "2006-02",
+        "anio": 2006,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.8251,
+        "morosidad_total_pct": 5.755,
+        "participacion_consumo_pct": 28.5597,
+        "cobertura_consumo_pct": 156.2454
+      },
+      {
+        "periodo": "2006-03",
+        "anio": 2006,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.7178,
+        "morosidad_total_pct": 5.3962,
+        "participacion_consumo_pct": 28.7823,
+        "cobertura_consumo_pct": 161.218
+      },
+      {
+        "periodo": "2006-04",
+        "anio": 2006,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.8009,
+        "morosidad_total_pct": 5.4124,
+        "participacion_consumo_pct": 28.5658,
+        "cobertura_consumo_pct": 163.3289
+      },
+      {
+        "periodo": "2006-05",
+        "anio": 2006,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.7395,
+        "morosidad_total_pct": 5.3863,
+        "participacion_consumo_pct": 28.9471,
+        "cobertura_consumo_pct": 164.7364
+      },
+      {
+        "periodo": "2006-06",
+        "anio": 2006,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.1959,
+        "morosidad_total_pct": 4.5894,
+        "participacion_consumo_pct": 28.9525,
+        "cobertura_consumo_pct": 184.3684
+      },
+      {
+        "periodo": "2006-07",
+        "anio": 2006,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.8487,
+        "morosidad_total_pct": 4.785,
+        "participacion_consumo_pct": 29.2594,
+        "cobertura_consumo_pct": 169.2157
+      },
+      {
+        "periodo": "2006-08",
+        "anio": 2006,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.7476,
+        "morosidad_total_pct": 4.5619,
+        "participacion_consumo_pct": 29.2793,
+        "cobertura_consumo_pct": 169.9811
+      },
+      {
+        "periodo": "2006-09",
+        "anio": 2006,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.131,
+        "morosidad_total_pct": 4.0849,
+        "participacion_consumo_pct": 29.3106,
+        "cobertura_consumo_pct": 185.654
+      },
+      {
+        "periodo": "2006-10",
+        "anio": 2006,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.3859,
+        "morosidad_total_pct": 4.2244,
+        "participacion_consumo_pct": 29.4496,
+        "cobertura_consumo_pct": 178.6754
+      },
+      {
+        "periodo": "2006-11",
+        "anio": 2006,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.865,
+        "morosidad_total_pct": 3.9701,
+        "participacion_consumo_pct": 29.1516,
+        "cobertura_consumo_pct": 190.7208
+      },
+      {
+        "periodo": "2006-12",
+        "anio": 2006,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.1264,
+        "morosidad_total_pct": 3.1963,
+        "participacion_consumo_pct": 28.3159,
+        "cobertura_consumo_pct": 223.3346
+      },
+      {
+        "periodo": "2007-01",
+        "anio": 2007,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.6709,
+        "morosidad_total_pct": 3.3836,
+        "participacion_consumo_pct": 29.5167,
+        "cobertura_consumo_pct": 191.4767
+      },
+      {
+        "periodo": "2007-02",
+        "anio": 2007,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.9857,
+        "morosidad_total_pct": 3.764,
+        "participacion_consumo_pct": 29.7764,
+        "cobertura_consumo_pct": 185.1121
+      },
+      {
+        "periodo": "2007-03",
+        "anio": 2007,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.6608,
+        "morosidad_total_pct": 3.5213,
+        "participacion_consumo_pct": 29.191,
+        "cobertura_consumo_pct": 205.002
+      },
+      {
+        "periodo": "2007-04",
+        "anio": 2007,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.0526,
+        "morosidad_total_pct": 3.7851,
+        "participacion_consumo_pct": 30.0719,
+        "cobertura_consumo_pct": 192.001
+      },
+      {
+        "periodo": "2007-05",
+        "anio": 2007,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.6597,
+        "morosidad_total_pct": 3.5783,
+        "participacion_consumo_pct": 29.7859,
+        "cobertura_consumo_pct": 214.6131
+      },
+      {
+        "periodo": "2007-06",
+        "anio": 2007,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.348,
+        "morosidad_total_pct": 3.1904,
+        "participacion_consumo_pct": 30.2787,
+        "cobertura_consumo_pct": 207.2053
+      },
+      {
+        "periodo": "2007-07",
+        "anio": 2007,
+        "mes": 7,
+        "morosidad_consumo_pct": 4.8393,
+        "morosidad_total_pct": 3.6139,
+        "participacion_consumo_pct": 30.4368,
+        "cobertura_consumo_pct": 193.1312
+      },
+      {
+        "periodo": "2007-08",
+        "anio": 2007,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.9077,
+        "morosidad_total_pct": 3.6634,
+        "participacion_consumo_pct": 29.949,
+        "cobertura_consumo_pct": 201.948
+      },
+      {
+        "periodo": "2007-09",
+        "anio": 2007,
+        "mes": 9,
+        "morosidad_consumo_pct": 4.9877,
+        "morosidad_total_pct": 3.5304,
+        "participacion_consumo_pct": 29.979,
+        "cobertura_consumo_pct": 191.2587
+      },
+      {
+        "periodo": "2007-10",
+        "anio": 2007,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.2015,
+        "morosidad_total_pct": 3.5556,
+        "participacion_consumo_pct": 29.7618,
+        "cobertura_consumo_pct": 191.0614
+      },
+      {
+        "periodo": "2007-11",
+        "anio": 2007,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.8574,
+        "morosidad_total_pct": 3.4233,
+        "participacion_consumo_pct": 29.6789,
+        "cobertura_consumo_pct": 207.1824
+      },
+      {
+        "periodo": "2007-12",
+        "anio": 2007,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.1127,
+        "morosidad_total_pct": 2.8979,
+        "participacion_consumo_pct": 29.7417,
+        "cobertura_consumo_pct": 225.6635
+      },
+      {
+        "periodo": "2008-01",
+        "anio": 2008,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.5364,
+        "morosidad_total_pct": 3.1468,
+        "participacion_consumo_pct": 29.5894,
+        "cobertura_consumo_pct": 207.7341
+      },
+      {
+        "periodo": "2008-02",
+        "anio": 2008,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.8603,
+        "morosidad_total_pct": 3.3737,
+        "participacion_consumo_pct": 29.4952,
+        "cobertura_consumo_pct": 197.5415
+      },
+      {
+        "periodo": "2008-03",
+        "anio": 2008,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.965,
+        "morosidad_total_pct": 3.3402,
+        "participacion_consumo_pct": 28.7646,
+        "cobertura_consumo_pct": 196.164
+      },
+      {
+        "periodo": "2008-04",
+        "anio": 2008,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.5995,
+        "morosidad_total_pct": 3.0704,
+        "participacion_consumo_pct": 28.1426,
+        "cobertura_consumo_pct": 216.6751
+      },
+      {
+        "periodo": "2008-05",
+        "anio": 2008,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.7196,
+        "morosidad_total_pct": 3.1112,
+        "participacion_consumo_pct": 27.8906,
+        "cobertura_consumo_pct": 208.6302
+      },
+      {
+        "periodo": "2008-06",
+        "anio": 2008,
+        "mes": 6,
+        "morosidad_consumo_pct": 3.9668,
+        "morosidad_total_pct": 2.7737,
+        "participacion_consumo_pct": 27.62,
+        "cobertura_consumo_pct": 236.7172
+      },
+      {
+        "periodo": "2008-07",
+        "anio": 2008,
+        "mes": 7,
+        "morosidad_consumo_pct": 3.8501,
+        "morosidad_total_pct": 2.8513,
+        "participacion_consumo_pct": 27.8281,
+        "cobertura_consumo_pct": 245.3162
+      },
+      {
+        "periodo": "2008-08",
+        "anio": 2008,
+        "mes": 8,
+        "morosidad_consumo_pct": 3.811,
+        "morosidad_total_pct": 2.8779,
+        "participacion_consumo_pct": 27.8812,
+        "cobertura_consumo_pct": 245.9296
+      },
+      {
+        "periodo": "2008-09",
+        "anio": 2008,
+        "mes": 9,
+        "morosidad_consumo_pct": 3.6912,
+        "morosidad_total_pct": 2.6899,
+        "participacion_consumo_pct": 28.0027,
+        "cobertura_consumo_pct": 245.9354
+      },
+      {
+        "periodo": "2008-10",
+        "anio": 2008,
+        "mes": 10,
+        "morosidad_consumo_pct": 4.2225,
+        "morosidad_total_pct": 2.7799,
+        "participacion_consumo_pct": 27.8844,
+        "cobertura_consumo_pct": 203.2248
+      },
+      {
+        "periodo": "2008-11",
+        "anio": 2008,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.1274,
+        "morosidad_total_pct": 2.7382,
+        "participacion_consumo_pct": 28.3071,
+        "cobertura_consumo_pct": 176.8118
+      },
+      {
+        "periodo": "2008-12",
+        "anio": 2008,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.7879,
+        "morosidad_total_pct": 2.503,
+        "participacion_consumo_pct": 29.2489,
+        "cobertura_consumo_pct": 224.7742
+      },
+      {
+        "periodo": "2009-01",
+        "anio": 2009,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.2829,
+        "morosidad_total_pct": 2.8325,
+        "participacion_consumo_pct": 29.7103,
+        "cobertura_consumo_pct": 207.6213
+      },
+      {
+        "periodo": "2009-02",
+        "anio": 2009,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.6643,
+        "morosidad_total_pct": 3.2775,
+        "participacion_consumo_pct": 29.7708,
+        "cobertura_consumo_pct": 194.1865
+      },
+      {
+        "periodo": "2009-03",
+        "anio": 2009,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.9416,
+        "morosidad_total_pct": 3.3993,
+        "participacion_consumo_pct": 30.1264,
+        "cobertura_consumo_pct": 185.3859
+      },
+      {
+        "periodo": "2009-04",
+        "anio": 2009,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.9563,
+        "morosidad_total_pct": 3.5056,
+        "participacion_consumo_pct": 30.2939,
+        "cobertura_consumo_pct": 190.0608
+      },
+      {
+        "periodo": "2009-05",
+        "anio": 2009,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.1587,
+        "morosidad_total_pct": 3.6572,
+        "participacion_consumo_pct": 31.1616,
+        "cobertura_consumo_pct": 182.5046
+      },
+      {
+        "periodo": "2009-06",
+        "anio": 2009,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.0551,
+        "morosidad_total_pct": 3.4714,
+        "participacion_consumo_pct": 30.6652,
+        "cobertura_consumo_pct": 190.7406
+      },
+      {
+        "periodo": "2009-07",
+        "anio": 2009,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.1487,
+        "morosidad_total_pct": 3.5436,
+        "participacion_consumo_pct": 30.5227,
+        "cobertura_consumo_pct": 186.1571
+      },
+      {
+        "periodo": "2009-08",
+        "anio": 2009,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.4039,
+        "morosidad_total_pct": 3.6341,
+        "participacion_consumo_pct": 30.7006,
+        "cobertura_consumo_pct": 182.4707
+      },
+      {
+        "periodo": "2009-09",
+        "anio": 2009,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.1297,
+        "morosidad_total_pct": 3.4032,
+        "participacion_consumo_pct": 30.681,
+        "cobertura_consumo_pct": 188.3566
+      },
+      {
+        "periodo": "2009-10",
+        "anio": 2009,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.2256,
+        "morosidad_total_pct": 3.447,
+        "participacion_consumo_pct": 30.5157,
+        "cobertura_consumo_pct": 184.1392
+      },
+      {
+        "periodo": "2009-11",
+        "anio": 2009,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.3086,
+        "morosidad_total_pct": 3.5669,
+        "participacion_consumo_pct": 30.2588,
+        "cobertura_consumo_pct": 177.0452
+      },
+      {
+        "periodo": "2009-12",
+        "anio": 2009,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.1726,
+        "morosidad_total_pct": 2.9083,
+        "participacion_consumo_pct": 30.696,
+        "cobertura_consumo_pct": 217.883
+      },
+      {
+        "periodo": "2010-01",
+        "anio": 2010,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.6866,
+        "morosidad_total_pct": 3.2599,
+        "participacion_consumo_pct": 31.1739,
+        "cobertura_consumo_pct": 194.541
+      },
+      {
+        "periodo": "2010-02",
+        "anio": 2010,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.1633,
+        "morosidad_total_pct": 3.426,
+        "participacion_consumo_pct": 31.345,
+        "cobertura_consumo_pct": 178.0549
+      },
+      {
+        "periodo": "2010-03",
+        "anio": 2010,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.1806,
+        "morosidad_total_pct": 3.2799,
+        "participacion_consumo_pct": 31.3254,
+        "cobertura_consumo_pct": 173.8799
+      },
+      {
+        "periodo": "2010-04",
+        "anio": 2010,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.7123,
+        "morosidad_total_pct": 3.0877,
+        "participacion_consumo_pct": 31.0539,
+        "cobertura_consumo_pct": 187.4622
+      },
+      {
+        "periodo": "2010-05",
+        "anio": 2010,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.6557,
+        "morosidad_total_pct": 3.1486,
+        "participacion_consumo_pct": 31.4188,
+        "cobertura_consumo_pct": 185.3925
+      },
+      {
+        "periodo": "2010-06",
+        "anio": 2010,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.2774,
+        "morosidad_total_pct": 2.8747,
+        "participacion_consumo_pct": 31.5622,
+        "cobertura_consumo_pct": 193.3502
+      },
+      {
+        "periodo": "2010-07",
+        "anio": 2010,
+        "mes": 7,
+        "morosidad_consumo_pct": 4.3507,
+        "morosidad_total_pct": 2.929,
+        "participacion_consumo_pct": 31.7582,
+        "cobertura_consumo_pct": 188.4438
+      },
+      {
+        "periodo": "2010-08",
+        "anio": 2010,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.3503,
+        "morosidad_total_pct": 2.9372,
+        "participacion_consumo_pct": 31.74,
+        "cobertura_consumo_pct": 187.7822
+      },
+      {
+        "periodo": "2010-09",
+        "anio": 2010,
+        "mes": 9,
+        "morosidad_consumo_pct": 4.3441,
+        "morosidad_total_pct": 2.8735,
+        "participacion_consumo_pct": 32.1105,
+        "cobertura_consumo_pct": 175.9352
+      },
+      {
+        "periodo": "2010-10",
+        "anio": 2010,
+        "mes": 10,
+        "morosidad_consumo_pct": 4.3802,
+        "morosidad_total_pct": 2.8322,
+        "participacion_consumo_pct": 31.9947,
+        "cobertura_consumo_pct": 177.216
+      },
+      {
+        "periodo": "2010-11",
+        "anio": 2010,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.3714,
+        "morosidad_total_pct": 2.8335,
+        "participacion_consumo_pct": 32.5762,
+        "cobertura_consumo_pct": 175.2602
+      },
+      {
+        "periodo": "2010-12",
+        "anio": 2010,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.4395,
+        "morosidad_total_pct": 2.2459,
+        "participacion_consumo_pct": 32.7561,
+        "cobertura_consumo_pct": 213.1635
+      },
+      {
+        "periodo": "2011-01",
+        "anio": 2011,
+        "mes": 1,
+        "morosidad_consumo_pct": 3.8187,
+        "morosidad_total_pct": 2.5213,
+        "participacion_consumo_pct": 33.3809,
+        "cobertura_consumo_pct": 192.4517
+      },
+      {
+        "periodo": "2011-02",
+        "anio": 2011,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.2416,
+        "morosidad_total_pct": 2.7911,
+        "participacion_consumo_pct": 34.1928,
+        "cobertura_consumo_pct": 174.8914
+      },
+      {
+        "periodo": "2011-03",
+        "anio": 2011,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.0489,
+        "morosidad_total_pct": 2.6387,
+        "participacion_consumo_pct": 34.6979,
+        "cobertura_consumo_pct": 181.5568
+      },
+      {
+        "periodo": "2011-04",
+        "anio": 2011,
+        "mes": 4,
+        "morosidad_consumo_pct": 3.9268,
+        "morosidad_total_pct": 2.6201,
+        "participacion_consumo_pct": 34.8658,
+        "cobertura_consumo_pct": 181.3322
+      },
+      {
+        "periodo": "2011-05",
+        "anio": 2011,
+        "mes": 5,
+        "morosidad_consumo_pct": 3.934,
+        "morosidad_total_pct": 2.5814,
+        "participacion_consumo_pct": 34.9233,
+        "cobertura_consumo_pct": 185.4208
+      },
+      {
+        "periodo": "2011-06",
+        "anio": 2011,
+        "mes": 6,
+        "morosidad_consumo_pct": 3.7741,
+        "morosidad_total_pct": 2.5583,
+        "participacion_consumo_pct": 36.1698,
+        "cobertura_consumo_pct": 189.813
+      },
+      {
+        "periodo": "2011-07",
+        "anio": 2011,
+        "mes": 7,
+        "morosidad_consumo_pct": 3.9957,
+        "morosidad_total_pct": 2.6777,
+        "participacion_consumo_pct": 36.5814,
+        "cobertura_consumo_pct": 177.9259
+      },
+      {
+        "periodo": "2011-08",
+        "anio": 2011,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.0408,
+        "morosidad_total_pct": 2.7164,
+        "participacion_consumo_pct": 36.9347,
+        "cobertura_consumo_pct": 176.2525
+      },
+      {
+        "periodo": "2011-09",
+        "anio": 2011,
+        "mes": 9,
+        "morosidad_consumo_pct": 4.0159,
+        "morosidad_total_pct": 2.6941,
+        "participacion_consumo_pct": 37.0693,
+        "cobertura_consumo_pct": 175.7259
+      },
+      {
+        "periodo": "2011-10",
+        "anio": 2011,
+        "mes": 10,
+        "morosidad_consumo_pct": 4.2298,
+        "morosidad_total_pct": 2.7996,
+        "participacion_consumo_pct": 37.0508,
+        "cobertura_consumo_pct": 167.7519
+      },
+      {
+        "periodo": "2011-11",
+        "anio": 2011,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.4666,
+        "morosidad_total_pct": 2.8695,
+        "participacion_consumo_pct": 36.758,
+        "cobertura_consumo_pct": 159.8454
+      },
+      {
+        "periodo": "2011-12",
+        "anio": 2011,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.4947,
+        "morosidad_total_pct": 2.239,
+        "participacion_consumo_pct": 36.6729,
+        "cobertura_consumo_pct": 206.4337
+      },
+      {
+        "periodo": "2012-01",
+        "anio": 2012,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.1129,
+        "morosidad_total_pct": 2.6157,
+        "participacion_consumo_pct": 37.152,
+        "cobertura_consumo_pct": 181.6545
+      },
+      {
+        "periodo": "2012-02",
+        "anio": 2012,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.4705,
+        "morosidad_total_pct": 2.8401,
+        "participacion_consumo_pct": 37.267,
+        "cobertura_consumo_pct": 169.0858
+      },
+      {
+        "periodo": "2012-03",
+        "anio": 2012,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.4568,
+        "morosidad_total_pct": 2.7768,
+        "participacion_consumo_pct": 36.949,
+        "cobertura_consumo_pct": 166.4442
+      },
+      {
+        "periodo": "2012-04",
+        "anio": 2012,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.8768,
+        "morosidad_total_pct": 3.0175,
+        "participacion_consumo_pct": 36.5927,
+        "cobertura_consumo_pct": 155.4329
+      },
+      {
+        "periodo": "2012-05",
+        "anio": 2012,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.8231,
+        "morosidad_total_pct": 2.9685,
+        "participacion_consumo_pct": 36.8295,
+        "cobertura_consumo_pct": 158.5109
+      },
+      {
+        "periodo": "2012-06",
+        "anio": 2012,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.9346,
+        "morosidad_total_pct": 2.9794,
+        "participacion_consumo_pct": 36.664,
+        "cobertura_consumo_pct": 156.9619
+      },
+      {
+        "periodo": "2012-07",
+        "anio": 2012,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.1123,
+        "morosidad_total_pct": 3.0671,
+        "participacion_consumo_pct": 36.7249,
+        "cobertura_consumo_pct": 154.8667
+      },
+      {
+        "periodo": "2012-08",
+        "anio": 2012,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.2112,
+        "morosidad_total_pct": 3.0558,
+        "participacion_consumo_pct": 36.5457,
+        "cobertura_consumo_pct": 152.5504
+      },
+      {
+        "periodo": "2012-09",
+        "anio": 2012,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.3136,
+        "morosidad_total_pct": 3.0541,
+        "participacion_consumo_pct": 36.439,
+        "cobertura_consumo_pct": 158.1464
+      },
+      {
+        "periodo": "2012-10",
+        "anio": 2012,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.6435,
+        "morosidad_total_pct": 3.2521,
+        "participacion_consumo_pct": 36.5732,
+        "cobertura_consumo_pct": 159.7867
+      },
+      {
+        "periodo": "2012-11",
+        "anio": 2012,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.7026,
+        "morosidad_total_pct": 3.2674,
+        "participacion_consumo_pct": 36.3119,
+        "cobertura_consumo_pct": 163.3156
+      },
+      {
+        "periodo": "2012-12",
+        "anio": 2012,
+        "mes": 12,
+        "morosidad_consumo_pct": 5.1467,
+        "morosidad_total_pct": 2.8025,
+        "participacion_consumo_pct": 36.0659,
+        "cobertura_consumo_pct": 177.9543
+      },
+      {
+        "periodo": "2013-01",
+        "anio": 2013,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.826,
+        "morosidad_total_pct": 3.1895,
+        "participacion_consumo_pct": 36.1512,
+        "cobertura_consumo_pct": 161.2306
+      },
+      {
+        "periodo": "2013-02",
+        "anio": 2013,
+        "mes": 2,
+        "morosidad_consumo_pct": 6.172,
+        "morosidad_total_pct": 3.3716,
+        "participacion_consumo_pct": 36.0109,
+        "cobertura_consumo_pct": 91.7715
+      },
+      {
+        "periodo": "2013-03",
+        "anio": 2013,
+        "mes": 3,
+        "morosidad_consumo_pct": 6.0195,
+        "morosidad_total_pct": 3.2292,
+        "participacion_consumo_pct": 35.5027,
+        "cobertura_consumo_pct": 93.8595
+      },
+      {
+        "periodo": "2013-04",
+        "anio": 2013,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.5687,
+        "morosidad_total_pct": 3.1379,
+        "participacion_consumo_pct": 35.3343,
+        "cobertura_consumo_pct": 103.2376
+      },
+      {
+        "periodo": "2013-05",
+        "anio": 2013,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.633,
+        "morosidad_total_pct": 3.1711,
+        "participacion_consumo_pct": 35.6463,
+        "cobertura_consumo_pct": 102.9491
+      },
+      {
+        "periodo": "2013-06",
+        "anio": 2013,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.5226,
+        "morosidad_total_pct": 3.1187,
+        "participacion_consumo_pct": 35.7216,
+        "cobertura_consumo_pct": 103.798
+      },
+      {
+        "periodo": "2013-07",
+        "anio": 2013,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.5266,
+        "morosidad_total_pct": 3.1422,
+        "participacion_consumo_pct": 35.8929,
+        "cobertura_consumo_pct": 103.7768
+      },
+      {
+        "periodo": "2013-08",
+        "anio": 2013,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.4572,
+        "morosidad_total_pct": 3.117,
+        "participacion_consumo_pct": 35.7933,
+        "cobertura_consumo_pct": 103.6371
+      },
+      {
+        "periodo": "2013-09",
+        "anio": 2013,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.5816,
+        "morosidad_total_pct": 3.1787,
+        "participacion_consumo_pct": 35.761,
+        "cobertura_consumo_pct": 99.7693
+      },
+      {
+        "periodo": "2013-10",
+        "anio": 2013,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.5607,
+        "morosidad_total_pct": 3.1765,
+        "participacion_consumo_pct": 35.9211,
+        "cobertura_consumo_pct": 100.1734
+      },
+      {
+        "periodo": "2013-11",
+        "anio": 2013,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.2546,
+        "morosidad_total_pct": 2.9772,
+        "participacion_consumo_pct": 35.5527,
+        "cobertura_consumo_pct": 100.8609
+      },
+      {
+        "periodo": "2013-12",
+        "anio": 2013,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.6471,
+        "morosidad_total_pct": 2.5958,
+        "participacion_consumo_pct": 35.4141,
+        "cobertura_consumo_pct": 111.5726
+      },
+      {
+        "periodo": "2014-01",
+        "anio": 2014,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.2983,
+        "morosidad_total_pct": 3.0098,
+        "participacion_consumo_pct": 35.8111,
+        "cobertura_consumo_pct": 102.3415
+      },
+      {
+        "periodo": "2014-02",
+        "anio": 2014,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.4229,
+        "morosidad_total_pct": 3.0905,
+        "participacion_consumo_pct": 35.5689,
+        "cobertura_consumo_pct": 101.8133
+      },
+      {
+        "periodo": "2014-03",
+        "anio": 2014,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.607,
+        "morosidad_total_pct": 3.207,
+        "participacion_consumo_pct": 35.0494,
+        "cobertura_consumo_pct": 99.9036
+      },
+      {
+        "periodo": "2014-04",
+        "anio": 2014,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.3891,
+        "morosidad_total_pct": 3.0358,
+        "participacion_consumo_pct": 34.4393,
+        "cobertura_consumo_pct": 104.0423
+      },
+      {
+        "periodo": "2014-05",
+        "anio": 2014,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.5647,
+        "morosidad_total_pct": 3.1611,
+        "participacion_consumo_pct": 34.5913,
+        "cobertura_consumo_pct": 102.7788
+      },
+      {
+        "periodo": "2014-06",
+        "anio": 2014,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.6532,
+        "morosidad_total_pct": 3.1394,
+        "participacion_consumo_pct": 34.918,
+        "cobertura_consumo_pct": 101.6349
+      },
+      {
+        "periodo": "2014-07",
+        "anio": 2014,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.5905,
+        "morosidad_total_pct": 3.1328,
+        "participacion_consumo_pct": 35.0255,
+        "cobertura_consumo_pct": 102.5267
+      },
+      {
+        "periodo": "2014-08",
+        "anio": 2014,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.56,
+        "morosidad_total_pct": 3.148,
+        "participacion_consumo_pct": 35.2615,
+        "cobertura_consumo_pct": 103.0794
+      },
+      {
+        "periodo": "2014-09",
+        "anio": 2014,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.6645,
+        "morosidad_total_pct": 3.171,
+        "participacion_consumo_pct": 35.2341,
+        "cobertura_consumo_pct": 100.9229
+      },
+      {
+        "periodo": "2014-10",
+        "anio": 2014,
+        "mes": 10,
+        "morosidad_consumo_pct": 6.2513,
+        "morosidad_total_pct": 3.3991,
+        "participacion_consumo_pct": 35.905,
+        "cobertura_consumo_pct": 96.9768
+      },
+      {
+        "periodo": "2014-11",
+        "anio": 2014,
+        "mes": 11,
+        "morosidad_consumo_pct": 6.5308,
+        "morosidad_total_pct": 3.4498,
+        "participacion_consumo_pct": 35.8735,
+        "cobertura_consumo_pct": 93.1783
+      },
+      {
+        "periodo": "2014-12",
+        "anio": 2014,
+        "mes": 12,
+        "morosidad_consumo_pct": 5.5285,
+        "morosidad_total_pct": 2.8733,
+        "participacion_consumo_pct": 35.2353,
+        "cobertura_consumo_pct": 105.2205
+      },
+      {
+        "periodo": "2015-01",
+        "anio": 2015,
+        "mes": 1,
+        "morosidad_consumo_pct": 6.2811,
+        "morosidad_total_pct": 3.3328,
+        "participacion_consumo_pct": 34.9303,
+        "cobertura_consumo_pct": 95.3487
+      },
+      {
+        "periodo": "2015-02",
+        "anio": 2015,
+        "mes": 2,
+        "morosidad_consumo_pct": 6.9071,
+        "morosidad_total_pct": 3.6345,
+        "participacion_consumo_pct": 34.1844,
+        "cobertura_consumo_pct": 88.3895
+      },
+      {
+        "periodo": "2015-03",
+        "anio": 2015,
+        "mes": 3,
+        "morosidad_consumo_pct": 6.5215,
+        "morosidad_total_pct": 3.473,
+        "participacion_consumo_pct": 34.178,
+        "cobertura_consumo_pct": 92.7859
+      },
+      {
+        "periodo": "2015-04",
+        "anio": 2015,
+        "mes": 4,
+        "morosidad_consumo_pct": 6.3304,
+        "morosidad_total_pct": 3.4411,
+        "participacion_consumo_pct": 33.659,
+        "cobertura_consumo_pct": 95.5031
+      },
+      {
+        "periodo": "2015-05",
+        "anio": 2015,
+        "mes": 5,
+        "morosidad_consumo_pct": 6.8526,
+        "morosidad_total_pct": 3.6659,
+        "participacion_consumo_pct": 33.7843,
+        "cobertura_consumo_pct": 91.1323
+      },
+      {
+        "periodo": "2015-06",
+        "anio": 2015,
+        "mes": 6,
+        "morosidad_consumo_pct": 7.0194,
+        "morosidad_total_pct": 3.643,
+        "participacion_consumo_pct": 33.5931,
+        "cobertura_consumo_pct": 90.6228
+      },
+      {
+        "periodo": "2015-07",
+        "anio": 2015,
+        "mes": 7,
+        "morosidad_consumo_pct": 7.2483,
+        "morosidad_total_pct": 3.7524,
+        "participacion_consumo_pct": 33.6494,
+        "cobertura_consumo_pct": 90.2196
+      },
+      {
+        "periodo": "2015-08",
+        "anio": 2015,
+        "mes": 8,
+        "morosidad_consumo_pct": 7.5531,
+        "morosidad_total_pct": 3.9823,
+        "participacion_consumo_pct": 33.8414,
+        "cobertura_consumo_pct": 88.9132
+      },
+      {
+        "periodo": "2015-09",
+        "anio": 2015,
+        "mes": 9,
+        "morosidad_consumo_pct": 7.5393,
+        "morosidad_total_pct": 4.0216,
+        "participacion_consumo_pct": 34.0703,
+        "cobertura_consumo_pct": 88.0111
+      },
+      {
+        "periodo": "2015-10",
+        "anio": 2015,
+        "mes": 10,
+        "morosidad_consumo_pct": 7.8047,
+        "morosidad_total_pct": 4.2222,
+        "participacion_consumo_pct": 33.9819,
+        "cobertura_consumo_pct": 87.8819
+      },
+      {
+        "periodo": "2015-11",
+        "anio": 2015,
+        "mes": 11,
+        "morosidad_consumo_pct": 8.1639,
+        "morosidad_total_pct": 4.4931,
+        "participacion_consumo_pct": 33.9298,
+        "cobertura_consumo_pct": 80.3055
+      },
+      {
+        "periodo": "2015-12",
+        "anio": 2015,
+        "mes": 12,
+        "morosidad_consumo_pct": 6.9257,
+        "morosidad_total_pct": 3.6611,
+        "participacion_consumo_pct": 33.7238,
+        "cobertura_consumo_pct": 95.96
+      },
+      {
+        "periodo": "2016-01",
+        "anio": 2016,
+        "mes": 1,
+        "morosidad_consumo_pct": 8.276,
+        "morosidad_total_pct": 4.4727,
+        "participacion_consumo_pct": 33.5535,
+        "cobertura_consumo_pct": 85.4937
+      },
+      {
+        "periodo": "2016-02",
+        "anio": 2016,
+        "mes": 2,
+        "morosidad_consumo_pct": 9.1337,
+        "morosidad_total_pct": 4.825,
+        "participacion_consumo_pct": 33.0796,
+        "cobertura_consumo_pct": 82.8243
+      },
+      {
+        "periodo": "2016-03",
+        "anio": 2016,
+        "mes": 3,
+        "morosidad_consumo_pct": 9.0031,
+        "morosidad_total_pct": 4.654,
+        "participacion_consumo_pct": 32.5983,
+        "cobertura_consumo_pct": 82.732
+      },
+      {
+        "periodo": "2016-04",
+        "anio": 2016,
+        "mes": 4,
+        "morosidad_consumo_pct": 9.0063,
+        "morosidad_total_pct": 4.652,
+        "participacion_consumo_pct": 32.0267,
+        "cobertura_consumo_pct": 83.6592
+      },
+      {
+        "periodo": "2016-05",
+        "anio": 2016,
+        "mes": 5,
+        "morosidad_consumo_pct": 10.1301,
+        "morosidad_total_pct": 5.2151,
+        "participacion_consumo_pct": 32.2305,
+        "cobertura_consumo_pct": 79.0385
+      },
+      {
+        "periodo": "2016-06",
+        "anio": 2016,
+        "mes": 6,
+        "morosidad_consumo_pct": 8.4102,
+        "morosidad_total_pct": 4.3149,
+        "participacion_consumo_pct": 32.0284,
+        "cobertura_consumo_pct": 91.0481
+      },
+      {
+        "periodo": "2016-07",
+        "anio": 2016,
+        "mes": 7,
+        "morosidad_consumo_pct": 8.5725,
+        "morosidad_total_pct": 4.3743,
+        "participacion_consumo_pct": 31.9266,
+        "cobertura_consumo_pct": 89.9576
+      },
+      {
+        "periodo": "2016-08",
+        "anio": 2016,
+        "mes": 8,
+        "morosidad_consumo_pct": 8.3668,
+        "morosidad_total_pct": 4.3591,
+        "participacion_consumo_pct": 32.5879,
+        "cobertura_consumo_pct": 92.1004
+      },
+      {
+        "periodo": "2016-09",
+        "anio": 2016,
+        "mes": 9,
+        "morosidad_consumo_pct": 7.6422,
+        "morosidad_total_pct": 4.0547,
+        "participacion_consumo_pct": 32.55,
+        "cobertura_consumo_pct": 97.0934
+      },
+      {
+        "periodo": "2016-10",
+        "anio": 2016,
+        "mes": 10,
+        "morosidad_consumo_pct": 7.8504,
+        "morosidad_total_pct": 4.2751,
+        "participacion_consumo_pct": 32.413,
+        "cobertura_consumo_pct": 93.1962
+      },
+      {
+        "periodo": "2016-11",
+        "anio": 2016,
+        "mes": 11,
+        "morosidad_consumo_pct": 7.896,
+        "morosidad_total_pct": 4.3402,
+        "participacion_consumo_pct": 32.3391,
+        "cobertura_consumo_pct": 92.0324
+      },
+      {
+        "periodo": "2016-12",
+        "anio": 2016,
+        "mes": 12,
+        "morosidad_consumo_pct": 6.7042,
+        "morosidad_total_pct": 3.5386,
+        "participacion_consumo_pct": 31.3222,
+        "cobertura_consumo_pct": 102.6377
+      },
+      {
+        "periodo": "2017-01",
+        "anio": 2017,
+        "mes": 1,
+        "morosidad_consumo_pct": 7.0478,
+        "morosidad_total_pct": 3.7709,
+        "participacion_consumo_pct": 31.3564,
+        "cobertura_consumo_pct": 97.5795
+      },
+      {
+        "periodo": "2017-02",
+        "anio": 2017,
+        "mes": 2,
+        "morosidad_consumo_pct": 7.2816,
+        "morosidad_total_pct": 3.9064,
+        "participacion_consumo_pct": 31.0971,
+        "cobertura_consumo_pct": 92.6474
+      },
+      {
+        "periodo": "2017-03",
+        "anio": 2017,
+        "mes": 3,
+        "morosidad_consumo_pct": 7.1603,
+        "morosidad_total_pct": 3.8103,
+        "participacion_consumo_pct": 30.882,
+        "cobertura_consumo_pct": 92.6166
+      },
+      {
+        "periodo": "2017-04",
+        "anio": 2017,
+        "mes": 4,
+        "morosidad_consumo_pct": 6.6322,
+        "morosidad_total_pct": 3.6105,
+        "participacion_consumo_pct": 30.4364,
+        "cobertura_consumo_pct": 97.6658
+      },
+      {
+        "periodo": "2017-05",
+        "anio": 2017,
+        "mes": 5,
+        "morosidad_consumo_pct": 6.6218,
+        "morosidad_total_pct": 3.5949,
+        "participacion_consumo_pct": 30.7381,
+        "cobertura_consumo_pct": 98.5411
+      },
+      {
+        "periodo": "2017-06",
+        "anio": 2017,
+        "mes": 6,
+        "morosidad_consumo_pct": 6.1585,
+        "morosidad_total_pct": 3.4517,
+        "participacion_consumo_pct": 34.5663,
+        "cobertura_consumo_pct": 116.2517
+      },
+      {
+        "periodo": "2017-07",
+        "anio": 2017,
+        "mes": 7,
+        "morosidad_consumo_pct": 6.3149,
+        "morosidad_total_pct": 3.5831,
+        "participacion_consumo_pct": 34.6011,
+        "cobertura_consumo_pct": 113.0517
+      },
+      {
+        "periodo": "2017-08",
+        "anio": 2017,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.9618,
+        "morosidad_total_pct": 3.4294,
+        "participacion_consumo_pct": 34.8998,
+        "cobertura_consumo_pct": 117.6816
+      },
+      {
+        "periodo": "2017-09",
+        "anio": 2017,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.8855,
+        "morosidad_total_pct": 3.3762,
+        "participacion_consumo_pct": 35.0018,
+        "cobertura_consumo_pct": 116.7767
+      },
+      {
+        "periodo": "2017-10",
+        "anio": 2017,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.9039,
+        "morosidad_total_pct": 3.3653,
+        "participacion_consumo_pct": 35.0376,
+        "cobertura_consumo_pct": 114.8474
+      },
+      {
+        "periodo": "2017-11",
+        "anio": 2017,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.8266,
+        "morosidad_total_pct": 3.299,
+        "participacion_consumo_pct": 35.1406,
+        "cobertura_consumo_pct": 112.896
+      },
+      {
+        "periodo": "2017-12",
+        "anio": 2017,
+        "mes": 12,
+        "morosidad_consumo_pct": 5.2097,
+        "morosidad_total_pct": 2.959,
+        "participacion_consumo_pct": 34.9784,
+        "cobertura_consumo_pct": 128.1807
+      },
+      {
+        "periodo": "2018-01",
+        "anio": 2018,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.6737,
+        "morosidad_total_pct": 3.194,
+        "participacion_consumo_pct": 35.0339,
+        "cobertura_consumo_pct": 124.4346
+      },
+      {
+        "periodo": "2018-02",
+        "anio": 2018,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.7996,
+        "morosidad_total_pct": 3.3132,
+        "participacion_consumo_pct": 35.231,
+        "cobertura_consumo_pct": 121.0778
+      },
+      {
+        "periodo": "2018-03",
+        "anio": 2018,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.5338,
+        "morosidad_total_pct": 3.1993,
+        "participacion_consumo_pct": 35.3279,
+        "cobertura_consumo_pct": 123.8449
+      },
+      {
+        "periodo": "2018-04",
+        "anio": 2018,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.4827,
+        "morosidad_total_pct": 3.2051,
+        "participacion_consumo_pct": 35.0531,
+        "cobertura_consumo_pct": 123.3525
+      },
+      {
+        "periodo": "2018-05",
+        "anio": 2018,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.4462,
+        "morosidad_total_pct": 3.1777,
+        "participacion_consumo_pct": 35.2606,
+        "cobertura_consumo_pct": 124.5255
+      },
+      {
+        "periodo": "2018-06",
+        "anio": 2018,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.1587,
+        "morosidad_total_pct": 3.0167,
+        "participacion_consumo_pct": 35.3745,
+        "cobertura_consumo_pct": 128.5057
+      },
+      {
+        "periodo": "2018-07",
+        "anio": 2018,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.2685,
+        "morosidad_total_pct": 3.0817,
+        "participacion_consumo_pct": 35.6984,
+        "cobertura_consumo_pct": 126.1744
+      },
+      {
+        "periodo": "2018-08",
+        "anio": 2018,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.2571,
+        "morosidad_total_pct": 3.1146,
+        "participacion_consumo_pct": 36.1403,
+        "cobertura_consumo_pct": 125.3676
+      },
+      {
+        "periodo": "2018-09",
+        "anio": 2018,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.124,
+        "morosidad_total_pct": 3.1082,
+        "participacion_consumo_pct": 36.4038,
+        "cobertura_consumo_pct": 126.6919
+      },
+      {
+        "periodo": "2018-10",
+        "anio": 2018,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.2345,
+        "morosidad_total_pct": 3.1674,
+        "participacion_consumo_pct": 36.5244,
+        "cobertura_consumo_pct": 122.7803
+      },
+      {
+        "periodo": "2018-11",
+        "anio": 2018,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.2224,
+        "morosidad_total_pct": 3.1007,
+        "participacion_consumo_pct": 36.7991,
+        "cobertura_consumo_pct": 120.1141
+      },
+      {
+        "periodo": "2018-12",
+        "anio": 2018,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.6659,
+        "morosidad_total_pct": 2.6227,
+        "participacion_consumo_pct": 36.5439,
+        "cobertura_consumo_pct": 128.4422
+      },
+      {
+        "periodo": "2019-01",
+        "anio": 2019,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.035,
+        "morosidad_total_pct": 2.8512,
+        "participacion_consumo_pct": 36.7841,
+        "cobertura_consumo_pct": 121.9848
+      },
+      {
+        "periodo": "2019-02",
+        "anio": 2019,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.0879,
+        "morosidad_total_pct": 2.9409,
+        "participacion_consumo_pct": 36.7862,
+        "cobertura_consumo_pct": 120.9546
+      },
+      {
+        "periodo": "2019-03",
+        "anio": 2019,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.4433,
+        "morosidad_total_pct": 3.0974,
+        "participacion_consumo_pct": 36.832,
+        "cobertura_consumo_pct": 113.5511
+      },
+      {
+        "periodo": "2019-04",
+        "anio": 2019,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.9983,
+        "morosidad_total_pct": 2.9512,
+        "participacion_consumo_pct": 36.6531,
+        "cobertura_consumo_pct": 123.2043
+      },
+      {
+        "periodo": "2019-05",
+        "anio": 2019,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.006,
+        "morosidad_total_pct": 3.0544,
+        "participacion_consumo_pct": 37.0008,
+        "cobertura_consumo_pct": 124.9871
+      },
+      {
+        "periodo": "2019-06",
+        "anio": 2019,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.0264,
+        "morosidad_total_pct": 2.9511,
+        "participacion_consumo_pct": 37.3769,
+        "cobertura_consumo_pct": 122.163
+      },
+      {
+        "periodo": "2019-07",
+        "anio": 2019,
+        "mes": 7,
+        "morosidad_consumo_pct": 4.9434,
+        "morosidad_total_pct": 2.9683,
+        "participacion_consumo_pct": 37.9135,
+        "cobertura_consumo_pct": 125.3516
+      },
+      {
+        "periodo": "2019-08",
+        "anio": 2019,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.9033,
+        "morosidad_total_pct": 2.9919,
+        "participacion_consumo_pct": 38.4084,
+        "cobertura_consumo_pct": 124.9311
+      },
+      {
+        "periodo": "2019-09",
+        "anio": 2019,
+        "mes": 9,
+        "morosidad_consumo_pct": 4.9626,
+        "morosidad_total_pct": 3.0048,
+        "participacion_consumo_pct": 38.6869,
+        "cobertura_consumo_pct": 121.8448
+      },
+      {
+        "periodo": "2019-10",
+        "anio": 2019,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.0702,
+        "morosidad_total_pct": 3.0092,
+        "participacion_consumo_pct": 38.6853,
+        "cobertura_consumo_pct": 121.4143
+      },
+      {
+        "periodo": "2019-11",
+        "anio": 2019,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.1274,
+        "morosidad_total_pct": 3.0513,
+        "participacion_consumo_pct": 39.0511,
+        "cobertura_consumo_pct": 120.5843
+      },
+      {
+        "periodo": "2019-12",
+        "anio": 2019,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.5736,
+        "morosidad_total_pct": 2.7328,
+        "participacion_consumo_pct": 39.0825,
+        "cobertura_consumo_pct": 128.2856
+      },
+      {
+        "periodo": "2020-01",
+        "anio": 2020,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.8528,
+        "morosidad_total_pct": 2.982,
+        "participacion_consumo_pct": 39.5935,
+        "cobertura_consumo_pct": 121.9399
+      },
+      {
+        "periodo": "2020-02",
+        "anio": 2020,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.0555,
+        "morosidad_total_pct": 3.2058,
+        "participacion_consumo_pct": 39.8854,
+        "cobertura_consumo_pct": 117.8246
+      },
+      {
+        "periodo": "2020-03",
+        "anio": 2020,
+        "mes": 3,
+        "morosidad_consumo_pct": 3.5309,
+        "morosidad_total_pct": 2.6309,
+        "participacion_consumo_pct": 39.6621,
+        "cobertura_consumo_pct": 170.5935
+      },
+      {
+        "periodo": "2020-04",
+        "anio": 2020,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.1093,
+        "morosidad_total_pct": 3.2625,
+        "participacion_consumo_pct": 39.7091,
+        "cobertura_consumo_pct": 153.3424
+      },
+      {
+        "periodo": "2020-05",
+        "anio": 2020,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.5852,
+        "morosidad_total_pct": 3.4043,
+        "participacion_consumo_pct": 39.5671,
+        "cobertura_consumo_pct": 141.7422
+      },
+      {
+        "periodo": "2020-06",
+        "anio": 2020,
+        "mes": 6,
+        "morosidad_consumo_pct": 3.8604,
+        "morosidad_total_pct": 2.8422,
+        "participacion_consumo_pct": 39.0996,
+        "cobertura_consumo_pct": 169.2617
+      },
+      {
+        "periodo": "2020-07",
+        "anio": 2020,
+        "mes": 7,
+        "morosidad_consumo_pct": 3.6787,
+        "morosidad_total_pct": 2.6519,
+        "participacion_consumo_pct": 39.1909,
+        "cobertura_consumo_pct": 178.571
+      },
+      {
+        "periodo": "2020-08",
+        "anio": 2020,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.4121,
+        "morosidad_total_pct": 2.9982,
+        "participacion_consumo_pct": 39.2399,
+        "cobertura_consumo_pct": 146.7171
+      },
+      {
+        "periodo": "2020-09",
+        "anio": 2020,
+        "mes": 9,
+        "morosidad_consumo_pct": 6.7419,
+        "morosidad_total_pct": 4.0716,
+        "participacion_consumo_pct": 39.1498,
+        "cobertura_consumo_pct": 119.2802
+      },
+      {
+        "periodo": "2020-10",
+        "anio": 2020,
+        "mes": 10,
+        "morosidad_consumo_pct": 4.4128,
+        "morosidad_total_pct": 2.8219,
+        "participacion_consumo_pct": 39.1958,
+        "cobertura_consumo_pct": 166.1894
+      },
+      {
+        "periodo": "2020-11",
+        "anio": 2020,
+        "mes": 11,
+        "morosidad_consumo_pct": 4.4891,
+        "morosidad_total_pct": 2.831,
+        "participacion_consumo_pct": 39.2259,
+        "cobertura_consumo_pct": 167.6784
+      },
+      {
+        "periodo": "2020-12",
+        "anio": 2020,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.2761,
+        "morosidad_total_pct": 2.6102,
+        "participacion_consumo_pct": 38.8888,
+        "cobertura_consumo_pct": 169.7072
+      },
+      {
+        "periodo": "2021-01",
+        "anio": 2021,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.3272,
+        "morosidad_total_pct": 2.6739,
+        "participacion_consumo_pct": 38.7593,
+        "cobertura_consumo_pct": 167.286
+      },
+      {
+        "periodo": "2021-02",
+        "anio": 2021,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.3929,
+        "morosidad_total_pct": 2.6961,
+        "participacion_consumo_pct": 38.6265,
+        "cobertura_consumo_pct": 166.0937
+      },
+      {
+        "periodo": "2021-03",
+        "anio": 2021,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.5372,
+        "morosidad_total_pct": 2.7601,
+        "participacion_consumo_pct": 38.4096,
+        "cobertura_consumo_pct": 155.7492
+      },
+      {
+        "periodo": "2021-04",
+        "anio": 2021,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.6323,
+        "morosidad_total_pct": 2.9635,
+        "participacion_consumo_pct": 38.4328,
+        "cobertura_consumo_pct": 155.1029
+      },
+      {
+        "periodo": "2021-05",
+        "anio": 2021,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.0933,
+        "morosidad_total_pct": 3.1529,
+        "participacion_consumo_pct": 37.2095,
+        "cobertura_consumo_pct": 136.9186
+      },
+      {
+        "periodo": "2021-06",
+        "anio": 2021,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.5351,
+        "morosidad_total_pct": 2.8468,
+        "participacion_consumo_pct": 37.3848,
+        "cobertura_consumo_pct": 149.7117
+      },
+      {
+        "periodo": "2021-07",
+        "anio": 2021,
+        "mes": 7,
+        "morosidad_consumo_pct": 4.0464,
+        "morosidad_total_pct": 2.6266,
+        "participacion_consumo_pct": 37.415,
+        "cobertura_consumo_pct": 160.808
+      },
+      {
+        "periodo": "2021-08",
+        "anio": 2021,
+        "mes": 8,
+        "morosidad_consumo_pct": 3.8146,
+        "morosidad_total_pct": 2.5404,
+        "participacion_consumo_pct": 37.4161,
+        "cobertura_consumo_pct": 176.9007
+      },
+      {
+        "periodo": "2021-09",
+        "anio": 2021,
+        "mes": 9,
+        "morosidad_consumo_pct": 3.4846,
+        "morosidad_total_pct": 2.4119,
+        "participacion_consumo_pct": 37.7634,
+        "cobertura_consumo_pct": 186.901
+      },
+      {
+        "periodo": "2021-10",
+        "anio": 2021,
+        "mes": 10,
+        "morosidad_consumo_pct": 3.2732,
+        "morosidad_total_pct": 2.3524,
+        "participacion_consumo_pct": 37.8054,
+        "cobertura_consumo_pct": 194.699
+      },
+      {
+        "periodo": "2021-11",
+        "anio": 2021,
+        "mes": 11,
+        "morosidad_consumo_pct": 3.3125,
+        "morosidad_total_pct": 2.36,
+        "participacion_consumo_pct": 38.0802,
+        "cobertura_consumo_pct": 189.8935
+      },
+      {
+        "periodo": "2021-12",
+        "anio": 2021,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.0604,
+        "morosidad_total_pct": 2.1354,
+        "participacion_consumo_pct": 37.7549,
+        "cobertura_consumo_pct": 205.1791
+      },
+      {
+        "periodo": "2022-01",
+        "anio": 2022,
+        "mes": 1,
+        "morosidad_consumo_pct": 3.2559,
+        "morosidad_total_pct": 2.3185,
+        "participacion_consumo_pct": 37.9369,
+        "cobertura_consumo_pct": 195.0926
+      },
+      {
+        "periodo": "2022-02",
+        "anio": 2022,
+        "mes": 2,
+        "morosidad_consumo_pct": 3.2213,
+        "morosidad_total_pct": 2.2716,
+        "participacion_consumo_pct": 37.7745,
+        "cobertura_consumo_pct": 197.0987
+      },
+      {
+        "periodo": "2022-03",
+        "anio": 2022,
+        "mes": 3,
+        "morosidad_consumo_pct": 3.1431,
+        "morosidad_total_pct": 2.2353,
+        "participacion_consumo_pct": 37.8193,
+        "cobertura_consumo_pct": 200.8705
+      },
+      {
+        "periodo": "2022-04",
+        "anio": 2022,
+        "mes": 4,
+        "morosidad_consumo_pct": 2.937,
+        "morosidad_total_pct": 2.1512,
+        "participacion_consumo_pct": 37.6363,
+        "cobertura_consumo_pct": 209.8654
+      },
+      {
+        "periodo": "2022-05",
+        "anio": 2022,
+        "mes": 5,
+        "morosidad_consumo_pct": 2.9629,
+        "morosidad_total_pct": 2.1567,
+        "participacion_consumo_pct": 37.6871,
+        "cobertura_consumo_pct": 210.9254
+      },
+      {
+        "periodo": "2022-06",
+        "anio": 2022,
+        "mes": 6,
+        "morosidad_consumo_pct": 2.8967,
+        "morosidad_total_pct": 2.1558,
+        "participacion_consumo_pct": 37.6602,
+        "cobertura_consumo_pct": 213.6576
+      },
+      {
+        "periodo": "2022-07",
+        "anio": 2022,
+        "mes": 7,
+        "morosidad_consumo_pct": 3.0111,
+        "morosidad_total_pct": 2.2132,
+        "participacion_consumo_pct": 37.892,
+        "cobertura_consumo_pct": 206.5967
+      },
+      {
+        "periodo": "2022-08",
+        "anio": 2022,
+        "mes": 8,
+        "morosidad_consumo_pct": 3.1111,
+        "morosidad_total_pct": 2.2656,
+        "participacion_consumo_pct": 38.4083,
+        "cobertura_consumo_pct": 197.8364
+      },
+      {
+        "periodo": "2022-09",
+        "anio": 2022,
+        "mes": 9,
+        "morosidad_consumo_pct": 2.9697,
+        "morosidad_total_pct": 2.152,
+        "participacion_consumo_pct": 38.5439,
+        "cobertura_consumo_pct": 204.2843
+      },
+      {
+        "periodo": "2022-10",
+        "anio": 2022,
+        "mes": 10,
+        "morosidad_consumo_pct": 3.1223,
+        "morosidad_total_pct": 2.2575,
+        "participacion_consumo_pct": 38.7817,
+        "cobertura_consumo_pct": 197.5239
+      },
+      {
+        "periodo": "2022-11",
+        "anio": 2022,
+        "mes": 11,
+        "morosidad_consumo_pct": 3.2378,
+        "morosidad_total_pct": 2.4061,
+        "participacion_consumo_pct": 39.1213,
+        "cobertura_consumo_pct": 190.7493
+      },
+      {
+        "periodo": "2022-12",
+        "anio": 2022,
+        "mes": 12,
+        "morosidad_consumo_pct": 3.0056,
+        "morosidad_total_pct": 2.187,
+        "participacion_consumo_pct": 39.1163,
+        "cobertura_consumo_pct": 203.9829
+      },
+      {
+        "periodo": "2023-01",
+        "anio": 2023,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.5458,
+        "morosidad_total_pct": 3.0751,
+        "participacion_consumo_pct": 39.3274,
+        "cobertura_consumo_pct": 142.091
+      },
+      {
+        "periodo": "2023-02",
+        "anio": 2023,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.8612,
+        "morosidad_total_pct": 3.2773,
+        "participacion_consumo_pct": 39.5355,
+        "cobertura_consumo_pct": 133.4577
+      },
+      {
+        "periodo": "2023-03",
+        "anio": 2023,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.9025,
+        "morosidad_total_pct": 3.2525,
+        "participacion_consumo_pct": 39.5712,
+        "cobertura_consumo_pct": 134.8034
+      },
+      {
+        "periodo": "2023-04",
+        "anio": 2023,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.8169,
+        "morosidad_total_pct": 3.2561,
+        "participacion_consumo_pct": 39.5759,
+        "cobertura_consumo_pct": 139.3852
+      },
+      {
+        "periodo": "2023-05",
+        "anio": 2023,
+        "mes": 5,
+        "morosidad_consumo_pct": 4.9165,
+        "morosidad_total_pct": 3.3214,
+        "participacion_consumo_pct": 39.8393,
+        "cobertura_consumo_pct": 138.6081
+      },
+      {
+        "periodo": "2023-06",
+        "anio": 2023,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.896,
+        "morosidad_total_pct": 3.2692,
+        "participacion_consumo_pct": 39.9663,
+        "cobertura_consumo_pct": 139.008
+      },
+      {
+        "periodo": "2023-07",
+        "anio": 2023,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.1118,
+        "morosidad_total_pct": 3.4277,
+        "participacion_consumo_pct": 40.2353,
+        "cobertura_consumo_pct": 135.1006
+      },
+      {
+        "periodo": "2023-08",
+        "anio": 2023,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.1045,
+        "morosidad_total_pct": 3.397,
+        "participacion_consumo_pct": 40.4497,
+        "cobertura_consumo_pct": 136.5499
+      },
+      {
+        "periodo": "2023-09",
+        "anio": 2023,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.0868,
+        "morosidad_total_pct": 3.41,
+        "participacion_consumo_pct": 40.6488,
+        "cobertura_consumo_pct": 134.8003
+      },
+      {
+        "periodo": "2023-10",
+        "anio": 2023,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.2827,
+        "morosidad_total_pct": 3.5463,
+        "participacion_consumo_pct": 40.8959,
+        "cobertura_consumo_pct": 131.5065
+      },
+      {
+        "periodo": "2023-11",
+        "anio": 2023,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.3685,
+        "morosidad_total_pct": 3.5536,
+        "participacion_consumo_pct": 41.2009,
+        "cobertura_consumo_pct": 129.3834
+      },
+      {
+        "periodo": "2023-12",
+        "anio": 2023,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.8094,
+        "morosidad_total_pct": 3.203,
+        "participacion_consumo_pct": 41.1872,
+        "cobertura_consumo_pct": 142.5832
+      },
+      {
+        "periodo": "2024-01",
+        "anio": 2024,
+        "mes": 1,
+        "morosidad_consumo_pct": 5.0569,
+        "morosidad_total_pct": 3.3981,
+        "participacion_consumo_pct": 41.3603,
+        "cobertura_consumo_pct": 139.7445
+      },
+      {
+        "periodo": "2024-02",
+        "anio": 2024,
+        "mes": 2,
+        "morosidad_consumo_pct": 5.2246,
+        "morosidad_total_pct": 3.5288,
+        "participacion_consumo_pct": 41.4679,
+        "cobertura_consumo_pct": 132.6981
+      },
+      {
+        "periodo": "2024-03",
+        "anio": 2024,
+        "mes": 3,
+        "morosidad_consumo_pct": 5.2544,
+        "morosidad_total_pct": 3.5627,
+        "participacion_consumo_pct": 41.456,
+        "cobertura_consumo_pct": 137.1307
+      },
+      {
+        "periodo": "2024-04",
+        "anio": 2024,
+        "mes": 4,
+        "morosidad_consumo_pct": 5.2348,
+        "morosidad_total_pct": 3.6139,
+        "participacion_consumo_pct": 41.4864,
+        "cobertura_consumo_pct": 135.3771
+      },
+      {
+        "periodo": "2024-05",
+        "anio": 2024,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.2014,
+        "morosidad_total_pct": 3.6236,
+        "participacion_consumo_pct": 41.5552,
+        "cobertura_consumo_pct": 135.3251
+      },
+      {
+        "periodo": "2024-06",
+        "anio": 2024,
+        "mes": 6,
+        "morosidad_consumo_pct": 5.2322,
+        "morosidad_total_pct": 3.5539,
+        "participacion_consumo_pct": 41.4783,
+        "cobertura_consumo_pct": 131.408
+      },
+      {
+        "periodo": "2024-07",
+        "anio": 2024,
+        "mes": 7,
+        "morosidad_consumo_pct": 5.346,
+        "morosidad_total_pct": 3.6821,
+        "participacion_consumo_pct": 41.7051,
+        "cobertura_consumo_pct": 129.2473
+      },
+      {
+        "periodo": "2024-08",
+        "anio": 2024,
+        "mes": 8,
+        "morosidad_consumo_pct": 5.4053,
+        "morosidad_total_pct": 3.6802,
+        "participacion_consumo_pct": 41.9729,
+        "cobertura_consumo_pct": 126.8371
+      },
+      {
+        "periodo": "2024-09",
+        "anio": 2024,
+        "mes": 9,
+        "morosidad_consumo_pct": 5.4322,
+        "morosidad_total_pct": 3.7164,
+        "participacion_consumo_pct": 42.0513,
+        "cobertura_consumo_pct": 129.2358
+      },
+      {
+        "periodo": "2024-10",
+        "anio": 2024,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.3332,
+        "morosidad_total_pct": 3.6053,
+        "participacion_consumo_pct": 42.0605,
+        "cobertura_consumo_pct": 130.2172
+      },
+      {
+        "periodo": "2024-11",
+        "anio": 2024,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.3718,
+        "morosidad_total_pct": 3.5457,
+        "participacion_consumo_pct": 41.9753,
+        "cobertura_consumo_pct": 133.6513
+      },
+      {
+        "periodo": "2024-12",
+        "anio": 2024,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.7794,
+        "morosidad_total_pct": 3.1566,
+        "participacion_consumo_pct": 41.7209,
+        "cobertura_consumo_pct": 147.8442
+      },
+      {
+        "periodo": "2025-01",
+        "anio": 2025,
+        "mes": 1,
+        "morosidad_consumo_pct": 4.6513,
+        "morosidad_total_pct": 3.1066,
+        "participacion_consumo_pct": 41.5995,
+        "cobertura_consumo_pct": 151.9957
+      },
+      {
+        "periodo": "2025-02",
+        "anio": 2025,
+        "mes": 2,
+        "morosidad_consumo_pct": 4.565,
+        "morosidad_total_pct": 3.0851,
+        "participacion_consumo_pct": 41.3926,
+        "cobertura_consumo_pct": 152.5549
+      },
+      {
+        "periodo": "2025-03",
+        "anio": 2025,
+        "mes": 3,
+        "morosidad_consumo_pct": 4.653,
+        "morosidad_total_pct": 3.098,
+        "participacion_consumo_pct": 41.091,
+        "cobertura_consumo_pct": 147.2643
+      },
+      {
+        "periodo": "2025-04",
+        "anio": 2025,
+        "mes": 4,
+        "morosidad_consumo_pct": 4.8618,
+        "morosidad_total_pct": 3.1821,
+        "participacion_consumo_pct": 40.938,
+        "cobertura_consumo_pct": 141.3607
+      },
+      {
+        "periodo": "2025-05",
+        "anio": 2025,
+        "mes": 5,
+        "morosidad_consumo_pct": 5.0287,
+        "morosidad_total_pct": 3.2723,
+        "participacion_consumo_pct": 41.0087,
+        "cobertura_consumo_pct": 138.2386
+      },
+      {
+        "periodo": "2025-06",
+        "anio": 2025,
+        "mes": 6,
+        "morosidad_consumo_pct": 4.9376,
+        "morosidad_total_pct": 3.2361,
+        "participacion_consumo_pct": 40.9561,
+        "cobertura_consumo_pct": 141.2356
+      },
+      {
+        "periodo": "2025-07",
+        "anio": 2025,
+        "mes": 7,
+        "morosidad_consumo_pct": 4.9439,
+        "morosidad_total_pct": 3.232,
+        "participacion_consumo_pct": 41.0938,
+        "cobertura_consumo_pct": 143.2012
+      },
+      {
+        "periodo": "2025-08",
+        "anio": 2025,
+        "mes": 8,
+        "morosidad_consumo_pct": 4.8673,
+        "morosidad_total_pct": 3.2394,
+        "participacion_consumo_pct": 41.1583,
+        "cobertura_consumo_pct": 143.5731
+      },
+      {
+        "periodo": "2025-09",
+        "anio": 2025,
+        "mes": 9,
+        "morosidad_consumo_pct": 4.9125,
+        "morosidad_total_pct": 3.2103,
+        "participacion_consumo_pct": 41.0545,
+        "cobertura_consumo_pct": 143.2479
+      },
+      {
+        "periodo": "2025-10",
+        "anio": 2025,
+        "mes": 10,
+        "morosidad_consumo_pct": 5.0165,
+        "morosidad_total_pct": 3.2078,
+        "participacion_consumo_pct": 40.6092,
+        "cobertura_consumo_pct": 143.038
+      },
+      {
+        "periodo": "2025-11",
+        "anio": 2025,
+        "mes": 11,
+        "morosidad_consumo_pct": 5.0715,
+        "morosidad_total_pct": 3.1969,
+        "participacion_consumo_pct": 40.5706,
+        "cobertura_consumo_pct": 143.0959
+      },
+      {
+        "periodo": "2025-12",
+        "anio": 2025,
+        "mes": 12,
+        "morosidad_consumo_pct": 4.7185,
+        "morosidad_total_pct": 2.9908,
+        "participacion_consumo_pct": 40.5472,
+        "cobertura_consumo_pct": 149.8931
+      }
+    ],
+    "mensual_modelo": [
+      {
+        "periodo": "2021-06",
+        "fecha": "2021-06-30",
+        "morosidad_consumo_pct": 4.535112,
+        "morosidad_total_pct": 2.84684,
+        "desempleo_pct": 5.122916,
+        "empleo_adecuado_pct": 31.253695,
+        "subempleo_pct": 23.010554,
+        "inflacion_anual_pct": -0.688257,
+        "tasa_consumo_pct": 16.56,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1140.46659,
+        "log_monto_consumo": 7.039193,
+        "d_morosidad_consumo_pct": null,
+        "d_desempleo_pct": null,
+        "d_inflacion_anual_pct": null,
+        "d_tasa_consumo_pct": null,
+        "d_log_monto_consumo": null,
+        "prediccion_ols_niveles_pct": 5.034289,
+        "residuo_ols_niveles_pp": -0.499177,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-07",
+        "fecha": "2021-07-31",
+        "morosidad_consumo_pct": 4.046437,
+        "morosidad_total_pct": 2.626642,
+        "desempleo_pct": 5.154756,
+        "empleo_adecuado_pct": 31.793575,
+        "subempleo_pct": 24.586045,
+        "inflacion_anual_pct": 0.45,
+        "tasa_consumo_pct": 16.51,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1105.148242,
+        "log_monto_consumo": 7.007735,
+        "d_morosidad_consumo_pct": -0.488675,
+        "d_desempleo_pct": 0.03184,
+        "d_inflacion_anual_pct": 1.138257,
+        "d_tasa_consumo_pct": -0.05,
+        "d_log_monto_consumo": -0.031458,
+        "prediccion_ols_niveles_pct": 4.476738,
+        "residuo_ols_niveles_pp": -0.430301,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-08",
+        "fecha": "2021-08-31",
+        "morosidad_consumo_pct": 3.814551,
+        "morosidad_total_pct": 2.540389,
+        "desempleo_pct": 4.859757,
+        "empleo_adecuado_pct": 32.4419,
+        "subempleo_pct": 22.095663,
+        "inflacion_anual_pct": 0.892484,
+        "tasa_consumo_pct": 16.4,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1061.164093,
+        "log_monto_consumo": 6.967122,
+        "d_morosidad_consumo_pct": -0.231886,
+        "d_desempleo_pct": -0.294999,
+        "d_inflacion_anual_pct": 0.442484,
+        "d_tasa_consumo_pct": -0.11,
+        "d_log_monto_consumo": -0.040613,
+        "prediccion_ols_niveles_pct": 4.172605,
+        "residuo_ols_niveles_pp": -0.358054,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-09",
+        "fecha": "2021-09-30",
+        "morosidad_consumo_pct": 3.484617,
+        "morosidad_total_pct": 2.411853,
+        "desempleo_pct": 4.864187,
+        "empleo_adecuado_pct": 33.537986,
+        "subempleo_pct": 22.659288,
+        "inflacion_anual_pct": 1.066535,
+        "tasa_consumo_pct": 16.29,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1180.173163,
+        "log_monto_consumo": 7.073416,
+        "d_morosidad_consumo_pct": -0.329934,
+        "d_desempleo_pct": 0.00443,
+        "d_inflacion_anual_pct": 0.174051,
+        "d_tasa_consumo_pct": -0.11,
+        "d_log_monto_consumo": 0.106294,
+        "prediccion_ols_niveles_pct": 4.18131,
+        "residuo_ols_niveles_pp": -0.696693,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-10",
+        "fecha": "2021-10-31",
+        "morosidad_consumo_pct": 3.273197,
+        "morosidad_total_pct": 2.352356,
+        "desempleo_pct": 4.574754,
+        "empleo_adecuado_pct": 31.961736,
+        "subempleo_pct": 23.878419,
+        "inflacion_anual_pct": 1.469017,
+        "tasa_consumo_pct": 16.31,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1096.522699,
+        "log_monto_consumo": 6.999899,
+        "d_morosidad_consumo_pct": -0.21142,
+        "d_desempleo_pct": -0.289433,
+        "d_inflacion_anual_pct": 0.402482,
+        "d_tasa_consumo_pct": 0.02,
+        "d_log_monto_consumo": -0.073517,
+        "prediccion_ols_niveles_pct": 4.120317,
+        "residuo_ols_niveles_pp": -0.84712,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-11",
+        "fecha": "2021-11-30",
+        "morosidad_consumo_pct": 3.312452,
+        "morosidad_total_pct": 2.360028,
+        "desempleo_pct": 4.412068,
+        "empleo_adecuado_pct": 33.703212,
+        "subempleo_pct": 24.487432,
+        "inflacion_anual_pct": 1.842729,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 1055.47669,
+        "log_monto_consumo": 6.961748,
+        "d_morosidad_consumo_pct": 0.039255,
+        "d_desempleo_pct": -0.162686,
+        "d_inflacion_anual_pct": 0.373712,
+        "d_tasa_consumo_pct": -0.04,
+        "d_log_monto_consumo": -0.038151,
+        "prediccion_ols_niveles_pct": 3.921987,
+        "residuo_ols_niveles_pp": -0.609535,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2021-12",
+        "fecha": "2021-12-31",
+        "morosidad_consumo_pct": 3.060415,
+        "morosidad_total_pct": 2.135416,
+        "desempleo_pct": 4.14655,
+        "empleo_adecuado_pct": 33.940852,
+        "subempleo_pct": 22.969921,
+        "inflacion_anual_pct": 1.940678,
+        "tasa_consumo_pct": 16.22,
+        "tasa_max_consumo_pct": 17.3,
+        "monto_consumo_musd": 991.575056,
+        "log_monto_consumo": 6.899295,
+        "d_morosidad_consumo_pct": -0.252037,
+        "d_desempleo_pct": -0.265518,
+        "d_inflacion_anual_pct": 0.097949,
+        "d_tasa_consumo_pct": -0.05,
+        "d_log_monto_consumo": -0.062453,
+        "prediccion_ols_niveles_pct": 3.771249,
+        "residuo_ols_niveles_pp": -0.710834,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-01",
+        "fecha": "2022-01-31",
+        "morosidad_consumo_pct": 3.255874,
+        "morosidad_total_pct": 2.31852,
+        "desempleo_pct": 5.391751,
+        "empleo_adecuado_pct": 33.077347,
+        "subempleo_pct": 22.616604,
+        "inflacion_anual_pct": 2.55688,
+        "tasa_consumo_pct": 16.16,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 965.183458,
+        "log_monto_consumo": 6.872318,
+        "d_morosidad_consumo_pct": 0.195459,
+        "d_desempleo_pct": 1.245201,
+        "d_inflacion_anual_pct": 0.616202,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": -0.026977,
+        "prediccion_ols_niveles_pct": 2.363543,
+        "residuo_ols_niveles_pp": 0.892331,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-02",
+        "fecha": "2022-02-28",
+        "morosidad_consumo_pct": 3.221339,
+        "morosidad_total_pct": 2.27159,
+        "desempleo_pct": 4.334467,
+        "empleo_adecuado_pct": 31.659144,
+        "subempleo_pct": 23.399874,
+        "inflacion_anual_pct": 2.708692,
+        "tasa_consumo_pct": 16.03,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1015.26843,
+        "log_monto_consumo": 6.922908,
+        "d_morosidad_consumo_pct": -0.034535,
+        "d_desempleo_pct": -1.057284,
+        "d_inflacion_anual_pct": 0.151812,
+        "d_tasa_consumo_pct": -0.13,
+        "d_log_monto_consumo": 0.05059,
+        "prediccion_ols_niveles_pct": 2.993722,
+        "residuo_ols_niveles_pp": 0.227617,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-03",
+        "fecha": "2022-03-31",
+        "morosidad_consumo_pct": 3.143109,
+        "morosidad_total_pct": 2.235339,
+        "desempleo_pct": 4.782516,
+        "empleo_adecuado_pct": 32.728147,
+        "subempleo_pct": 22.984676,
+        "inflacion_anual_pct": 2.644139,
+        "tasa_consumo_pct": 15.98,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1188.334071,
+        "log_monto_consumo": 7.080308,
+        "d_morosidad_consumo_pct": -0.07823,
+        "d_desempleo_pct": 0.448049,
+        "d_inflacion_anual_pct": -0.064553,
+        "d_tasa_consumo_pct": -0.05,
+        "d_log_monto_consumo": 0.1574,
+        "prediccion_ols_niveles_pct": 3.035974,
+        "residuo_ols_niveles_pp": 0.107135,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-04",
+        "fecha": "2022-04-30",
+        "morosidad_consumo_pct": 2.937048,
+        "morosidad_total_pct": 2.151249,
+        "desempleo_pct": 4.685938,
+        "empleo_adecuado_pct": 32.499236,
+        "subempleo_pct": 23.948193,
+        "inflacion_anual_pct": 2.894186,
+        "tasa_consumo_pct": 15.94,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1105.166126,
+        "log_monto_consumo": 7.007751,
+        "d_morosidad_consumo_pct": -0.206061,
+        "d_desempleo_pct": -0.096578,
+        "d_inflacion_anual_pct": 0.250047,
+        "d_tasa_consumo_pct": -0.04,
+        "d_log_monto_consumo": -0.072557,
+        "prediccion_ols_niveles_pct": 2.703468,
+        "residuo_ols_niveles_pp": 0.23358,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-05",
+        "fecha": "2022-05-31",
+        "morosidad_consumo_pct": 2.962908,
+        "morosidad_total_pct": 2.156668,
+        "desempleo_pct": 3.680689,
+        "empleo_adecuado_pct": 33.221661,
+        "subempleo_pct": 22.065624,
+        "inflacion_anual_pct": 3.381571,
+        "tasa_consumo_pct": 15.95,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1158.956346,
+        "log_monto_consumo": 7.055275,
+        "d_morosidad_consumo_pct": 0.02586,
+        "d_desempleo_pct": -1.005249,
+        "d_inflacion_anual_pct": 0.487385,
+        "d_tasa_consumo_pct": 0.01,
+        "d_log_monto_consumo": 0.047524,
+        "prediccion_ols_niveles_pct": 3.566733,
+        "residuo_ols_niveles_pp": -0.603825,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-06",
+        "fecha": "2022-06-30",
+        "morosidad_consumo_pct": 2.896687,
+        "morosidad_total_pct": 2.155804,
+        "desempleo_pct": 4.04868,
+        "empleo_adecuado_pct": 34.049359,
+        "subempleo_pct": 23.577616,
+        "inflacion_anual_pct": 4.234766,
+        "tasa_consumo_pct": 15.96,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1067.278587,
+        "log_monto_consumo": 6.972867,
+        "d_morosidad_consumo_pct": -0.066221,
+        "d_desempleo_pct": 0.367991,
+        "d_inflacion_anual_pct": 0.853195,
+        "d_tasa_consumo_pct": 0.01,
+        "d_log_monto_consumo": -0.082408,
+        "prediccion_ols_niveles_pct": 2.805188,
+        "residuo_ols_niveles_pp": 0.091499,
+        "regimen_coyuntural": "Post-pandemia y reactivación (2021-2022 S1)"
+      },
+      {
+        "periodo": "2022-07",
+        "fecha": "2022-07-31",
+        "morosidad_consumo_pct": 3.011128,
+        "morosidad_total_pct": 2.213183,
+        "desempleo_pct": 3.872215,
+        "empleo_adecuado_pct": 32.086045,
+        "subempleo_pct": 22.038511,
+        "inflacion_anual_pct": 3.855292,
+        "tasa_consumo_pct": 15.89,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1180.371509,
+        "log_monto_consumo": 7.073585,
+        "d_morosidad_consumo_pct": 0.114441,
+        "d_desempleo_pct": -0.176465,
+        "d_inflacion_anual_pct": -0.379474,
+        "d_tasa_consumo_pct": -0.07,
+        "d_log_monto_consumo": 0.100718,
+        "prediccion_ols_niveles_pct": 3.190785,
+        "residuo_ols_niveles_pp": -0.179657,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2022-08",
+        "fecha": "2022-08-31",
+        "morosidad_consumo_pct": 3.111137,
+        "morosidad_total_pct": 2.265562,
+        "desempleo_pct": 4.02074,
+        "empleo_adecuado_pct": 33.323855,
+        "subempleo_pct": 23.082205,
+        "inflacion_anual_pct": 3.765155,
+        "tasa_consumo_pct": 15.93,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1424.546275,
+        "log_monto_consumo": 7.261609,
+        "d_morosidad_consumo_pct": 0.100009,
+        "d_desempleo_pct": 0.148525,
+        "d_inflacion_anual_pct": -0.090137,
+        "d_tasa_consumo_pct": 0.04,
+        "d_log_monto_consumo": 0.188024,
+        "prediccion_ols_niveles_pct": 3.82007,
+        "residuo_ols_niveles_pp": -0.708933,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2022-09",
+        "fecha": "2022-09-30",
+        "morosidad_consumo_pct": 2.969741,
+        "morosidad_total_pct": 2.152028,
+        "desempleo_pct": 4.075883,
+        "empleo_adecuado_pct": 35.404718,
+        "subempleo_pct": 20.311995,
+        "inflacion_anual_pct": 4.119174,
+        "tasa_consumo_pct": 16.03,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1288.15634,
+        "log_monto_consumo": 7.160967,
+        "d_morosidad_consumo_pct": -0.141396,
+        "d_desempleo_pct": 0.055143,
+        "d_inflacion_anual_pct": 0.354019,
+        "d_tasa_consumo_pct": 0.1,
+        "d_log_monto_consumo": -0.100642,
+        "prediccion_ols_niveles_pct": 3.618443,
+        "residuo_ols_niveles_pp": -0.648702,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2022-10",
+        "fecha": "2022-10-31",
+        "morosidad_consumo_pct": 3.122312,
+        "morosidad_total_pct": 2.257502,
+        "desempleo_pct": 4.085239,
+        "empleo_adecuado_pct": 33.741292,
+        "subempleo_pct": 19.923641,
+        "inflacion_anual_pct": 4.024147,
+        "tasa_consumo_pct": 16.07,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1199.217036,
+        "log_monto_consumo": 7.089424,
+        "d_morosidad_consumo_pct": 0.152571,
+        "d_desempleo_pct": 0.009356,
+        "d_inflacion_anual_pct": -0.095027,
+        "d_tasa_consumo_pct": 0.04,
+        "d_log_monto_consumo": -0.071543,
+        "prediccion_ols_niveles_pct": 3.506474,
+        "residuo_ols_niveles_pp": -0.384162,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2022-11",
+        "fecha": "2022-11-30",
+        "morosidad_consumo_pct": 3.237752,
+        "morosidad_total_pct": 2.406115,
+        "desempleo_pct": 3.798942,
+        "empleo_adecuado_pct": 35.582073,
+        "subempleo_pct": 22.926598,
+        "inflacion_anual_pct": 3.644207,
+        "tasa_consumo_pct": 16.09,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1111.208099,
+        "log_monto_consumo": 7.013203,
+        "d_morosidad_consumo_pct": 0.11544,
+        "d_desempleo_pct": -0.286297,
+        "d_inflacion_anual_pct": -0.37994,
+        "d_tasa_consumo_pct": 0.02,
+        "d_log_monto_consumo": -0.076221,
+        "prediccion_ols_niveles_pct": 3.637244,
+        "residuo_ols_niveles_pp": -0.399492,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2022-12",
+        "fecha": "2022-12-31",
+        "morosidad_consumo_pct": 3.005576,
+        "morosidad_total_pct": 2.187041,
+        "desempleo_pct": 3.193914,
+        "empleo_adecuado_pct": 36.035635,
+        "subempleo_pct": 19.369194,
+        "inflacion_anual_pct": 3.737642,
+        "tasa_consumo_pct": 16.08,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1074.801493,
+        "log_monto_consumo": 6.979891,
+        "d_morosidad_consumo_pct": -0.232176,
+        "d_desempleo_pct": -0.605028,
+        "d_inflacion_anual_pct": 0.093435,
+        "d_tasa_consumo_pct": -0.01,
+        "d_log_monto_consumo": -0.033312,
+        "prediccion_ols_niveles_pct": 3.962394,
+        "residuo_ols_niveles_pp": -0.956818,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-01",
+        "fecha": "2023-01-31",
+        "morosidad_consumo_pct": 4.545788,
+        "morosidad_total_pct": 3.075141,
+        "desempleo_pct": 3.753098,
+        "empleo_adecuado_pct": 34.81118,
+        "subempleo_pct": 19.333768,
+        "inflacion_anual_pct": 3.118911,
+        "tasa_consumo_pct": 16.08,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1216.691777,
+        "log_monto_consumo": 7.103891,
+        "d_morosidad_consumo_pct": 1.540212,
+        "d_desempleo_pct": 0.559184,
+        "d_inflacion_anual_pct": -0.618731,
+        "d_tasa_consumo_pct": 0.0,
+        "d_log_monto_consumo": 0.124,
+        "prediccion_ols_niveles_pct": 4.082322,
+        "residuo_ols_niveles_pp": 0.463466,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-02",
+        "fecha": "2023-02-28",
+        "morosidad_consumo_pct": 4.86125,
+        "morosidad_total_pct": 3.27726,
+        "desempleo_pct": 3.86307,
+        "empleo_adecuado_pct": 32.949369,
+        "subempleo_pct": 21.579457,
+        "inflacion_anual_pct": 2.898524,
+        "tasa_consumo_pct": 16.18,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1096.541683,
+        "log_monto_consumo": 6.999917,
+        "d_morosidad_consumo_pct": 0.315462,
+        "d_desempleo_pct": 0.109972,
+        "d_inflacion_anual_pct": -0.220387,
+        "d_tasa_consumo_pct": 0.1,
+        "d_log_monto_consumo": -0.103974,
+        "prediccion_ols_niveles_pct": 3.974883,
+        "residuo_ols_niveles_pp": 0.886367,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-03",
+        "fecha": "2023-03-31",
+        "morosidad_consumo_pct": 4.90254,
+        "morosidad_total_pct": 3.252522,
+        "desempleo_pct": 3.633443,
+        "empleo_adecuado_pct": 34.58824,
+        "subempleo_pct": 19.724993,
+        "inflacion_anual_pct": 2.849752,
+        "tasa_consumo_pct": 16.23,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1311.7143,
+        "log_monto_consumo": 7.17909,
+        "d_morosidad_consumo_pct": 0.04129,
+        "d_desempleo_pct": -0.229627,
+        "d_inflacion_anual_pct": -0.048772,
+        "d_tasa_consumo_pct": 0.05,
+        "d_log_monto_consumo": 0.179173,
+        "prediccion_ols_niveles_pct": 4.894395,
+        "residuo_ols_niveles_pp": 0.008145,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-04",
+        "fecha": "2023-04-30",
+        "morosidad_consumo_pct": 4.816938,
+        "morosidad_total_pct": 3.25607,
+        "desempleo_pct": 4.020181,
+        "empleo_adecuado_pct": 35.168093,
+        "subempleo_pct": 19.895157,
+        "inflacion_anual_pct": 2.443408,
+        "tasa_consumo_pct": 16.22,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1082.691178,
+        "log_monto_consumo": 6.987205,
+        "d_morosidad_consumo_pct": -0.085602,
+        "d_desempleo_pct": 0.386738,
+        "d_inflacion_anual_pct": -0.406344,
+        "d_tasa_consumo_pct": -0.01,
+        "d_log_monto_consumo": -0.191885,
+        "prediccion_ols_niveles_pct": 4.031438,
+        "residuo_ols_niveles_pp": 0.7855,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-05",
+        "fecha": "2023-05-31",
+        "morosidad_consumo_pct": 4.916488,
+        "morosidad_total_pct": 3.321361,
+        "desempleo_pct": 3.204429,
+        "empleo_adecuado_pct": 36.367964,
+        "subempleo_pct": 18.868581,
+        "inflacion_anual_pct": 1.966425,
+        "tasa_consumo_pct": 16.13,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1299.649324,
+        "log_monto_consumo": 7.16985,
+        "d_morosidad_consumo_pct": 0.09955,
+        "d_desempleo_pct": -0.815752,
+        "d_inflacion_anual_pct": -0.476983,
+        "d_tasa_consumo_pct": -0.09,
+        "d_log_monto_consumo": 0.182645,
+        "prediccion_ols_niveles_pct": 5.171937,
+        "residuo_ols_niveles_pp": -0.255449,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-06",
+        "fecha": "2023-06-30",
+        "morosidad_consumo_pct": 4.896023,
+        "morosidad_total_pct": 3.269216,
+        "desempleo_pct": 3.833632,
+        "empleo_adecuado_pct": 34.459502,
+        "subempleo_pct": 20.124837,
+        "inflacion_anual_pct": 1.688316,
+        "tasa_consumo_pct": 16.18,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1316.568244,
+        "log_monto_consumo": 7.182784,
+        "d_morosidad_consumo_pct": -0.020465,
+        "d_desempleo_pct": 0.629203,
+        "d_inflacion_anual_pct": -0.278109,
+        "d_tasa_consumo_pct": 0.05,
+        "d_log_monto_consumo": 0.012934,
+        "prediccion_ols_niveles_pct": 4.914585,
+        "residuo_ols_niveles_pp": -0.018562,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-07",
+        "fecha": "2023-07-31",
+        "morosidad_consumo_pct": 5.111756,
+        "morosidad_total_pct": 3.427723,
+        "desempleo_pct": 3.707452,
+        "empleo_adecuado_pct": 35.474838,
+        "subempleo_pct": 20.171607,
+        "inflacion_anual_pct": 2.072902,
+        "tasa_consumo_pct": 16.24,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1249.581699,
+        "log_monto_consumo": 7.130564,
+        "d_morosidad_consumo_pct": 0.215733,
+        "d_desempleo_pct": -0.12618,
+        "d_inflacion_anual_pct": 0.384586,
+        "d_tasa_consumo_pct": 0.06,
+        "d_log_monto_consumo": -0.05222,
+        "prediccion_ols_niveles_pct": 4.903604,
+        "residuo_ols_niveles_pp": 0.208152,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-08",
+        "fecha": "2023-08-31",
+        "morosidad_consumo_pct": 5.104471,
+        "morosidad_total_pct": 3.396987,
+        "desempleo_pct": 3.47529,
+        "empleo_adecuado_pct": 34.973687,
+        "subempleo_pct": 21.162618,
+        "inflacion_anual_pct": 2.556967,
+        "tasa_consumo_pct": 16.18,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1270.682818,
+        "log_monto_consumo": 7.14731,
+        "d_morosidad_consumo_pct": -0.007285,
+        "d_desempleo_pct": -0.232162,
+        "d_inflacion_anual_pct": 0.484065,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": 0.016746,
+        "prediccion_ols_niveles_pct": 4.859891,
+        "residuo_ols_niveles_pp": 0.24458,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-09",
+        "fecha": "2023-09-30",
+        "morosidad_consumo_pct": 5.086824,
+        "morosidad_total_pct": 3.410012,
+        "desempleo_pct": 3.678275,
+        "empleo_adecuado_pct": 35.466204,
+        "subempleo_pct": 20.164746,
+        "inflacion_anual_pct": 2.230914,
+        "tasa_consumo_pct": 16.2,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1232.38892,
+        "log_monto_consumo": 7.11671,
+        "d_morosidad_consumo_pct": -0.017647,
+        "d_desempleo_pct": 0.202985,
+        "d_inflacion_anual_pct": -0.326053,
+        "d_tasa_consumo_pct": 0.02,
+        "d_log_monto_consumo": -0.0306,
+        "prediccion_ols_niveles_pct": 4.734087,
+        "residuo_ols_niveles_pp": 0.352737,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-10",
+        "fecha": "2023-10-31",
+        "morosidad_consumo_pct": 5.282651,
+        "morosidad_total_pct": 3.546333,
+        "desempleo_pct": 3.560041,
+        "empleo_adecuado_pct": 34.825029,
+        "subempleo_pct": 18.286272,
+        "inflacion_anual_pct": 1.932989,
+        "tasa_consumo_pct": 16.25,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1299.3569,
+        "log_monto_consumo": 7.169625,
+        "d_morosidad_consumo_pct": 0.195827,
+        "d_desempleo_pct": -0.118234,
+        "d_inflacion_anual_pct": -0.297925,
+        "d_tasa_consumo_pct": 0.05,
+        "d_log_monto_consumo": 0.052915,
+        "prediccion_ols_niveles_pct": 5.21338,
+        "residuo_ols_niveles_pp": 0.069271,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-11",
+        "fecha": "2023-11-30",
+        "morosidad_consumo_pct": 5.368519,
+        "morosidad_total_pct": 3.553553,
+        "desempleo_pct": 3.45703,
+        "empleo_adecuado_pct": 35.771255,
+        "subempleo_pct": 21.000439,
+        "inflacion_anual_pct": 1.533201,
+        "tasa_consumo_pct": 16.24,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1127.459351,
+        "log_monto_consumo": 7.027722,
+        "d_morosidad_consumo_pct": 0.085868,
+        "d_desempleo_pct": -0.103011,
+        "d_inflacion_anual_pct": -0.399788,
+        "d_tasa_consumo_pct": -0.01,
+        "d_log_monto_consumo": -0.141903,
+        "prediccion_ols_niveles_pct": 4.906301,
+        "residuo_ols_niveles_pp": 0.462218,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2023-12",
+        "fecha": "2023-12-31",
+        "morosidad_consumo_pct": 4.809403,
+        "morosidad_total_pct": 3.202974,
+        "desempleo_pct": 3.383342,
+        "empleo_adecuado_pct": 35.916845,
+        "subempleo_pct": 21.184965,
+        "inflacion_anual_pct": 1.349742,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1037.439655,
+        "log_monto_consumo": 6.944511,
+        "d_morosidad_consumo_pct": -0.559116,
+        "d_desempleo_pct": -0.073688,
+        "d_inflacion_anual_pct": -0.183459,
+        "d_tasa_consumo_pct": 0.03,
+        "d_log_monto_consumo": -0.083211,
+        "prediccion_ols_niveles_pct": 4.818974,
+        "residuo_ols_niveles_pp": -0.009571,
+        "regimen_coyuntural": "Normalización crediticia e inflación moderada (2022 S2-2023)"
+      },
+      {
+        "periodo": "2024-01",
+        "fecha": "2024-01-31",
+        "morosidad_consumo_pct": 5.056904,
+        "morosidad_total_pct": 3.398133,
+        "desempleo_pct": 3.924156,
+        "empleo_adecuado_pct": 34.747988,
+        "subempleo_pct": 20.448046,
+        "inflacion_anual_pct": 1.354559,
+        "tasa_consumo_pct": 16.23,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1162.147377,
+        "log_monto_consumo": 7.058025,
+        "d_morosidad_consumo_pct": 0.247501,
+        "d_desempleo_pct": 0.540814,
+        "d_inflacion_anual_pct": 0.004817,
+        "d_tasa_consumo_pct": -0.04,
+        "d_log_monto_consumo": 0.113514,
+        "prediccion_ols_niveles_pct": 4.650906,
+        "residuo_ols_niveles_pp": 0.405998,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-02",
+        "fecha": "2024-02-29",
+        "morosidad_consumo_pct": 5.224575,
+        "morosidad_total_pct": 3.528777,
+        "desempleo_pct": 4.238297,
+        "empleo_adecuado_pct": 33.936529,
+        "subempleo_pct": 21.246522,
+        "inflacion_anual_pct": 1.430095,
+        "tasa_consumo_pct": 16.32,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1145.274361,
+        "log_monto_consumo": 7.0434,
+        "d_morosidad_consumo_pct": 0.167671,
+        "d_desempleo_pct": 0.314141,
+        "d_inflacion_anual_pct": 0.075536,
+        "d_tasa_consumo_pct": 0.09,
+        "d_log_monto_consumo": -0.014625,
+        "prediccion_ols_niveles_pct": 4.570215,
+        "residuo_ols_niveles_pp": 0.65436,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-03",
+        "fecha": "2024-03-31",
+        "morosidad_consumo_pct": 5.25439,
+        "morosidad_total_pct": 3.562701,
+        "desempleo_pct": 3.761973,
+        "empleo_adecuado_pct": 34.443236,
+        "subempleo_pct": 20.266861,
+        "inflacion_anual_pct": 1.656194,
+        "tasa_consumo_pct": 16.26,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1238.557103,
+        "log_monto_consumo": 7.121702,
+        "d_morosidad_consumo_pct": 0.029815,
+        "d_desempleo_pct": -0.476324,
+        "d_inflacion_anual_pct": 0.226099,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": 0.078302,
+        "prediccion_ols_niveles_pct": 4.992043,
+        "residuo_ols_niveles_pp": 0.262347,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-04",
+        "fecha": "2024-04-30",
+        "morosidad_consumo_pct": 5.234814,
+        "morosidad_total_pct": 3.613927,
+        "desempleo_pct": 3.387332,
+        "empleo_adecuado_pct": 33.619801,
+        "subempleo_pct": 21.050879,
+        "inflacion_anual_pct": 2.748767,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1185.866283,
+        "log_monto_consumo": 7.078229,
+        "d_morosidad_consumo_pct": -0.019576,
+        "d_desempleo_pct": -0.374641,
+        "d_inflacion_anual_pct": 1.092573,
+        "d_tasa_consumo_pct": 0.01,
+        "d_log_monto_consumo": -0.043473,
+        "prediccion_ols_niveles_pct": 4.892536,
+        "residuo_ols_niveles_pp": 0.342278,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-05",
+        "fecha": "2024-05-31",
+        "morosidad_consumo_pct": 5.201435,
+        "morosidad_total_pct": 3.623569,
+        "desempleo_pct": 3.546565,
+        "empleo_adecuado_pct": 33.414999,
+        "subempleo_pct": 23.051595,
+        "inflacion_anual_pct": 2.534827,
+        "tasa_consumo_pct": 16.23,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1255.853696,
+        "log_monto_consumo": 7.135571,
+        "d_morosidad_consumo_pct": -0.033379,
+        "d_desempleo_pct": 0.159233,
+        "d_inflacion_anual_pct": -0.21394,
+        "d_tasa_consumo_pct": -0.04,
+        "d_log_monto_consumo": 0.057342,
+        "prediccion_ols_niveles_pct": 4.902686,
+        "residuo_ols_niveles_pp": 0.298749,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-06",
+        "fecha": "2024-06-30",
+        "morosidad_consumo_pct": 5.232213,
+        "morosidad_total_pct": 3.55387,
+        "desempleo_pct": 3.136758,
+        "empleo_adecuado_pct": 35.423662,
+        "subempleo_pct": 19.92728,
+        "inflacion_anual_pct": 1.1805,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1154.207771,
+        "log_monto_consumo": 7.051169,
+        "d_morosidad_consumo_pct": 0.030778,
+        "d_desempleo_pct": -0.409807,
+        "d_inflacion_anual_pct": -1.354327,
+        "d_tasa_consumo_pct": 0.04,
+        "d_log_monto_consumo": -0.084402,
+        "prediccion_ols_niveles_pct": 5.411849,
+        "residuo_ols_niveles_pp": -0.179636,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-07",
+        "fecha": "2024-07-31",
+        "morosidad_consumo_pct": 5.346036,
+        "morosidad_total_pct": 3.682054,
+        "desempleo_pct": 3.724426,
+        "empleo_adecuado_pct": 34.863723,
+        "subempleo_pct": 19.950575,
+        "inflacion_anual_pct": 1.574347,
+        "tasa_consumo_pct": 16.28,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1225.657029,
+        "log_monto_consumo": 7.111232,
+        "d_morosidad_consumo_pct": 0.113823,
+        "d_desempleo_pct": 0.587668,
+        "d_inflacion_anual_pct": 0.393847,
+        "d_tasa_consumo_pct": 0.01,
+        "d_log_monto_consumo": 0.060063,
+        "prediccion_ols_niveles_pct": 5.062132,
+        "residuo_ols_niveles_pp": 0.283904,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-08",
+        "fecha": "2024-08-31",
+        "morosidad_consumo_pct": 5.405295,
+        "morosidad_total_pct": 3.680229,
+        "desempleo_pct": 3.996471,
+        "empleo_adecuado_pct": 34.343809,
+        "subempleo_pct": 21.254459,
+        "inflacion_anual_pct": 1.284613,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1174.379483,
+        "log_monto_consumo": 7.068495,
+        "d_morosidad_consumo_pct": 0.059259,
+        "d_desempleo_pct": 0.272045,
+        "d_inflacion_anual_pct": -0.289734,
+        "d_tasa_consumo_pct": -0.01,
+        "d_log_monto_consumo": -0.042737,
+        "prediccion_ols_niveles_pct": 4.751793,
+        "residuo_ols_niveles_pp": 0.653502,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-09",
+        "fecha": "2024-09-30",
+        "morosidad_consumo_pct": 5.432154,
+        "morosidad_total_pct": 3.716424,
+        "desempleo_pct": 3.690813,
+        "empleo_adecuado_pct": 36.136461,
+        "subempleo_pct": 21.177701,
+        "inflacion_anual_pct": 1.424739,
+        "tasa_consumo_pct": 16.29,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1161.247995,
+        "log_monto_consumo": 7.057251,
+        "d_morosidad_consumo_pct": 0.026859,
+        "d_desempleo_pct": -0.305658,
+        "d_inflacion_anual_pct": 0.140126,
+        "d_tasa_consumo_pct": 0.02,
+        "d_log_monto_consumo": -0.011244,
+        "prediccion_ols_niveles_pct": 4.976889,
+        "residuo_ols_niveles_pp": 0.455265,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-10",
+        "fecha": "2024-10-31",
+        "morosidad_consumo_pct": 5.333238,
+        "morosidad_total_pct": 3.605291,
+        "desempleo_pct": 3.53659,
+        "empleo_adecuado_pct": 35.293586,
+        "subempleo_pct": 21.234647,
+        "inflacion_anual_pct": 1.360459,
+        "tasa_consumo_pct": 16.24,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1150.588994,
+        "log_monto_consumo": 7.048029,
+        "d_morosidad_consumo_pct": -0.098916,
+        "d_desempleo_pct": -0.154223,
+        "d_inflacion_anual_pct": -0.06428,
+        "d_tasa_consumo_pct": -0.05,
+        "d_log_monto_consumo": -0.009222,
+        "prediccion_ols_niveles_pct": 4.954131,
+        "residuo_ols_niveles_pp": 0.379107,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-11",
+        "fecha": "2024-11-30",
+        "morosidad_consumo_pct": 5.371762,
+        "morosidad_total_pct": 3.545691,
+        "desempleo_pct": 3.733892,
+        "empleo_adecuado_pct": 33.693491,
+        "subempleo_pct": 22.706171,
+        "inflacion_anual_pct": 1.506197,
+        "tasa_consumo_pct": 16.29,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1056.048913,
+        "log_monto_consumo": 6.96229,
+        "d_morosidad_consumo_pct": 0.038524,
+        "d_desempleo_pct": 0.197302,
+        "d_inflacion_anual_pct": 0.145738,
+        "d_tasa_consumo_pct": 0.05,
+        "d_log_monto_consumo": -0.085739,
+        "prediccion_ols_niveles_pct": 4.608646,
+        "residuo_ols_niveles_pp": 0.763116,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2024-12",
+        "fecha": "2024-12-31",
+        "morosidad_consumo_pct": 4.779435,
+        "morosidad_total_pct": 3.156591,
+        "desempleo_pct": 2.688249,
+        "empleo_adecuado_pct": 33.029059,
+        "subempleo_pct": 24.454349,
+        "inflacion_anual_pct": 0.52917,
+        "tasa_consumo_pct": 16.27,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 947.746269,
+        "log_monto_consumo": 6.854087,
+        "d_morosidad_consumo_pct": -0.592327,
+        "d_desempleo_pct": -1.045643,
+        "d_inflacion_anual_pct": -0.977027,
+        "d_tasa_consumo_pct": -0.02,
+        "d_log_monto_consumo": -0.108203,
+        "prediccion_ols_niveles_pct": 5.292386,
+        "residuo_ols_niveles_pp": -0.512951,
+        "regimen_coyuntural": "Desaceleración y crisis energética (2024)"
+      },
+      {
+        "periodo": "2025-01",
+        "fecha": "2025-01-31",
+        "morosidad_consumo_pct": 4.65126,
+        "morosidad_total_pct": 3.106645,
+        "desempleo_pct": 3.818146,
+        "empleo_adecuado_pct": 34.03344,
+        "subempleo_pct": 20.647792,
+        "inflacion_anual_pct": 0.256625,
+        "tasa_consumo_pct": 16.21,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1058.464074,
+        "log_monto_consumo": 6.964574,
+        "d_morosidad_consumo_pct": -0.128175,
+        "d_desempleo_pct": 1.129897,
+        "d_inflacion_anual_pct": -0.272545,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": 0.110487,
+        "prediccion_ols_niveles_pct": 4.660405,
+        "residuo_ols_niveles_pp": -0.009145,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-02",
+        "fecha": "2025-02-28",
+        "morosidad_consumo_pct": 4.565041,
+        "morosidad_total_pct": 3.085115,
+        "desempleo_pct": 3.454865,
+        "empleo_adecuado_pct": 35.426872,
+        "subempleo_pct": 19.266265,
+        "inflacion_anual_pct": 0.24994,
+        "tasa_consumo_pct": 16.25,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1113.329061,
+        "log_monto_consumo": 7.01511,
+        "d_morosidad_consumo_pct": -0.086219,
+        "d_desempleo_pct": -0.363281,
+        "d_inflacion_anual_pct": -0.006685,
+        "d_tasa_consumo_pct": 0.04,
+        "d_log_monto_consumo": 0.050536,
+        "prediccion_ols_niveles_pct": 5.226346,
+        "residuo_ols_niveles_pp": -0.661305,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-03",
+        "fecha": "2025-03-31",
+        "morosidad_consumo_pct": 4.653007,
+        "morosidad_total_pct": 3.097951,
+        "desempleo_pct": 3.311598,
+        "empleo_adecuado_pct": 34.153361,
+        "subempleo_pct": 20.910437,
+        "inflacion_anual_pct": 0.307502,
+        "tasa_consumo_pct": 16.15,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1190.320801,
+        "log_monto_consumo": 7.081978,
+        "d_morosidad_consumo_pct": 0.087966,
+        "d_desempleo_pct": -0.143267,
+        "d_inflacion_anual_pct": 0.057562,
+        "d_tasa_consumo_pct": -0.1,
+        "d_log_monto_consumo": 0.066868,
+        "prediccion_ols_niveles_pct": 5.280677,
+        "residuo_ols_niveles_pp": -0.62767,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-04",
+        "fecha": "2025-04-30",
+        "morosidad_consumo_pct": 4.861769,
+        "morosidad_total_pct": 3.182117,
+        "desempleo_pct": 3.637017,
+        "empleo_adecuado_pct": 35.772081,
+        "subempleo_pct": 21.093174,
+        "inflacion_anual_pct": -0.687488,
+        "tasa_consumo_pct": 16.09,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1113.286762,
+        "log_monto_consumo": 7.015072,
+        "d_morosidad_consumo_pct": 0.208762,
+        "d_desempleo_pct": 0.325419,
+        "d_inflacion_anual_pct": -0.99499,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": -0.066906,
+        "prediccion_ols_niveles_pct": 4.898211,
+        "residuo_ols_niveles_pp": -0.036442,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-05",
+        "fecha": "2025-05-31",
+        "morosidad_consumo_pct": 5.028708,
+        "morosidad_total_pct": 3.272263,
+        "desempleo_pct": 4.110402,
+        "empleo_adecuado_pct": 35.189253,
+        "subempleo_pct": 20.87212,
+        "inflacion_anual_pct": 0.458959,
+        "tasa_consumo_pct": 15.95,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1248.47972,
+        "log_monto_consumo": 7.129682,
+        "d_morosidad_consumo_pct": 0.166939,
+        "d_desempleo_pct": 0.473385,
+        "d_inflacion_anual_pct": 1.146447,
+        "d_tasa_consumo_pct": -0.14,
+        "d_log_monto_consumo": 0.11461,
+        "prediccion_ols_niveles_pct": 4.22564,
+        "residuo_ols_niveles_pp": 0.803068,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-06",
+        "fecha": "2025-06-30",
+        "morosidad_consumo_pct": 4.937557,
+        "morosidad_total_pct": 3.236061,
+        "desempleo_pct": 3.498725,
+        "empleo_adecuado_pct": 35.870707,
+        "subempleo_pct": 19.603321,
+        "inflacion_anual_pct": 1.484228,
+        "tasa_consumo_pct": 16.05,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1305.211779,
+        "log_monto_consumo": 7.174121,
+        "d_morosidad_consumo_pct": -0.091151,
+        "d_desempleo_pct": -0.611677,
+        "d_inflacion_anual_pct": 1.025269,
+        "d_tasa_consumo_pct": 0.1,
+        "d_log_monto_consumo": 0.044439,
+        "prediccion_ols_niveles_pct": 4.862376,
+        "residuo_ols_niveles_pp": 0.075181,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-07",
+        "fecha": "2025-07-31",
+        "morosidad_consumo_pct": 4.943862,
+        "morosidad_total_pct": 3.232034,
+        "desempleo_pct": 3.278843,
+        "empleo_adecuado_pct": 38.603431,
+        "subempleo_pct": 20.243685,
+        "inflacion_anual_pct": 0.721236,
+        "tasa_consumo_pct": 15.98,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1403.237276,
+        "log_monto_consumo": 7.246537,
+        "d_morosidad_consumo_pct": 0.006305,
+        "d_desempleo_pct": -0.219882,
+        "d_inflacion_anual_pct": -0.762992,
+        "d_tasa_consumo_pct": -0.07,
+        "d_log_monto_consumo": 0.072416,
+        "prediccion_ols_niveles_pct": 5.289271,
+        "residuo_ols_niveles_pp": -0.345409,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-08",
+        "fecha": "2025-08-31",
+        "morosidad_consumo_pct": 4.867282,
+        "morosidad_total_pct": 3.239448,
+        "desempleo_pct": 3.579503,
+        "empleo_adecuado_pct": 35.104457,
+        "subempleo_pct": 19.350185,
+        "inflacion_anual_pct": 0.812631,
+        "tasa_consumo_pct": 16.0,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1280.462043,
+        "log_monto_consumo": 7.154976,
+        "d_morosidad_consumo_pct": -0.07658,
+        "d_desempleo_pct": 0.30066,
+        "d_inflacion_anual_pct": 0.091395,
+        "d_tasa_consumo_pct": 0.02,
+        "d_log_monto_consumo": -0.091561,
+        "prediccion_ols_niveles_pct": 4.776047,
+        "residuo_ols_niveles_pp": 0.091235,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-09",
+        "fecha": "2025-09-30",
+        "morosidad_consumo_pct": 4.912488,
+        "morosidad_total_pct": 3.210312,
+        "desempleo_pct": 3.192384,
+        "empleo_adecuado_pct": 37.015777,
+        "subempleo_pct": 17.612262,
+        "inflacion_anual_pct": 0.71967,
+        "tasa_consumo_pct": 15.94,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1289.467675,
+        "log_monto_consumo": 7.161985,
+        "d_morosidad_consumo_pct": 0.045206,
+        "d_desempleo_pct": -0.387119,
+        "d_inflacion_anual_pct": -0.092961,
+        "d_tasa_consumo_pct": -0.06,
+        "d_log_monto_consumo": 0.007009,
+        "prediccion_ols_niveles_pct": 4.974506,
+        "residuo_ols_niveles_pp": -0.062018,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      },
+      {
+        "periodo": "2025-10",
+        "fecha": "2025-10-31",
+        "morosidad_consumo_pct": 5.016456,
+        "morosidad_total_pct": 3.207839,
+        "desempleo_pct": 3.212521,
+        "empleo_adecuado_pct": 37.410022,
+        "subempleo_pct": 19.992188,
+        "inflacion_anual_pct": 1.243229,
+        "tasa_consumo_pct": 15.91,
+        "tasa_max_consumo_pct": 16.77,
+        "monto_consumo_musd": 1298.53,
+        "log_monto_consumo": 7.168988,
+        "d_morosidad_consumo_pct": 0.103968,
+        "d_desempleo_pct": 0.020137,
+        "d_inflacion_anual_pct": 0.523559,
+        "d_tasa_consumo_pct": -0.03,
+        "d_log_monto_consumo": 0.007003,
+        "prediccion_ols_niveles_pct": 4.765701,
+        "residuo_ols_niveles_pp": 0.250755,
+        "regimen_coyuntural": "Estabilización reciente (2025)"
+      }
+    ],
+    "anual_largo_plazo": [
+      {
+        "anio": 2003,
+        "morosidad_consumo_pct": 9.1485,
+        "morosidad_total_pct": 9.51,
+        "morosidad_fmi_bm_pct": 8.6033,
+        "pib_crecimiento_pct": 2.8845,
+        "desempleo_pct": 5.662,
+        "inflacion_anual_pct": 7.9294,
+        "remesas_pib_pct": 5.275,
+        "credito_privado_pib_pct": 18.0551,
+        "prediccion_ols_anual_pct": 6.9895,
+        "residuo_ols_anual_pp": 2.159
+      },
+      {
+        "anio": 2004,
+        "morosidad_consumo_pct": 8.0135,
+        "morosidad_total_pct": 8.1625,
+        "morosidad_fmi_bm_pct": 6.5731,
+        "pib_crecimiento_pct": 6.8324,
+        "desempleo_pct": 5.002,
+        "inflacion_anual_pct": 2.7432,
+        "remesas_pib_pct": 5.2225,
+        "credito_privado_pib_pct": 20.5414,
+        "prediccion_ols_anual_pct": 6.7546,
+        "residuo_ols_anual_pp": 1.2589
+      },
+      {
+        "anio": 2005,
+        "morosidad_consumo_pct": 6.1205,
+        "morosidad_total_pct": 6.3761,
+        "morosidad_fmi_bm_pct": 5.1221,
+        "pib_crecimiento_pct": 5.3986,
+        "desempleo_pct": 3.779,
+        "inflacion_anual_pct": 2.1683,
+        "remesas_pib_pct": 6.1074,
+        "credito_privado_pib_pct": 21.9843,
+        "prediccion_ols_anual_pct": 6.1324,
+        "residuo_ols_anual_pp": -0.0118
+      },
+      {
+        "anio": 2006,
+        "morosidad_consumo_pct": 5.3762,
+        "morosidad_total_pct": 4.7263,
+        "morosidad_fmi_bm_pct": 3.9672,
+        "pib_crecimiento_pct": 4.3411,
+        "desempleo_pct": 3.55,
+        "inflacion_anual_pct": 3.2987,
+        "remesas_pib_pct": 6.421,
+        "credito_privado_pib_pct": 22.3312,
+        "prediccion_ols_anual_pct": 5.9394,
+        "residuo_ols_anual_pp": -0.5632
+      },
+      {
+        "anio": 2007,
+        "morosidad_consumo_pct": 4.7737,
+        "morosidad_total_pct": 3.4923,
+        "morosidad_fmi_bm_pct": 3.7394,
+        "pib_crecimiento_pct": 1.9024,
+        "desempleo_pct": 3.142,
+        "inflacion_anual_pct": 2.2762,
+        "remesas_pib_pct": 6.703,
+        "credito_privado_pib_pct": 23.3805,
+        "prediccion_ols_anual_pct": 5.8609,
+        "residuo_ols_anual_pp": -1.0872
+      },
+      {
+        "anio": 2008,
+        "morosidad_consumo_pct": 4.2615,
+        "morosidad_total_pct": 2.938,
+        "morosidad_fmi_bm_pct": 3.4627,
+        "pib_crecimiento_pct": 6.5649,
+        "desempleo_pct": 3.917,
+        "inflacion_anual_pct": 8.4001,
+        "remesas_pib_pct": 5.0518,
+        "credito_privado_pib_pct": 23.9649,
+        "prediccion_ols_anual_pct": 5.4817,
+        "residuo_ols_anual_pp": -1.2202
+      },
+      {
+        "anio": 2009,
+        "morosidad_consumo_pct": 4.954,
+        "morosidad_total_pct": 3.3872,
+        "morosidad_fmi_bm_pct": 3.9895,
+        "pib_crecimiento_pct": 1.091,
+        "desempleo_pct": 4.608,
+        "inflacion_anual_pct": 5.16,
+        "remesas_pib_pct": 4.5635,
+        "credito_privado_pib_pct": 24.8896,
+        "prediccion_ols_anual_pct": 6.331,
+        "residuo_ols_anual_pp": -1.377
+      },
+      {
+        "anio": 2010,
+        "morosidad_consumo_pct": 4.4927,
+        "morosidad_total_pct": 2.9773,
+        "morosidad_fmi_bm_pct": 3.1744,
+        "pib_crecimiento_pct": 4.0291,
+        "desempleo_pct": 4.088,
+        "inflacion_anual_pct": 3.5544,
+        "remesas_pib_pct": 3.8136,
+        "credito_privado_pib_pct": 27.0843,
+        "prediccion_ols_anual_pct": 5.9219,
+        "residuo_ols_anual_pp": -1.4292
+      },
+      {
+        "anio": 2011,
+        "morosidad_consumo_pct": 3.999,
+        "morosidad_total_pct": 2.6423,
+        "morosidad_fmi_bm_pct": 2.9888,
+        "pib_crecimiento_pct": 8.4815,
+        "desempleo_pct": 3.458,
+        "inflacion_anual_pct": 4.4745,
+        "remesas_pib_pct": 3.3937,
+        "credito_privado_pib_pct": 27.5915,
+        "prediccion_ols_anual_pct": 5.267,
+        "residuo_ols_anual_pp": -1.268
+      },
+      {
+        "anio": 2012,
+        "morosidad_consumo_pct": 4.9837,
+        "morosidad_total_pct": 2.9748,
+        "morosidad_fmi_bm_pct": 3.7339,
+        "pib_crecimiento_pct": 5.7832,
+        "desempleo_pct": 3.235,
+        "inflacion_anual_pct": 5.1017,
+        "remesas_pib_pct": 2.8224,
+        "credito_privado_pib_pct": 28.4444,
+        "prediccion_ols_anual_pct": 5.1665,
+        "residuo_ols_anual_pp": -0.1828
+      },
+      {
+        "anio": 2013,
+        "morosidad_consumo_pct": 5.5641,
+        "morosidad_total_pct": 3.1171,
+        "morosidad_fmi_bm_pct": 3.7491,
+        "pib_crecimiento_pct": 7.2112,
+        "desempleo_pct": 3.083,
+        "inflacion_anual_pct": 2.7218,
+        "remesas_pib_pct": 2.5461,
+        "credito_privado_pib_pct": 28.5522,
+        "prediccion_ols_anual_pct": 5.221,
+        "residuo_ols_anual_pp": 0.3431
+      },
+      {
+        "anio": 2014,
+        "morosidad_consumo_pct": 5.6717,
+        "morosidad_total_pct": 3.1515,
+        "morosidad_fmi_bm_pct": 3.8538,
+        "pib_crecimiento_pct": 4.2261,
+        "desempleo_pct": 3.48,
+        "inflacion_anual_pct": 3.5892,
+        "remesas_pib_pct": 2.407,
+        "credito_privado_pib_pct": 29.2084,
+        "prediccion_ols_anual_pct": 5.4545,
+        "residuo_ols_anual_pp": 0.2173
+      },
+      {
+        "anio": 2015,
+        "morosidad_consumo_pct": 7.0956,
+        "morosidad_total_pct": 3.7769,
+        "morosidad_fmi_bm_pct": 4.5015,
+        "pib_crecimiento_pct": 0.1197,
+        "desempleo_pct": 3.616,
+        "inflacion_anual_pct": 3.9666,
+        "remesas_pib_pct": 2.4561,
+        "credito_privado_pib_pct": 29.9363,
+        "prediccion_ols_anual_pct": 5.6401,
+        "residuo_ols_anual_pp": 1.4555
+      },
+      {
+        "anio": 2016,
+        "morosidad_consumo_pct": 8.416,
+        "morosidad_total_pct": 4.423,
+        "morosidad_fmi_bm_pct": 4.1854,
+        "pib_crecimiento_pct": -0.688,
+        "desempleo_pct": 4.597,
+        "inflacion_anual_pct": 1.7283,
+        "remesas_pib_pct": 2.6744,
+        "credito_privado_pib_pct": 31.5047,
+        "prediccion_ols_anual_pct": 6.2978,
+        "residuo_ols_anual_pp": 2.1181
+      },
+      {
+        "anio": 2017,
+        "morosidad_consumo_pct": 6.3337,
+        "morosidad_total_pct": 3.5131,
+        "morosidad_fmi_bm_pct": 3.2268,
+        "pib_crecimiento_pct": 5.9704,
+        "desempleo_pct": 3.836,
+        "inflacion_anual_pct": 0.4173,
+        "remesas_pib_pct": 2.7272,
+        "credito_privado_pib_pct": 34.2208,
+        "prediccion_ols_anual_pct": 5.5286,
+        "residuo_ols_anual_pp": 0.8051
+      },
+      {
+        "anio": 2018,
+        "morosidad_consumo_pct": 5.3223,
+        "morosidad_total_pct": 3.1084,
+        "morosidad_fmi_bm_pct": 2.8375,
+        "pib_crecimiento_pct": 1.0443,
+        "desempleo_pct": 3.53,
+        "inflacion_anual_pct": -0.2241,
+        "remesas_pib_pct": 2.8276,
+        "credito_privado_pib_pct": 38.3375,
+        "prediccion_ols_anual_pct": 5.3963,
+        "residuo_ols_anual_pp": -0.074
+      },
+      {
+        "anio": 2019,
+        "morosidad_consumo_pct": 5.0148,
+        "morosidad_total_pct": 2.967,
+        "morosidad_fmi_bm_pct": 3.1806,
+        "pib_crecimiento_pct": 0.1654,
+        "desempleo_pct": 3.812,
+        "inflacion_anual_pct": 0.266,
+        "remesas_pib_pct": 3.0138,
+        "credito_privado_pib_pct": 42.6916,
+        "prediccion_ols_anual_pct": 5.2735,
+        "residuo_ols_anual_pp": -0.2587
+      },
+      {
+        "anio": 2020,
+        "morosidad_consumo_pct": 4.5004,
+        "morosidad_total_pct": 3.026,
+        "morosidad_fmi_bm_pct": 3.2518,
+        "pib_crecimiento_pct": -9.2451,
+        "desempleo_pct": 6.116,
+        "inflacion_anual_pct": -0.3389,
+        "remesas_pib_pct": 3.4879,
+        "credito_privado_pib_pct": 49.0557,
+        "prediccion_ols_anual_pct": 6.5944,
+        "residuo_ols_anual_pp": -2.094
+      },
+      {
+        "anio": 2021,
+        "morosidad_consumo_pct": 4.0425,
+        "morosidad_total_pct": 2.6267,
+        "morosidad_fmi_bm_pct": 3.1509,
+        "pib_crecimiento_pct": 9.4219,
+        "desempleo_pct": 4.504,
+        "inflacion_anual_pct": 0.1333,
+        "remesas_pib_pct": 4.0749,
+        "credito_privado_pib_pct": 49.7534,
+        "prediccion_ols_anual_pct": 4.7815,
+        "residuo_ols_anual_pp": -0.739
+      },
+      {
+        "anio": 2022,
+        "morosidad_consumo_pct": 3.0729,
+        "morosidad_total_pct": 2.2309,
+        "morosidad_fmi_bm_pct": 3.1561,
+        "pib_crecimiento_pct": 5.8684,
+        "desempleo_pct": 3.713,
+        "inflacion_anual_pct": 3.4662,
+        "remesas_pib_pct": 4.0884,
+        "credito_privado_pib_pct": 52.3799,
+        "prediccion_ols_anual_pct": 4.0716,
+        "residuo_ols_anual_pp": -0.9987
+      },
+      {
+        "anio": 2023,
+        "morosidad_consumo_pct": 4.9752,
+        "morosidad_total_pct": 3.3324,
+        "morosidad_fmi_bm_pct": 4.721,
+        "pib_crecimiento_pct": 1.8328,
+        "desempleo_pct": 3.51,
+        "inflacion_anual_pct": 2.2157,
+        "remesas_pib_pct": 4.5139,
+        "credito_privado_pib_pct": 54.6545,
+        "prediccion_ols_anual_pct": 4.1203,
+        "residuo_ols_anual_pp": 0.8549
+      },
+      {
+        "anio": 2024,
+        "morosidad_consumo_pct": 5.2394,
+        "morosidad_total_pct": 3.5556,
+        "morosidad_fmi_bm_pct": 4.8198,
+        "pib_crecimiento_pct": -1.9441,
+        "desempleo_pct": 3.453,
+        "inflacion_anual_pct": 1.5473,
+        "remesas_pib_pct": 5.2861,
+        "credito_privado_pib_pct": 56.577,
+        "prediccion_ols_anual_pct": 4.2055,
+        "residuo_ols_anual_pp": 1.0339
+      },
+      {
+        "anio": 2025,
+        "morosidad_consumo_pct": 4.8523,
+        "morosidad_total_pct": 3.1715,
+        "morosidad_fmi_bm_pct": 4.452,
+        "pib_crecimiento_pct": 3.7259,
+        "desempleo_pct": 3.308,
+        "inflacion_anual_pct": 0.7105,
+        "remesas_pib_pct": 5.9335,
+        "credito_privado_pib_pct": 58.8743,
+        "prediccion_ols_anual_pct": 3.7942,
+        "residuo_ols_anual_pp": 1.0581
+      }
+    ]
+  }
+}

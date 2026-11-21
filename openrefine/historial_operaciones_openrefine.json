@@ -1,0 +1,298 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "periodo",
+    "expression": "grel:value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Normalizar espacios en blanco en la columna periodo (YYYY-MM)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "grel:value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Normalizar espacios en blanco en la columna fecha ISO (YYYY-MM-DD)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "morosidad_consumo_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir morosidad_consumo_pct a número decimal (6 decimales)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "morosidad_total_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir morosidad_total_pct a número decimal (6 decimales)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "desempleo_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir desempleo_pct (ENEMDU-INEC/BCE) a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "empleo_adecuado_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir empleo_adecuado_pct a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subempleo_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir subempleo_pct a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "inflacion_anual_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir inflacion_anual_pct (IPC anual INEC/BCE) a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tasa_consumo_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir tasa_consumo_pct (Tasa activa referencial consumo BCE) a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tasa_max_consumo_pct",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir tasa_max_consumo_pct (techo regulatorio JPRF/BCE) a número decimal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "monto_consumo_musd",
+    "expression": "grel:if(isBlank(value), null, round(toNumber(value) * 1000000) / 1000000.0)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Convertir monto_consumo_musd (millones USD) a número decimal"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tasa_consumo_pct_nulo",
+          "expression": "isBlank(value)",
+          "columnName": "tasa_consumo_pct",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Excluir meses sin tasa activa unificada de consumo (2021-01 a 2021-05) sin imputar datos"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "desempleo_pct_nulo",
+          "expression": "isBlank(value)",
+          "columnName": "desempleo_pct",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Excluir meses sin dato ENEMDU publicado en el corte IEM m2085 (2025-11 y 2025-12) sin imputación"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "periodo",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Ordenar filas cronológicamente de forma ascendente por periodo (YYYY-MM)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "duplicados_periodo",
+          "expression": "facetCount(value, 'value', 'periodo') > 1",
+          "columnName": "periodo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Control de deduplicación sobre clave primaria periodo (0 duplicados esperados)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "monto_consumo_musd",
+    "expression": "grel:round(ln(value) * 1000000) / 1000000.0",
+    "onError": "set-to-blank",
+    "newColumnName": "log_monto_consumo",
+    "columnInsertIndex": 15,
+    "description": "Crear variable log_monto_consumo = ln(monto_consumo_musd) para interpretación semi-elástica"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tasa_consumo_pct",
+    "expression": "grel:round((value - cells['inflacion_anual_pct'].value) * 1000000) / 1000000.0",
+    "onError": "set-to-blank",
+    "newColumnName": "tasa_real_aprox_pct",
+    "columnInsertIndex": 16,
+    "description": "Crear tasa_real_aprox_pct = tasa_consumo_pct - inflacion_anual_pct (aproximación de Fisher)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tasa_max_consumo_pct",
+    "expression": "grel:round((value - cells['tasa_consumo_pct'].value) * 1000000) / 1000000.0",
+    "onError": "set-to-blank",
+    "newColumnName": "brecha_tasa_maxima_pct",
+    "columnInsertIndex": 17,
+    "description": "Crear brecha_tasa_maxima_pct = tasa_max_consumo_pct - tasa_consumo_pct"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "periodo",
+    "expression": "grel:if(value <= '2022-06', 'Post-pandemia y reactivación (2021-2022 S1)', if(value <= '2023-12', 'Normalización crediticia e inflación moderada (2022 S2-2023)', if(value <= '2024-12', 'Desaceleración y crisis energética (2024)', 'Estabilización reciente (2025)')))",
+    "onError": "keep-original",
+    "newColumnName": "regimen_coyuntural",
+    "columnInsertIndex": 18,
+    "description": "Clasificar régimen coyuntural para segmentación en Tableau Public"
+  }
+]
