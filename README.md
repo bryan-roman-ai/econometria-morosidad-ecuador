@@ -157,3 +157,11 @@ Distribuido bajo licencia **MIT** (ver [`LICENSE`](LICENSE)).
 
 **Herramienta educativa. No es asesoría financiera.**  
 Hecho por Bryan Román · [linkedin.com/in/bryan-roman-ai](https://www.linkedin.com/in/bryan-roman-ai)
+
+## Actualización 2026 (24-nov-2026)
+
+- **Fuente:** Superintendencia de Bancos, Boletín de Series — Total Subsistema Banca Privada, corte **octubre 2026** (`data/raw/sb_series_banca_privada_oct2026.zip`, SHA-256 en `data/processed/actualizacion_2026.json`). Control: su valor de dic-2025 (4.719%) coincide con el del estudio.
+- **Dato:** morosidad de consumo oct-2026 = **4.79%**; promedio ene–oct 2026 = 4.90% (2025: 4.84%); cobertura 154.4% (dic-2025: 149.9%).
+- **Estimación de diciembre 2026 (no oficial):** estacional 4.29% (rango 3.91–4.65%, percentiles 10–90 del cambio oct→dic 2015–2025) y autorregresiva 4.34% (MCO con rezago + efecto diciembre, n = 142, R² = 0.90, HAC). Diciembre cayó frente a octubre en los 11 años 2015–2025.
+- **Pendiente:** re-estimar el modelo macro (M2/M4) con 2026 cuando el INEC publique la ENEMDU mensual completa del año (hoy llega a mayo de 2026).
+- Reproducir: `python scripts/actualizacion_2026.py`.

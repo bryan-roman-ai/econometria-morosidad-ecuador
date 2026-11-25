@@ -1,0 +1,155 @@
+{
+ "fuente": {
+  "institucion": "Superintendencia de Bancos del Ecuador",
+  "titulo": "Boletín de Series — Total Subsistema Banca Privada, corte OCT 2026",
+  "pagina_origen": "https://www.superbancos.gob.ec/estadisticas/portalestudios/bancos-2/",
+  "url": "https://www.superbancos.gob.ec/estadisticas/portalestudios/wp-admin/admin-ajax.php?action=shareonedrive-download&dl=1&id=01ONK3WL7U5X2E36NT4NH2W7T7LI22G2H7&drive_id=b!Iz-mji9B1EqK1eiAuGWU7x82x3m7uftFja_xK_rSLWY6gLR41EOqTYg222Ho8lwD&account_id=341c37a6-daa9-4b83-adad-506b00ccb984&listtoken=cb2dcac486c20e9c7a63b3bc95e58f46",
+  "sha256_zip": "bf2109d482950d336174917c13663ac45c172c5d2062850822788a2b2dc0caf3",
+  "control_dic2025": 4.7185
+ },
+ "mensual_2026": {
+  "2025-12": {
+   "morosidad_consumo_pct": 4.719,
+   "morosidad_total_pct": 2.991,
+   "cobertura_consumo_pct": 149.89,
+   "participacion_consumo_pct": 40.55
+  },
+  "2026-01": {
+   "morosidad_consumo_pct": 4.917,
+   "morosidad_total_pct": 3.152,
+   "cobertura_consumo_pct": 144.36,
+   "participacion_consumo_pct": 40.62
+  },
+  "2026-02": {
+   "morosidad_consumo_pct": 5.065,
+   "morosidad_total_pct": 3.215,
+   "cobertura_consumo_pct": 141.01,
+   "participacion_consumo_pct": 40.36
+  },
+  "2026-03": {
+   "morosidad_consumo_pct": 4.891,
+   "morosidad_total_pct": 3.107,
+   "cobertura_consumo_pct": 144.52,
+   "participacion_consumo_pct": 40.07
+  },
+  "2026-04": {
+   "morosidad_consumo_pct": 4.883,
+   "morosidad_total_pct": 3.11,
+   "cobertura_consumo_pct": 145.35,
+   "participacion_consumo_pct": 40.27
+  },
+  "2026-05": {
+   "morosidad_consumo_pct": 4.938,
+   "morosidad_total_pct": 3.141,
+   "cobertura_consumo_pct": 144.26,
+   "participacion_consumo_pct": 40.37
+  },
+  "2026-06": {
+   "morosidad_consumo_pct": 4.852,
+   "morosidad_total_pct": 3.054,
+   "cobertura_consumo_pct": 144.06,
+   "participacion_consumo_pct": 40.02
+  },
+  "2026-07": {
+   "morosidad_consumo_pct": 4.96,
+   "morosidad_total_pct": 3.066,
+   "cobertura_consumo_pct": 144.5,
+   "participacion_consumo_pct": 39.98
+  },
+  "2026-08": {
+   "morosidad_consumo_pct": 4.951,
+   "morosidad_total_pct": 3.093,
+   "cobertura_consumo_pct": 150.56,
+   "participacion_consumo_pct": 40.07
+  },
+  "2026-09": {
+   "morosidad_consumo_pct": 4.753,
+   "morosidad_total_pct": 2.942,
+   "cobertura_consumo_pct": 153.47,
+   "participacion_consumo_pct": 40.15
+  },
+  "2026-10": {
+   "morosidad_consumo_pct": 4.789,
+   "morosidad_total_pct": 2.958,
+   "cobertura_consumo_pct": 154.37,
+   "participacion_consumo_pct": 40.11
+  }
+ },
+ "promedio_ene_oct": {
+  "2025": 4.844,
+  "2026": 4.9
+ },
+ "estimacion_dic2026": {
+  "estacional": {
+   "dic2026": 4.293,
+   "p10": 3.91,
+   "p90": 4.653,
+   "cambios_oct_dic_2015_2025": [
+    [
+     2015,
+     -0.879
+    ],
+    [
+     2016,
+     -1.146
+    ],
+    [
+     2017,
+     -0.694
+    ],
+    [
+     2018,
+     -0.569
+    ],
+    [
+     2019,
+     -0.497
+    ],
+    [
+     2020,
+     -0.137
+    ],
+    [
+     2021,
+     -0.213
+    ],
+    [
+     2022,
+     -0.117
+    ],
+    [
+     2023,
+     -0.473
+    ],
+    [
+     2024,
+     -0.554
+    ],
+    [
+     2025,
+     -0.298
+    ]
+   ]
+  },
+  "autorregresiva": {
+   "nov2026": 4.89,
+   "dic2026": 4.341,
+   "ic90_mas_menos": 1.055,
+   "r2": 0.897,
+   "n": 142,
+   "coeficientes": {
+    "const": 0.3516,
+    "lag": 0.9415,
+    "dic": -0.6155,
+    "nov": 0.0296
+   },
+   "p_hac": {
+    "const": 0.0666,
+    "lag": 0.0,
+    "dic": 0.0,
+    "nov": 0.5699
+   }
+  },
+  "aviso": "Estimación estadística, no dato oficial. El dato real de diciembre lo publica la Superintendencia de Bancos."
+ }
+}
